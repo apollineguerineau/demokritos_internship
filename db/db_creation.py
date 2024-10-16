@@ -1,8 +1,10 @@
-from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Table
+from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Table, Boolean, Float
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship, sessionmaker
 
-# URL of SQLite database
+from dotenv import load_dotenv
+
+load_dotenv()
 DATABASE_URL = "sqlite:///local_database.db"
 
 # BDD initialization
@@ -13,7 +15,7 @@ expert_page_association = Table(
     'expert_page', Base.metadata,
     Column('expert_id', Integer, ForeignKey('experts.id'), primary_key=True),
     Column('page_id', Integer, ForeignKey('pages.id'), primary_key=True),
-    Column('rating', String)  # Optional rating provided by the expert for a page
+    Column('is_relevant', Boolean)  # Optional rating provided by the expert for a page
 )
 
 # Association table for many-to-many relationship between CrawlSession and Page
@@ -22,7 +24,8 @@ session_page_association = Table(
     'session_page', Base.metadata,
     Column('session_id', Integer, ForeignKey('sessions.id'), primary_key=True),
     Column('page_id', Integer, ForeignKey('pages.id'), primary_key=True),
-    Column('is_seed', Integer, default=0)  # 0 for false, 1 for true (seed status)
+    Column('is_seed', Boolean, default=False),
+    Column('score', Float) 
 )
 
 # Page table
