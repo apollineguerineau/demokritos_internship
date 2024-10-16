@@ -1,11 +1,12 @@
-from sorter.abstract_sorter import AbstractSorter
+from model.sorter.abstract_sorter import AbstractSorter
 import random
 
 class RandomSorter(AbstractSorter):
 
     def __init__(self):
-        self.name = "Random sorter"
+        super().__init__(name= "Random sorter")
         
-    def sort(self, candidate_pages):
-        random.shuffle(candidate_pages)
-        return(candidate_pages)
+    def sort(self, fetched_pages, new_pages):
+        all_pages = fetched_pages + new_pages
+        random.shuffle(all_pages)
+        return(all_pages)

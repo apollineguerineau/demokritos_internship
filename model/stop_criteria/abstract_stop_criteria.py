@@ -2,8 +2,7 @@ from abc import ABC, abstractmethod
 
 class AbstractStopCriteria :
     
-    def __init__(self, crawl_session, name) : 
-        self.crawl_session = crawl_session
+    def __init__(self, name) : 
         self.name = name
 
     @abstractmethod
