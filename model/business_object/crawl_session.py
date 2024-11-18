@@ -13,10 +13,14 @@ class CrawlSession:
 
         self.seed_pages = []
         self.fetched_pages = []
+        self.rejected_pages = []
 
         self.hyde = None
 
     def add_fetched_page(self, page):
         self.fetched_pages.append(page)
+
+    def add_rejected_page(self, page):
+        self.rejected_pages.append(page)
 
         

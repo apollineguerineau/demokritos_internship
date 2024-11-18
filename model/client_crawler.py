@@ -62,6 +62,12 @@ class ClientCrawler :
         start = datetime.now()
         i=0 
         while not self.stop_criteria.is_reached(self.crawl_session) : 
+            current_count = len(self.crawl_session.fetched_pages)
+            actual = datetime.now()
+            time_diff = actual - start
+            minutes_elapsed = time_diff.total_seconds() // 60 
+            sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
+            sys.stdout.flush()
             
             if self.query_expander :
                 if i>0:
@@ -73,36 +79,40 @@ class ClientCrawler :
             max_results = self.searcher.get_max_results(self.crawl_session.current_query)
             nb_new_pages = 0
             j=0
-            while j<max_results-1 and nb_new_pages<self.nb_pages_per_request and not self.stop_criteria.is_reached(self.crawl_session) :
-                page = self.searcher.get_page(self.crawl_session.current_query, num_page=j)
-                # if page.url not in [fetched_page.url for fetched_page in self.crawl_session.fetched_pages] : 
-                if page not in self.crawl_session.fetched_pages :
-                    page.get_with_query=self.crawl_session.current_query
-                    if self.classifier : 
-                        score = self.classifier.attribute_score(self.crawl_session, page)
-                        if score >= self.threshold : 
-                            page.score = score
+            while j<=max_results-1 and nb_new_pages<self.nb_pages_per_request and not self.stop_criteria.is_reached(self.crawl_session) :
+                try : 
+                    page = self.searcher.get_page(self.crawl_session.current_query, num_page=j)
+                    if page and page not in self.crawl_session.fetched_pages and page not in self.crawl_session.rejected_pages:
+                        page.get_with_query=self.crawl_session.current_query
+                        if self.classifier : 
+                            score = self.classifier.attribute_score(self.crawl_session, page)
+                            if score >= self.threshold : 
+                                page.score = score
+                                self.crawl_session.add_fetched_page(page)
+                                self.write_page(self.folder + '/fetched_pages.csv', page)
+                                nb_new_pages+=1   
+                                current_count = len(self.crawl_session.fetched_pages)
+                                actual = datetime.now()
+                                time_diff = actual - start
+                                minutes_elapsed = time_diff.total_seconds() // 60 
+                                sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
+                                sys.stdout.flush()
+                            else : 
+                                self.crawl_session.add_rejected_page(page)
+                        else : 
                             self.crawl_session.add_fetched_page(page)
                             self.write_page(self.folder + '/fetched_pages.csv', page)
-                            nb_new_pages+=1   
+                            nb_new_pages+=1  
                             current_count = len(self.crawl_session.fetched_pages)
                             actual = datetime.now()
                             time_diff = actual - start
                             minutes_elapsed = time_diff.total_seconds() // 60 
                             sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
                             sys.stdout.flush()
-
-                    else : 
-                        self.crawl_session.add_fetched_page(page)
-                        self.write_page(self.folder + '/fetched_pages.csv', page)
-                        nb_new_pages+=1  
-                        current_count = len(self.crawl_session.fetched_pages)
-                        actual = datetime.now()
-                        time_diff = actual - start
-                        minutes_elapsed = time_diff.total_seconds() // 60 
-                        sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
-                        sys.stdout.flush()
-                j += 1
+                except : 
+                    pass
+                finally : 
+                    j += 1
             i +=1 
         end = datetime.now()
         duration = end - self.crawl_session.start_time

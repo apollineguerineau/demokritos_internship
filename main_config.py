@@ -28,13 +28,16 @@ import os
 import time
 from tqdm import tqdm
 
+from itertools import product
+import os
+
 # Configuration de base
 base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/RAG/"
 query = '''RAG AND "code generation"'''
 llm = OllamaLLM(model='llama3.2')
 maximum_duration = 120
 stop_criteria = DurationStopCriteria(maximum_duration=maximum_duration)
-searcher = ChemRxivSearcher()
+searcher = ArxivSearcher()
 
 # Classifiers et leurs seuils
 sim_classifier = SimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
@@ -52,26 +55,30 @@ query_expander_best_page = LLMQueryExpander(llm=llm, template=MostRelevantPagesB
 hyde_generator = LLMHydeGenerator(llm=llm, template=HydeBasedTemplate())
 
 # Combinaisons possibles
-query_expanders = [query_expander_none, query_expander_on_seed, query_expander_best_page]
+query_expanders = [query_expander_on_seed, query_expander_best_page]
+# query_expander_none, 
 classifiers_and_thresholds = [
     (None, None),  # Pas de classificateur
     (sim_classifier, threshold_sim),  # Similarity classifier
     (hyde_classifier, threshold_hyde),  # Hyde classifier
 ]
-# nb_pages_per_requests_options = [10, 50, 100]
 nb_pages_per_requests_options = [10]
+# 50, 100 
 # Initialisation des configurations
 configurations = []
 
 # Génération des configurations
 for query_expander, (classifier, threshold) in product(query_expanders, classifiers_and_thresholds):
-    if query_expander is None :
-        # Cas particulier : seulement nb_pages_per_requests = 100
-        nb_pages_per_requests = [10]
-    else:
-        # Tous les autres cas
-        nb_pages_per_requests = nb_pages_per_requests_options
+    # Vérification : query_expander_best_page nécessite un classificateur
+    if query_expander == query_expander_best_page and classifier is None:
+        continue  # Sauter cette combinaison invalide
     
+    # Définir nb_pages_per_requests selon les cas
+    if query_expander is None:
+        nb_pages_per_requests = [100]  # Cas particulier : seulement nb_pages_per_requests = 100
+    else:
+        nb_pages_per_requests = nb_pages_per_requests_options  # Tous les autres cas
+
     for nb_pages in nb_pages_per_requests:
         config = {
             "query_expander": query_expander,
@@ -112,7 +119,7 @@ for i, config in enumerate(configurations, 1):
     folder_name = f"{expander_name}_{classifier_name}_thr_{threshold_value}_pages_{config['nb_pages_per_requests']}/"
     folder_path = base_output_dir + folder_name
 
-    if not os.path.exists(folder_path) : 
+    if not os.path.exists(folder_path):
         print(folder_name)
     
         # Lancer le crawler
@@ -133,6 +140,7 @@ for i, config in enumerate(configurations, 1):
 
         crawler_client.crawl()
         print('-----------------------------------------------')
+
 
 
 

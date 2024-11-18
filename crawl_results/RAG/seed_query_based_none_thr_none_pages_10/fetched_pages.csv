@@ -1,0 +1,1775 @@
+url,title,description,score,get_with_query,time_fetch,is_seed
+http://arxiv.org/abs/2402.18150v2,"Unsupervised Information Refinement Training of Large Language Models
+  for Retrieval-Augmented Generation","  Retrieval-augmented generation (RAG) enhances large language models (LLMs) by
+incorporating additional information from retrieval. However, studies have
+shown that LLMs still face challenges in effectively using the retrieved
+information, even ignoring it or being misled by it. The key reason is that the
+training of LLMs does not clearly make LLMs learn how to utilize input
+retrieved texts with varied quality. In this paper, we propose a novel
+perspective that considers the role of LLMs in RAG as ``Information Refiner'',
+which means that regardless of correctness, completeness, or usefulness of
+retrieved texts, LLMs can consistently integrate knowledge within the retrieved
+texts and model parameters to generate the texts that are more concise,
+accurate, and complete than the retrieved texts. To this end, we propose an
+information refinement training method named InFO-RAG that optimizes LLMs for
+RAG in an unsupervised manner. InFO-RAG is low-cost and general across various
+tasks. Extensive experiments on zero-shot prediction of 11 datasets in diverse
+tasks including Question Answering, Slot-Filling, Language Modeling, Dialogue,
+and Code Generation show that InFO-RAG improves the performance of LLaMA2 by an
+average of 9.39\% relative points. InFO-RAG also shows advantages in in-context
+learning and robustness of RAG.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:48.458201,False
+http://arxiv.org/abs/2407.02742v1,"A Comparative Study of DSL Code Generation: Fine-Tuning vs. Optimized
+  Retrieval Augmentation","  Natural Language to Code Generation has made significant progress in recent
+years with the advent of Large Language Models(LLMs). While generation for
+general-purpose languages like C, C++, and Python has improved significantly,
+LLMs struggle with custom function names in Domain Specific Languages or DSLs.
+This leads to higher hallucination rates and syntax errors, specially for DSLs
+having a high number of custom function names. Additionally, constant updates
+to function names add to the challenge as LLMs need to stay up-to-date. In this
+paper, we present optimizations for using Retrieval Augmented Generation (or
+RAG) with LLMs for DSL generation along with an ablation study comparing these
+strategies. We generated a train as well as test dataset with a DSL to
+represent automation tasks across roughly 700 APIs in public domain. We used
+the training dataset to fine-tune a Codex model for this DSL. Our results
+showed that the fine-tuned model scored the best on code similarity metric.
+With our RAG optimizations, we achieved parity for similarity metric. The
+compilation rate, however, showed that both the models still got the syntax
+wrong many times, with RAG-based method being 2 pts better. Conversely,
+hallucination rate for RAG model lagged by 1 pt for API names and by 2 pts for
+API parameter keys. We conclude that an optimized RAG model can match the
+quality of fine-tuned models and offer advantages for new, unseen APIs.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:48.966707,False
+http://arxiv.org/abs/2405.01585v1,"Tabular Embedding Model (TEM): Finetuning Embedding Models For Tabular
+  RAG Applications","  In recent times Large Language Models have exhibited tremendous capabilities,
+especially in the areas of mathematics, code generation and general-purpose
+reasoning. However for specialized domains especially in applications that
+require parsing and analyzing large chunks of numeric or tabular data even
+state-of-the-art (SOTA) models struggle. In this paper, we introduce a new
+approach to solving domain-specific tabular data analysis tasks by presenting a
+unique RAG workflow that mitigates the scalability issues of existing tabular
+LLM solutions. Specifically, we present Tabular Embedding Model (TEM), a novel
+approach to fine-tune embedding models for tabular Retrieval-Augmentation
+Generation (RAG) applications. Embedding models form a crucial component in the
+RAG workflow and even current SOTA embedding models struggle as they are
+predominantly trained on textual datasets and thus underperform in scenarios
+involving complex tabular data. The evaluation results showcase that our
+approach not only outperforms current SOTA embedding models in this domain but
+also does so with a notably smaller and more efficient model structure.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:49.432706,False
+http://arxiv.org/abs/2409.20550v1,"LLM Hallucinations in Practical Code Generation: Phenomena, Mechanism,
+  and Mitigation","  Code generation aims to automatically generate code from input requirements,
+significantly enhancing development efficiency. Recent large language models
+(LLMs) based approaches have shown promising results and revolutionized code
+generation task. Despite the promising performance, LLMs often generate
+contents with hallucinations, especially for the code generation scenario
+requiring the handling of complex contextual dependencies in practical
+development process. Although previous study has analyzed hallucinations in
+LLM-powered code generation, the study is limited to standalone function
+generation. In this paper, we conduct an empirical study to study the
+phenomena, mechanism, and mitigation of LLM hallucinations within more
+practical and complex development contexts in repository-level generation
+scenario. First, we manually examine the code generation results from six
+mainstream LLMs to establish a hallucination taxonomy of LLM-generated code.
+Next, we elaborate on the phenomenon of hallucinations, analyze their
+distribution across different models. We then analyze causes of hallucinations
+and identify four potential factors contributing to hallucinations. Finally, we
+propose an RAG-based mitigation method, which demonstrates consistent
+effectiveness in all studied LLMs. The replication package including code,
+data, and experimental results is available at
+https://github.com/DeepSoftwareAnalytics/LLMCodingHallucination
+",na,"RAG AND ""code generation""",2024-11-18 14:40:49.896572,False
+http://arxiv.org/abs/2406.14497v1,CodeRAG-Bench: Can Retrieval Augment Code Generation?,"  While language models (LMs) have proven remarkably adept at generating code,
+many programs are challenging for LMs to generate using their parametric
+knowledge alone. Providing external contexts such as library documentation can
+facilitate generating accurate and functional code. Despite the success of
+retrieval-augmented generation (RAG) in various text-oriented tasks, its
+potential for improving code generation remains under-explored. In this work,
+we conduct a systematic, large-scale analysis by asking: in what scenarios can
+retrieval benefit code generation models? and what challenges remain? We first
+curate a comprehensive evaluation benchmark, CodeRAG-Bench, encompassing three
+categories of code generation tasks, including basic programming, open-domain,
+and repository-level problems. We aggregate documents from five sources for
+models to retrieve contexts: competition solutions, online tutorials, library
+documentation, StackOverflow posts, and GitHub repositories. We examine
+top-performing models on CodeRAG-Bench by providing contexts retrieved from one
+or multiple sources. While notable gains are made in final code generation by
+retrieving high-quality contexts across various settings, our analysis reveals
+room for improvement -- current retrievers still struggle to fetch useful
+contexts especially with limited lexical overlap, and generators fail to
+improve with limited context lengths or abilities to integrate additional
+contexts. We hope CodeRAG-Bench serves as an effective testbed to encourage
+further development of advanced code-oriented RAG methods.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:50.372064,False
+http://arxiv.org/abs/2310.04963v3,LLM4VV: Developing LLM-Driven Testsuite for Compiler Validation,"  Large language models (LLMs) are a new and powerful tool for a wide span of
+applications involving natural language and demonstrate impressive code
+generation abilities. The goal of this work is to automatically generate tests
+and use these tests to validate and verify compiler implementations of a
+directive-based parallel programming paradigm, OpenACC. To do so, in this
+paper, we explore the capabilities of state-of-the-art LLMs, including
+open-source LLMs -- Meta Codellama, Phind fine-tuned version of Codellama,
+Deepseek Deepseek Coder and closed-source LLMs -- OpenAI GPT-3.5-Turbo and
+GPT-4-Turbo. We further fine-tuned the open-source LLMs and GPT-3.5-Turbo using
+our own testsuite dataset along with using the OpenACC specification. We also
+explored these LLMs using various prompt engineering techniques that include
+code template, template with retrieval-augmented generation (RAG), one-shot
+example, one-shot with RAG, expressive prompt with code template and RAG. This
+paper highlights our findings from over 5000 tests generated via all the above
+mentioned methods. Our contributions include: (a) exploring the capabilities of
+the latest and relevant LLMs for code generation, (b) investigating fine-tuning
+and prompt methods, and (c) analyzing the outcome of LLMs generated tests
+including manually analysis of representative set of tests. We found the LLM
+Deepseek-Coder-33b-Instruct produced the most passing tests followed by
+GPT-4-Turbo.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:50.845763,False
+http://arxiv.org/abs/2410.18251v1,Context-Augmented Code Generation Using Programming Knowledge Graphs,"  Large Language Models (LLMs) and Code-LLMs (CLLMs) have significantly
+improved code generation, but, they frequently face difficulties when dealing
+with challenging and complex problems. Retrieval-Augmented Generation (RAG)
+addresses this issue by retrieving and integrating external knowledge at the
+inference time. However, retrieval models often fail to find most relevant
+context, and generation models, with limited context capacity, can hallucinate
+when given irrelevant data. We present a novel framework that leverages a
+Programming Knowledge Graph (PKG) to semantically represent and retrieve code.
+This approach enables fine-grained code retrieval by focusing on the most
+relevant segments while reducing irrelevant context through a tree-pruning
+technique. PKG is coupled with a re-ranking mechanism to reduce even more
+hallucinations by selectively integrating non-RAG solutions. We propose two
+retrieval approaches-block-wise and function-wise-based on the PKG, optimizing
+context granularity. Evaluations on the HumanEval and MBPP benchmarks show our
+method improves pass@1 accuracy by up to 20%, and outperforms state-of-the-art
+models by up to 34% on MBPP. Our contributions include PKG-based retrieval,
+tree pruning to enhance retrieval precision, a re-ranking method for robust
+solution selection and a Fill-in-the-Middle (FIM) enhancer module for automatic
+code augmentation with relevant comments and docstrings.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:51.318462,False
+http://arxiv.org/abs/2410.20975v1,"Geo-FuB: A Method for Constructing an Operator-Function Knowledge Base
+  for Geospatial Code Generation Tasks Using Large Language Models","  The rise of spatiotemporal data and the need for efficient geospatial
+modeling have spurred interest in automating these tasks with large language
+models (LLMs). However, general LLMs often generate errors in geospatial code
+due to a lack of domain-specific knowledge on functions and operators. To
+address this, a retrieval-augmented generation (RAG) approach, utilizing an
+external knowledge base of geospatial functions and operators, is proposed.
+This study introduces a framework to construct such a knowledge base,
+leveraging geospatial script semantics. The framework includes: Function
+Semantic Framework Construction (Geo-FuSE), Frequent Operator Combination
+Statistics (Geo-FuST), and Semantic Mapping (Geo-FuM). Techniques like
+Chain-of-Thought, TF-IDF, and the APRIORI algorithm are utilized to derive and
+align geospatial functions. An example knowledge base, Geo-FuB, built from
+154,075 Google Earth Engine scripts, is available on GitHub. Evaluation metrics
+show a high accuracy, reaching 88.89% overall, with structural and semantic
+accuracies of 92.03% and 86.79% respectively. Geo-FuB's potential to optimize
+geospatial code generation through the RAG and fine-tuning paradigms is
+highlighted.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:51.788208,False
+http://arxiv.org/abs/2410.15154v1,"MCCoder: Streamlining Motion Control with LLM-Assisted Code Generation
+  and Rigorous Verification","  Large Language Models (LLMs) have shown considerable promise in code
+generation. However, the automation sector, especially in motion control,
+continues to rely heavily on manual programming due to the complexity of tasks
+and critical safety considerations. In this domain, incorrect code execution
+can pose risks to both machinery and personnel, necessitating specialized
+expertise. To address these challenges, we introduce MCCoder, an LLM-powered
+system designed to generate code that addresses complex motion control tasks,
+with integrated soft-motion data verification. MCCoder enhances code generation
+through multitask decomposition, hybrid retrieval-augmented generation (RAG),
+and self-correction with a private motion library. Moreover, it supports data
+verification by logging detailed trajectory data and providing simulations and
+plots, allowing users to assess the accuracy of the generated code and
+bolstering confidence in LLM-based programming. To ensure robust validation, we
+propose MCEVAL, an evaluation dataset with metrics tailored to motion control
+tasks of varying difficulties. Experiments indicate that MCCoder improves
+performance by 11.61% overall and by 66.12% on complex tasks in MCEVAL dataset
+compared with base models with naive RAG. This system and dataset aim to
+facilitate the application of code generation in automation settings with
+strict safety requirements. MCCoder is publicly available at
+https://github.com/MCCodeAI/MCCoder.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:52.264123,False
+http://arxiv.org/abs/2402.12317v1,ARKS: Active Retrieval in Knowledge Soup for Code Generation,"  Recently the retrieval-augmented generation (RAG) paradigm has raised much
+attention for its potential in incorporating external knowledge into large
+language models (LLMs) without further training. While widely explored in
+natural language applications, its utilization in code generation remains
+under-explored. In this paper, we introduce Active Retrieval in Knowledge Soup
+(ARKS), an advanced strategy for generalizing large language models for code.
+In contrast to relying on a single source, we construct a knowledge soup
+integrating web search, documentation, execution feedback, and evolved code
+snippets. We employ an active retrieval strategy that iteratively refines the
+query and updates the knowledge soup. To assess the performance of ARKS, we
+compile a new benchmark comprising realistic coding problems associated with
+frequently updated libraries and long-tail programming languages. Experimental
+results on ChatGPT and CodeLlama demonstrate a substantial improvement in the
+average execution accuracy of ARKS on LLMs. The analysis confirms the
+effectiveness of our proposed knowledge soup and active retrieval strategies,
+offering rich insights into the construction of effective retrieval-augmented
+code generation (RACG) pipelines. Our model, code, and data are available at
+https://arks-codegen.github.io.
+",na,"RAG AND ""code generation""",2024-11-18 14:40:52.723507,False
+http://arxiv.org/abs/2408.04125v1,Exploring RAG-based Vulnerability Augmentation with LLMs,"  Detecting vulnerabilities is a crucial task for maintaining the integrity,
+availability, and security of software systems. Utilizing DL-based models for
+vulnerability detection has become commonplace in recent years. However, such
+deep learning-based vulnerability detectors (DLVD) suffer from a shortage of
+sizable datasets to train effectively. Data augmentation can potentially
+alleviate the shortage of data, but augmenting vulnerable code is challenging
+and requires designing a generative solution that maintains vulnerability.
+Hence, the work on generating vulnerable code samples has been limited and
+previous works have only focused on generating samples that contain single
+statements or specific types of vulnerabilities. Lately, large language models
+(LLMs) are being used for solving various code generation and comprehension
+tasks and have shown inspiring results, especially when fused with retrieval
+augmented generation (RAG). In this study, we explore three different
+strategies to augment vulnerabilities both single and multi-statement
+vulnerabilities, with LLMs, namely Mutation, Injection, and Extension. We
+conducted an extensive evaluation of our proposed approach on three
+vulnerability datasets and three DLVD models, using two LLMs. Our results show
+that our injection-based clustering-enhanced RAG method beats the baseline
+setting (NoAug), Vulgen, and VGX (two SOTA methods), and Random Oversampling
+(ROS) by 30.80\%, 27.48\%, 27.93\%, and 15.41\% in f1-score with 5K generated
+vulnerable samples on average, and 53.84\%, 54.10\%, 69.90\%, and 40.93\% with
+15K generated vulnerable samples. Our approach demonstrates its feasibility for
+large-scale data augmentation by generating 1K samples at as cheap as US$ 1.88.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:40:58.082660,False
+http://arxiv.org/abs/2407.06245v2,"ORAN-Bench-13K: An Open Source Benchmark for Assessing LLMs in Open
+  Radio Access Networks","  Large Language Models (LLMs) can revolutionize how we deploy and operate Open
+Radio Access Networks (O-RAN) by enhancing network analytics, anomaly
+detection, and code generation and significantly increasing the efficiency and
+reliability of a plethora of O-RAN tasks. In this paper, we present
+ORAN-Bench-13K, the first comprehensive benchmark designed to evaluate the
+performance of Large Language Models (LLMs) within the context of O-RAN. Our
+benchmark consists of 13,952 meticulously curated multiple-choice questions
+generated from 116 O-RAN specification documents. We leverage a novel
+three-stage LLM framework, and the questions are categorized into three
+distinct difficulties to cover a wide spectrum of ORAN-related knowledge. We
+thoroughly evaluate the performance of several state-of-the-art LLMs, including
+Gemini, Chat-GPT, and Mistral. Additionally, we propose ORANSight, a
+Retrieval-Augmented Generation (RAG)-based pipeline that demonstrates superior
+performance on ORAN-Bench-13K compared to other tested closed-source models.
+Our findings indicate that current popular LLM models are not proficient in
+O-RAN, highlighting the need for specialized models. We observed a noticeable
+performance improvement when incorporating the RAG-based ORANSight pipeline,
+with a Macro Accuracy of 0.784 and a Weighted Accuracy of 0.776, which was on
+average 21.55% and 22.59% better than the other tested LLMs.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:01.692236,False
+http://arxiv.org/abs/2408.08335v1,Plan with Code: Comparing approaches for robust NL to DSL generation,"  Planning in code is considered a more reliable approach for many
+orchestration tasks. This is because code is more tractable than steps
+generated via Natural Language and make it easy to support more complex
+sequences by abstracting deterministic logic into functions. It also allows
+spotting issues with incorrect function names with the help of parsing checks
+that can be run on code. Progress in Code Generation methodologies, however,
+remains limited to general-purpose languages like C, C++, and Python. LLMs
+continue to face challenges with custom function names in Domain Specific
+Languages or DSLs, leading to higher hallucination rates and syntax errors.
+This is more common for custom function names, that are typically part of the
+plan. Moreover, keeping LLMs up-to-date with newer function names is an issue.
+This poses a challenge for scenarios like task planning over a large number of
+APIs, since the plan is represented as a DSL having custom API names. In this
+paper, we focus on workflow automation in RPA (Robotic Process Automation)
+domain as a special case of task planning. We present optimizations for using
+Retrieval Augmented Generation (or RAG) with LLMs for DSL generation along with
+an ablation study comparing these strategies with a fine-tuned model. Our
+results showed that the fine-tuned model scored the best on code similarity
+metric. However, with our optimizations, RAG approach is able to match the
+quality for in-domain API names in the test set. Additionally, it offers
+significant advantage for out-of-domain or unseen API names, outperforming
+Fine-Tuned model on similarity metric by 7 pts.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:02.144858,False
+http://arxiv.org/abs/2409.15204v2,RAMBO: Enhancing RAG-based Repository-Level Method Body Completion,"  Code completion is essential in software development, helping developers by
+predicting code snippets based on context. Among completion tasks, Method Body
+Completion (MBC) is particularly challenging as it involves generating complete
+method bodies based on their signatures and context. This task becomes
+significantly harder in large repositories, where method bodies must integrate
+repositoryspecific elements such as custom APIs, inter-module dependencies, and
+project-specific conventions. In this paper, we introduce RAMBO, a novel
+RAG-based approach for repository-level MBC. Instead of retrieving similar
+method bodies, RAMBO identifies essential repository-specific elements, such as
+classes, methods, and variables/fields, and their relevant usages. By
+incorporating these elements and their relevant usages into the code generation
+process, RAMBO ensures more accurate and contextually relevant method bodies.
+Our experimental results with leading code LLMs across 40 Java projects show
+that RAMBO significantly outperformed the state-of-the-art repository-level MBC
+approaches, with the improvements of up to 46% in BLEU, 57% in CodeBLEU, 36% in
+Compilation Rate, and up to 3X in Exact Match. Notably, RAMBO surpassed
+RepoCoder Oracle method by up to 12% in Exact Match, setting a new benchmark
+for repository-level MBC.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:02.599684,False
+http://arxiv.org/abs/2407.18333v1,"AutoVCoder: A Systematic Framework for Automated Verilog Code Generation
+  using LLMs","  Recently, the use of large language models (LLMs) for software code
+generation, e.g., C/C++ and Python, has proven a great success. However, LLMs
+still suffer from low syntactic and functional correctness when it comes to the
+generation of register-transfer level (RTL) code, such as Verilog. To address
+this issue, in this paper, we develop AutoVCoder, a systematic open-source
+framework that significantly improves the LLMs' correctness of generating
+Verilog code and enhances the quality of its output at the same time. Our
+framework integrates three novel techniques, including a high-quality hardware
+dataset generation approach, a two-round LLM fine-tuning method and a
+domain-specific retrieval-augmented generation (RAG) mechanism. Experimental
+results demonstrate that AutoVCoder outperforms both industrial and academic
+LLMs in Verilog code generation. Specifically, AutoVCoder shows a 0.5% and 2.2%
+improvement in functional correctness on the EvalMachine and EvalHuman
+benchmarks compared with BetterV, and also achieves a 3.4% increase in syntax
+correctness and a 3.4% increase in functional correctness on the RTLLM
+benchmark compared with RTLCoder.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:03.057937,False
+http://arxiv.org/abs/2311.16267v2,"Novel Preprocessing Technique for Data Embedding in Engineering Code
+  Generation Using Large Language Model","  We present four main contributions to enhance the performance of Large
+Language Models (LLMs) in generating domain-specific code: (i) utilizing
+LLM-based data splitting and data renovation techniques to improve the semantic
+representation of embeddings' space; (ii) introducing the Chain of Density for
+Renovation Credibility (CoDRC), driven by LLMs, and the Adaptive Text
+Renovation (ATR) algorithm for assessing data renovation reliability; (iii)
+developing the Implicit Knowledge Expansion and Contemplation (IKEC) Prompt
+technique; and (iv) effectively refactoring existing scripts to generate new
+and high-quality scripts with LLMs. By using engineering simulation software
+RedHawk-SC as a case study, we demonstrate the effectiveness of our data
+pre-processing method for expanding and categorizing scripts. When combined
+with IKEC, these techniques enhance the Retrieval-Augmented Generation (RAG)
+method in retrieving more relevant information, ultimately achieving a 73.33%
+""Percentage of Correct Lines"" for code generation problems in MapReduce
+applications.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:03.507557,False
+http://arxiv.org/abs/2410.14209v1,"Agents4PLC: Automating Closed-loop PLC Code Generation and Verification
+  in Industrial Control Systems using LLM-based Agents","  In industrial control systems, the generation and verification of
+Programmable Logic Controller (PLC) code are critical for ensuring operational
+efficiency and safety. While Large Language Models (LLMs) have made strides in
+automated code generation, they often fall short in providing correctness
+guarantees and specialized support for PLC programming. To address these
+challenges, this paper introduces Agents4PLC, a novel framework that not only
+automates PLC code generation but also includes code-level verification through
+an LLM-based multi-agent system. We first establish a comprehensive benchmark
+for verifiable PLC code generation area, transitioning from natural language
+requirements to human-written-verified formal specifications and reference PLC
+code. We further enhance our `agents' specifically for industrial control
+systems by incorporating Retrieval-Augmented Generation (RAG), advanced prompt
+engineering techniques, and Chain-of-Thought strategies. Evaluation against the
+benchmark demonstrates that Agents4PLC significantly outperforms previous
+methods, achieving superior results across a series of increasingly rigorous
+metrics. This research not only addresses the critical challenges in PLC
+programming but also highlights the potential of our framework to generate
+verifiable code applicable to real-world industrial applications.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:03.963165,False
+http://arxiv.org/abs/2409.02864v2,Language Model Powered Digital Biology,"  Recent advancements in Large Language Models (LLMs) are transforming biology,
+computer science, and many other research fields, as well as impacting everyday
+life. While transformer-based technologies are currently being deployed in
+biology, no available agentic system has been developed to tackle
+bioinformatics workflows. We present a prototype Bioinformatics Retrieval
+Augmented Data (BRAD) digital assistant. BRAD is a chatbot and agentic system
+that integrates a suite of tools to handle bioinformatics tasks, from code
+execution to online search. We demonstrate its capabilities through (1)
+improved question-and-answering with retrieval augmented generation (RAG), (2)
+the ability to run complex software pipelines, and (3) the ability to organize
+and distribute tasks in agentic workflows. We use BRAD for automation,
+performing tasks ranging from gene enrichment and searching the archive to
+automatic code generation for running biomarker identification pipelines. BRAD
+is a step toward autonomous, self-driving labs for digital biology.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:04.416951,False
+http://arxiv.org/abs/2401.01701v3,"De-Hallucinator: Mitigating LLM Hallucinations in Code Generation Tasks
+  via Iterative Grounding","  Large language models (LLMs) trained on datasets of publicly available source
+code have established a new state of the art in code generation tasks. However,
+these models are mostly unaware of the code that exists within a specific
+project, preventing the models from making good use of existing APIs. Instead,
+LLMs often invent, or ""hallucinate"", non-existent APIs or produce variants of
+already existing code. This paper presents De-Hallucinator, a technique that
+grounds the predictions of an LLM through a novel combination of retrieving
+suitable API references and iteratively querying the model with increasingly
+suitable context information in the prompt. The approach exploits the
+observation that predictions by LLMs often resemble the desired code, but they
+fail to correctly refer to already existing APIs. De-Hallucinator automatically
+identifies project-specific API references related to the model's initial
+predictions and adds these references into the prompt. Unlike
+retrieval-augmented generation (RAG), our approach uses the initial
+prediction(s) by the model to iteratively retrieve increasingly suitable API
+references. Our evaluation applies the approach to two tasks: predicting API
+usages in Python and generating tests in JavaScript. We show that
+De-Hallucinator consistently improves the generated code across five LLMs. In
+particular, the approach improves the edit distance by 23.3-50.6% and the
+recall of correctly predicted API usages by 23.9-61.0% for code completion, and
+improves the number of fixed tests that initially failed because of
+hallucinations by 63.2%, resulting in a 15.5% increase in statement coverage
+for test generation.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:04.877265,False
+http://arxiv.org/abs/2405.13057v1,Can Github issues be solved with Tree Of Thoughts?,"  While there have been extensive studies in code generation by large language
+models (LLM), where benchmarks like HumanEval have been surpassed with an
+impressive 96.3% success rate, these benchmarks predominantly judge a model's
+performance on basic function-level code generation and lack the critical
+thinking and concept of scope required of real-world scenarios such as solving
+GitHub issues. This research introduces the application of the Tree of Thoughts
+(ToT) language model reasoning framework for enhancing the decision-making and
+problem-solving abilities of LLMs for this complex task. Compared to
+traditional input-output (IO) prompting and Retrieval Augmented Generation
+(RAG) techniques, ToT is designed to improve performance by facilitating a
+structured exploration of multiple reasoning trajectories and enabling
+self-assessment of potential solutions. We experimentally deploy ToT in
+tackling a Github issue contained within an instance of the SWE-bench. However,
+our results reveal that the ToT framework alone is not enough to give LLMs the
+critical reasoning capabilities to outperform existing methods. In this paper
+we analyze the potential causes of these shortcomings and identify key areas
+for improvement such as deepening the thought process and introducing agentic
+capabilities. The insights of this research are aimed at informing future
+directions for refining the application of ToT and better harnessing the
+potential of LLMs in real-world problem-solving scenarios.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:05.358378,False
+http://arxiv.org/abs/2407.03889v1,"Automated C/C++ Program Repair for High-Level Synthesis via Large
+  Language Models","  In High-Level Synthesis (HLS), converting a regular C/C++ program into its
+HLS-compatible counterpart (HLS-C) still requires tremendous manual effort.
+Various program scripts have been introduced to automate this process. But the
+resulting codes usually contain many issues that should be manually repaired by
+developers. Since Large Language Models (LLMs) have the ability to automate
+code generation, they can also be used for automated program repair in HLS.
+However, due to the limited training of LLMs considering hardware and software
+simultaneously, hallucinations may occur during program repair using LLMs,
+leading to compilation failures. Besides, using LLMs for iterative repair also
+incurs a high cost. To address these challenges, we propose an LLM-driven
+program repair framework that takes regular C/C++ code as input and
+automatically generates its corresponding HLS-C code for synthesis while
+minimizing human repair effort. To mitigate the hallucinations in LLMs and
+enhance the prompt quality, a Retrieval-Augmented Generation (RAG) paradigm is
+introduced to guide the LLMs toward correct repair. In addition, we use LLMs to
+create a static bit width optimization program to identify the optimized bit
+widths for variables. Moreover, LLM-driven HLS optimization strategies are
+introduced to add/tune pragmas in HLS-C programs for circuit optimization.
+Experimental results demonstrate that the proposed LLM-driven automated
+framework can achieve much higher repair pass rates in 24 real-world
+applications compared with the traditional scripts and the direct application
+of LLMs for program repair.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:17.746523,False
+http://arxiv.org/abs/2410.03960v1,"SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving
+  Model Transformation","  LLM inference for popular enterprise use cases, such as summarization, RAG,
+and code-generation, typically observes orders of magnitude longer prompt
+lengths than generation lengths. This characteristic leads to high cost of
+prefill and increased response latency. In this paper, we present SwiftKV, a
+novel model transformation and distillation procedure specifically designed to
+reduce the time and cost of processing prompt tokens while preserving high
+quality of generated tokens. SwiftKV combines three key mechanisms: i)
+SingleInputKV, which prefills later layers' KV cache using a much earlier
+layer's output, allowing prompt tokens to skip much of the model computation,
+ii) AcrossKV, which merges the KV caches of neighboring layers to reduce the
+memory footprint and support larger batch size for higher throughput, and iii)
+a knowledge-preserving distillation procedure that can adapt existing LLMs for
+SwiftKV with minimal accuracy impact and low compute and data requirement. For
+Llama-3.1-8B and 70B, SwiftKV reduces the compute requirement of prefill by 50%
+and the memory requirement of the KV cache by 62.5% while incurring minimum
+quality degradation across a wide range of tasks. In the end-to-end inference
+serving using an optimized vLLM implementation, SwiftKV realizes up to 2x
+higher aggregate throughput and 60% lower time per output token. It can achieve
+a staggering 560 TFlops/GPU of normalized inference throughput, which
+translates to 16K tokens/s for Llama-3.1-70B in 16-bit precision on 4x H100
+GPUs.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:18.172911,False
+http://arxiv.org/abs/2410.18792v2,An LLM Agent for Automatic Geospatial Data Analysis,"  Large language models (LLMs) are being used in data science code generation
+tasks, but they often struggle with complex sequential tasks, leading to
+logical errors. Their application to geospatial data processing is particularly
+challenging due to difficulties in incorporating complex data structures and
+spatial constraints, effectively utilizing diverse function calls, and the
+tendency to hallucinate less-used geospatial libraries. To tackle these
+problems, we introduce GeoAgent, a new interactive framework designed to help
+LLMs handle geospatial data processing more effectively. GeoAgent pioneers the
+integration of a code interpreter, static analysis, and Retrieval-Augmented
+Generation (RAG) techniques within a Monte Carlo Tree Search (MCTS) algorithm,
+offering a novel approach to geospatial data processing. In addition, we
+contribute a new benchmark specifically designed to evaluate the LLM-based
+approach in geospatial tasks. This benchmark leverages a variety of Python
+libraries and includes both single-turn and multi-turn tasks such as data
+acquisition, data analysis, and visualization. By offering a comprehensive
+evaluation among diverse geospatial contexts, this benchmark sets a new
+standard for developing LLM-based approaches in geospatial data analysis tasks.
+Our findings suggest that relying solely on knowledge of LLM is insufficient
+for accurate geospatial task programming, which requires coherent multi-step
+processes and multiple function calls. Compared to the baseline LLMs, the
+proposed GeoAgent has demonstrated superior performance, yielding notable
+improvements in function calls and task completion. In addition, these results
+offer valuable insights for the future development of LLM agents in automatic
+geospatial data analysis task programming.
+",na,(RAG AND (code\ generator OR code\ creation)),2024-11-18 14:41:18.605149,False
+http://arxiv.org/abs/2407.21059v1,"Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable
+  Frameworks","  Retrieval-augmented Generation (RAG) has markedly enhanced the capabilities
+of Large Language Models (LLMs) in tackling knowledge-intensive tasks. The
+increasing demands of application scenarios have driven the evolution of RAG,
+leading to the integration of advanced retrievers, LLMs and other complementary
+technologies, which in turn has amplified the intricacy of RAG systems.
+However, the rapid advancements are outpacing the foundational RAG paradigm,
+with many methods struggling to be unified under the process of
+""retrieve-then-generate"". In this context, this paper examines the limitations
+of the existing RAG paradigm and introduces the modular RAG framework. By
+decomposing complex RAG systems into independent modules and specialized
+operators, it facilitates a highly reconfigurable framework. Modular RAG
+transcends the traditional linear architecture, embracing a more advanced
+design that integrates routing, scheduling, and fusion mechanisms. Drawing on
+extensive research, this paper further identifies prevalent RAG
+patterns-linear, conditional, branching, and looping-and offers a comprehensive
+analysis of their respective implementation nuances. Modular RAG presents
+innovative opportunities for the conceptualization and deployment of RAG
+systems. Finally, the paper explores the potential emergence of new operators
+and paradigms, establishing a solid theoretical foundation and a practical
+roadmap for the continued evolution and practical deployment of RAG
+technologies.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:39.328624,False
+http://arxiv.org/abs/2410.09584v1,"Toward General Instruction-Following Alignment for Retrieval-Augmented
+  Generation","  Following natural instructions is crucial for the effective application of
+Retrieval-Augmented Generation (RAG) systems. Despite recent advancements in
+Large Language Models (LLMs), research on assessing and improving
+instruction-following (IF) alignment within the RAG domain remains limited. To
+address this issue, we propose VIF-RAG, the first automated, scalable, and
+verifiable synthetic pipeline for instruction-following alignment in RAG
+systems. We start by manually crafting a minimal set of atomic instructions
+(<100) and developing combination rules to synthesize and verify complex
+instructions for a seed set. We then use supervised models for instruction
+rewriting while simultaneously generating code to automate the verification of
+instruction quality via a Python executor. Finally, we integrate these
+instructions with extensive RAG and general data samples, scaling up to a
+high-quality VIF-RAG-QA dataset (>100k) through automated processes. To further
+bridge the gap in instruction-following auto-evaluation for RAG systems, we
+introduce FollowRAG Benchmark, which includes approximately 3K test samples,
+covering 22 categories of general instruction constraints and four
+knowledge-intensive QA datasets. Due to its robust pipeline design, FollowRAG
+can seamlessly integrate with different RAG benchmarks. Using FollowRAG and
+eight widely-used IF and foundational abilities benchmarks for LLMs, we
+demonstrate that VIF-RAG markedly enhances LLM performance across a broad range
+of general instruction constraints while effectively leveraging its
+capabilities in RAG scenarios. Further analysis offers practical insights for
+achieving IF alignment in RAG systems. Our code and datasets are released at
+https://FollowRAG.github.io.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:39.811263,False
+http://arxiv.org/abs/2409.01666v1,In Defense of RAG in the Era of Long-Context Language Models,"  Overcoming the limited context limitations in early-generation LLMs,
+retrieval-augmented generation (RAG) has been a reliable solution for
+context-based answer generation in the past. Recently, the emergence of
+long-context LLMs allows the models to incorporate much longer text sequences,
+making RAG less attractive. Recent studies show that long-context LLMs
+significantly outperform RAG in long-context applications. Unlike the existing
+works favoring the long-context LLM over RAG, we argue that the extremely long
+context in LLMs suffers from a diminished focus on relevant information and
+leads to potential degradation in answer quality. This paper revisits the RAG
+in long-context answer generation. We propose an order-preserve
+retrieval-augmented generation (OP-RAG) mechanism, which significantly improves
+the performance of RAG for long-context question-answer applications. With
+OP-RAG, as the number of retrieved chunks increases, the answer quality
+initially rises, and then declines, forming an inverted U-shaped curve. There
+exist sweet points where OP-RAG could achieve higher answer quality with much
+less tokens than long-context LLM taking the whole context as input. Extensive
+experiments on public benchmark demonstrate the superiority of our OP-RAG.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:40.284711,False
+http://arxiv.org/abs/2408.02545v1,"RAG Foundry: A Framework for Enhancing LLMs for Retrieval Augmented
+  Generation","  Implementing Retrieval-Augmented Generation (RAG) systems is inherently
+complex, requiring deep understanding of data, use cases, and intricate design
+decisions. Additionally, evaluating these systems presents significant
+challenges, necessitating assessment of both retrieval accuracy and generative
+quality through a multi-faceted approach. We introduce RAG Foundry, an
+open-source framework for augmenting large language models for RAG use cases.
+RAG Foundry integrates data creation, training, inference and evaluation into a
+single workflow, facilitating the creation of data-augmented datasets for
+training and evaluating large language models in RAG settings. This integration
+enables rapid prototyping and experimentation with various RAG techniques,
+allowing users to easily generate datasets and train RAG models using internal
+or specialized knowledge sources. We demonstrate the framework effectiveness by
+augmenting and fine-tuning Llama-3 and Phi-3 models with diverse RAG
+configurations, showcasing consistent improvements across three
+knowledge-intensive datasets. Code is released as open-source in
+https://github.com/IntelLabs/RAGFoundry.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:41.761145,False
+http://arxiv.org/abs/2410.20299v1,"EACO-RAG: Edge-Assisted and Collaborative RAG with Adaptive Knowledge
+  Update","  Large Language Models are revolutionizing Web, mobile, and Web of Things
+systems, driving intelligent and scalable solutions. However, as
+Retrieval-Augmented Generation (RAG) systems expand, they encounter significant
+challenges related to scalability, including increased delay and communication
+overhead. To address these issues, we propose EACO-RAG, an edge-assisted
+distributed RAG system that leverages adaptive knowledge updates and inter-node
+collaboration. By distributing vector datasets across edge nodes and optimizing
+retrieval processes, EACO-RAG significantly reduces delay and resource
+consumption while enhancing response accuracy. The system employs a multi-armed
+bandit framework with safe online Bayesian methods to balance performance and
+cost. Extensive experimental evaluation demonstrates that EACO-RAG outperforms
+traditional centralized RAG systems in both response time and resource
+efficiency. EACO-RAG effectively reduces delay and resource expenditure to
+levels comparable to, or even lower than, those of local RAG systems, while
+significantly improving accuracy. This study presents the first systematic
+exploration of edge-assisted distributed RAG architectures, providing a
+scalable and cost-effective solution for large-scale distributed environments.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:42.243917,False
+http://arxiv.org/abs/2401.15391v1,"MultiHop-RAG: Benchmarking Retrieval-Augmented Generation for Multi-Hop
+  Queries","  Retrieval-augmented generation (RAG) augments large language models (LLM) by
+retrieving relevant knowledge, showing promising potential in mitigating LLM
+hallucinations and enhancing response quality, thereby facilitating the great
+adoption of LLMs in practice. However, we find that existing RAG systems are
+inadequate in answering multi-hop queries, which require retrieving and
+reasoning over multiple pieces of supporting evidence. Furthermore, to our
+knowledge, no existing RAG benchmarking dataset focuses on multi-hop queries.
+In this paper, we develop a novel dataset, MultiHop-RAG, which consists of a
+knowledge base, a large collection of multi-hop queries, their ground-truth
+answers, and the associated supporting evidence. We detail the procedure of
+building the dataset, utilizing an English news article dataset as the
+underlying RAG knowledge base. We demonstrate the benchmarking utility of
+MultiHop-RAG in two experiments. The first experiment compares different
+embedding models for retrieving evidence for multi-hop queries. In the second
+experiment, we examine the capabilities of various state-of-the-art LLMs,
+including GPT-4, PaLM, and Llama2-70B, in reasoning and answering multi-hop
+queries given the evidence. Both experiments reveal that existing RAG methods
+perform unsatisfactorily in retrieving and answering multi-hop queries. We hope
+MultiHop-RAG will be a valuable resource for the community in developing
+effective RAG systems, thereby facilitating greater adoption of LLMs in
+practice. The MultiHop-RAG and implemented RAG system is publicly available at
+https://github.com/yixuantt/MultiHop-RAG/.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:42.696396,False
+http://arxiv.org/abs/2410.13509v1,"RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable
+  Data Rewards","  Retrieval-Augmented Generation (RAG) has proven its effectiveness in
+mitigating hallucinations in Large Language Models (LLMs) by retrieving
+knowledge from external resources. To adapt LLMs for RAG pipelines, current
+approaches use instruction tuning to optimize LLMs, improving their ability to
+utilize retrieved knowledge. This supervised fine-tuning (SFT) approach focuses
+on equipping LLMs to handle diverse RAG tasks using different instructions.
+However, it trains RAG modules to overfit training signals and overlooks the
+varying data preferences among agents within the RAG system. In this paper, we
+propose a Differentiable Data Rewards (DDR) method, which end-to-end trains RAG
+systems by aligning data preferences between different RAG modules. DDR works
+by collecting the rewards to optimize each agent with a rollout method. This
+method prompts agents to sample some potential responses as perturbations,
+evaluates the impact of these perturbations on the whole RAG system, and
+subsequently optimizes the agent to produce outputs that improve the
+performance of the RAG system. Our experiments on various knowledge-intensive
+tasks demonstrate that DDR significantly outperforms the SFT method,
+particularly for LLMs with smaller-scale parameters that depend more on the
+retrieved knowledge. Additionally, DDR exhibits a stronger capability to align
+the data preference between RAG modules. The DDR method makes generation module
+more effective in extracting key information from documents and mitigating
+conflicts between parametric memory and external knowledge. All codes are
+available at https://github.com/OpenMatch/RAG-DDR.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:43.149712,False
+http://arxiv.org/abs/2410.13085v1,"MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language
+  Models","  Artificial Intelligence (AI) has demonstrated significant potential in
+healthcare, particularly in disease diagnosis and treatment planning. Recent
+progress in Medical Large Vision-Language Models (Med-LVLMs) has opened up new
+possibilities for interactive diagnostic tools. However, these models often
+suffer from factual hallucination, which can lead to incorrect diagnoses.
+Fine-tuning and retrieval-augmented generation (RAG) have emerged as methods to
+address these issues. However, the amount of high-quality data and distribution
+shifts between training data and deployment data limit the application of
+fine-tuning methods. Although RAG is lightweight and effective, existing
+RAG-based approaches are not sufficiently general to different medical domains
+and can potentially cause misalignment issues, both between modalities and
+between the model and the ground truth. In this paper, we propose a versatile
+multimodal RAG system, MMed-RAG, designed to enhance the factuality of
+Med-LVLMs. Our approach introduces a domain-aware retrieval mechanism, an
+adaptive retrieved contexts selection method, and a provable RAG-based
+preference fine-tuning strategy. These innovations make the RAG process
+sufficiently general and reliable, significantly improving alignment when
+introducing retrieved contexts. Experimental results across five medical
+datasets (involving radiology, ophthalmology, pathology) on medical VQA and
+report generation demonstrate that MMed-RAG can achieve an average improvement
+of 43.8% in the factual accuracy of Med-LVLMs. Our data and code are available
+in https://github.com/richard-peng-xia/MMed-RAG.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:43.611100,False
+http://arxiv.org/abs/2407.19994v3,"A Study on the Implementation Method of an Agent-Based Advanced RAG
+  System Using Graph","  This study aims to improve knowledge-based question-answering (QA) systems by
+overcoming the limitations of existing Retrieval-Augmented Generation (RAG)
+models and implementing an advanced RAG system based on Graph technology to
+develop high-quality generative AI services. While existing RAG models
+demonstrate high accuracy and fluency by utilizing retrieved information, they
+may suffer from accuracy degradation as they generate responses using
+pre-loaded knowledge without reprocessing. Additionally, they cannot
+incorporate real-time data after the RAG configuration stage, leading to issues
+with contextual understanding and biased information. To address these
+limitations, this study implemented an enhanced RAG system utilizing Graph
+technology. This system is designed to efficiently search and utilize
+information. Specifically, it employs LangGraph to evaluate the reliability of
+retrieved information and synthesizes diverse data to generate more accurate
+and enhanced responses. Furthermore, the study provides a detailed explanation
+of the system's operation, key implementation steps, and examples through
+implementation code and validation results, thereby enhancing the understanding
+of advanced RAG technology. This approach offers practical guidelines for
+implementing advanced RAG systems in corporate services, making it a valuable
+resource for practical application.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:44.067681,False
+http://arxiv.org/abs/2402.16893v1,"The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented
+  Generation (RAG)","  Retrieval-augmented generation (RAG) is a powerful technique to facilitate
+language model with proprietary and private data, where data privacy is a
+pivotal concern. Whereas extensive research has demonstrated the privacy risks
+of large language models (LLMs), the RAG technique could potentially reshape
+the inherent behaviors of LLM generation, posing new privacy issues that are
+currently under-explored. In this work, we conduct extensive empirical studies
+with novel attack methods, which demonstrate the vulnerability of RAG systems
+on leaking the private retrieval database. Despite the new risk brought by RAG
+on the retrieval data, we further reveal that RAG can mitigate the leakage of
+the LLMs' training data. Overall, we provide new insights in this paper for
+privacy protection of retrieval-augmented LLMs, which benefit both LLMs and RAG
+systems builders. Our code is available at
+https://github.com/phycholosogy/RAG-privacy.
+",na,"(Rag OR ""Rag"" + Rag) AND (code generation OR code generation tool OR auto code generation)",2024-11-18 14:41:44.517983,False
+http://arxiv.org/abs/2404.06082v1,A RAG Method for Source Code Inquiry Tailored to Long-Context LLMs,"  Although the context length limitation of large language models (LLMs) has
+been mitigated, it still hinders their application to software development
+tasks. This study proposes a method incorporating execution traces into RAG for
+inquiries about source code. Small-scale experiments confirm a tendency for the
+method to contribute to improving LLM response quality.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:50.491982,False
+http://arxiv.org/abs/2406.11147v2,"Vul-RAG: Enhancing LLM-based Vulnerability Detection via Knowledge-level
+  RAG","  Vulnerability detection is essential for software quality assurance. In
+recent years, deep learning models (especially large language models) have
+shown promise in vulnerability detection. In this work, we propose a novel
+LLM-based vulnerability detection technique Vul-RAG, which leverages
+knowledge-level retrieval-augmented generation (RAG) framework to detect
+vulnerability for the given code in three phases. First, Vul-RAG constructs a
+vulnerability knowledge base by extracting multi-dimension knowledge via LLMs
+from existing CVE instances; second, for a given code snippet, Vul-RAG}
+retrieves the relevant vulnerability knowledge from the constructed knowledge
+base based on functional semantics; third, Vul-RAG leverages LLMs to check the
+vulnerability of the given code snippet by reasoning the presence of
+vulnerability causes and fixing solutions of the retrieved vulnerability
+knowledge. Our evaluation of Vul-RAG on our constructed benchmark PairVul shows
+that Vul-RAG substantially outperforms all baselines by 12.96\%/110\% relative
+improvement in accuracy/pairwise-accuracy. In addition, our user study shows
+that the vulnerability knowledge generated by Vul-RAG can serve as high-quality
+explanations which can improve the manual detection accuracy from 0.60 to 0.77.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:53.604743,False
+http://arxiv.org/abs/2405.13576v1,"FlashRAG: A Modular Toolkit for Efficient Retrieval-Augmented Generation
+  Research","  With the advent of Large Language Models (LLMs), the potential of Retrieval
+Augmented Generation (RAG) techniques have garnered considerable research
+attention. Numerous novel algorithms and models have been introduced to enhance
+various aspects of RAG systems. However, the absence of a standardized
+framework for implementation, coupled with the inherently intricate RAG
+process, makes it challenging and time-consuming for researchers to compare and
+evaluate these approaches in a consistent environment. Existing RAG toolkits
+like LangChain and LlamaIndex, while available, are often heavy and unwieldy,
+failing to meet the personalized needs of researchers. In response to this
+challenge, we propose FlashRAG, an efficient and modular open-source toolkit
+designed to assist researchers in reproducing existing RAG methods and in
+developing their own RAG algorithms within a unified framework. Our toolkit
+implements 12 advanced RAG methods and has gathered and organized 32 benchmark
+datasets. Our toolkit has various features, including customizable modular
+framework, rich collection of pre-implemented RAG works, comprehensive
+datasets, efficient auxiliary pre-processing scripts, and extensive and
+standard evaluation metrics. Our toolkit and resources are available at
+https://github.com/RUC-NLPIR/FlashRAG.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:54.931646,False
+http://arxiv.org/abs/2106.11517v1,"Fine-tune the Entire RAG Architecture (including DPR retriever) for
+  Question-Answering","  In this paper, we illustrate how to fine-tune the entire Retrieval Augment
+Generation (RAG) architecture in an end-to-end manner. We highlighted the main
+engineering challenges that needed to be addressed to achieve this objective.
+We also compare how end-to-end RAG architecture outperforms the original RAG
+architecture for the task of question answering. We have open-sourced our
+implementation in the HuggingFace Transformers library.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:55.367114,False
+http://arxiv.org/abs/2406.13213v2,"Multi-Meta-RAG: Improving RAG for Multi-Hop Queries using Database
+  Filtering with LLM-Extracted Metadata","  The retrieval-augmented generation (RAG) enables retrieval of relevant
+information from an external knowledge source and allows large language models
+(LLMs) to answer queries over previously unseen document collections. However,
+it was demonstrated that traditional RAG applications perform poorly in
+answering multi-hop questions, which require retrieving and reasoning over
+multiple elements of supporting evidence. We introduce a new method called
+Multi-Meta-RAG, which uses database filtering with LLM-extracted metadata to
+improve the RAG selection of the relevant documents from various sources,
+relevant to the question. While database filtering is specific to a set of
+questions from a particular domain and format, we found out that Multi-Meta-RAG
+greatly improves the results on the MultiHop-RAG benchmark. The code is
+available at https://github.com/mxpoliakov/Multi-Meta-RAG.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:57.090083,False
+http://arxiv.org/abs/2410.15285v1,"Contextual Augmented Multi-Model Programming (CAMP): A Hybrid
+  Local-Cloud Copilot Framework","  The advancements in cloud-based Large Languages Models (LLMs) have
+revolutionized AI-assisted programming. However, their integration into certain
+local development environments like ones within the Apple software ecosystem
+(e.g., iOS apps, macOS) remains challenging due to computational demands and
+sandboxed constraints. This paper presents CAMP, a multi-model AI-assisted
+programming framework that consists of a local model that employs
+Retrieval-Augmented Generation (RAG) to retrieve contextual information from
+the codebase to facilitate context-aware prompt construction thus optimizing
+the performance of the cloud model, empowering LLMs' capabilities in local
+Integrated Development Environments (IDEs). The methodology is actualized in
+Copilot for Xcode, an AI-assisted programming tool crafted for Xcode that
+employs the RAG module to address software constraints and enables diverse
+generative programming tasks, including automatic code completion,
+documentation, error detection, and intelligent user-agent interaction. The
+results from objective experiments on generated code quality and subjective
+experiments on user adoption collectively demonstrate the pilot success of the
+proposed system and mark its significant contributions to the realm of
+AI-assisted programming.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:57.550745,False
+http://arxiv.org/abs/2402.01717v1,"From RAG to QA-RAG: Integrating Generative AI for Pharmaceutical
+  Regulatory Compliance Process","  Regulatory compliance in the pharmaceutical industry entails navigating
+through complex and voluminous guidelines, often requiring significant human
+resources. To address these challenges, our study introduces a chatbot model
+that utilizes generative AI and the Retrieval Augmented Generation (RAG)
+method. This chatbot is designed to search for guideline documents relevant to
+the user inquiries and provide answers based on the retrieved guidelines.
+Recognizing the inherent need for high reliability in this domain, we propose
+the Question and Answer Retrieval Augmented Generation (QA-RAG) model. In
+comparative experiments, the QA-RAG model demonstrated a significant
+improvement in accuracy, outperforming all other baselines including
+conventional RAG methods. This paper details QA-RAG's structure and performance
+evaluation, emphasizing its potential for the regulatory compliance domain in
+the pharmaceutical industry and beyond. We have made our work publicly
+available for further research and development.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:58.001113,False
+http://arxiv.org/abs/2407.13193v2,Retrieval-Augmented Generation for Natural Language Processing: A Survey,"  Large language models (LLMs) have demonstrated great success in various
+fields, benefiting from their huge amount of parameters that store knowledge.
+However, LLMs still suffer from several key issues, such as hallucination
+problems, knowledge update issues, and lacking domain-specific expertise. The
+appearance of retrieval-augmented generation (RAG), which leverages an external
+knowledge database to augment LLMs, makes up those drawbacks of LLMs. This
+paper reviews all significant techniques of RAG, especially in the retriever
+and the retrieval fusions. Besides, tutorial codes are provided for
+implementing the representative techniques in RAG. This paper further discusses
+the RAG training, including RAG with/without datastore update. Then, we
+introduce the application of RAG in representative natural language processing
+tasks and industrial scenarios. Finally, this paper discusses the future
+directions and challenges of RAG for promoting its development.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:58.428258,False
+http://arxiv.org/abs/2410.15944v1,"Developing Retrieval Augmented Generation (RAG) based LLM Systems from
+  PDFs: An Experience Report","  This paper presents an experience report on the development of Retrieval
+Augmented Generation (RAG) systems using PDF documents as the primary data
+source. The RAG architecture combines generative capabilities of Large Language
+Models (LLMs) with the precision of information retrieval. This approach has
+the potential to redefine how we interact with and augment both structured and
+unstructured knowledge in generative models to enhance transparency, accuracy,
+and contextuality of responses. The paper details the end-to-end pipeline, from
+data collection, preprocessing, to retrieval indexing and response generation,
+highlighting technical challenges and practical solutions. We aim to offer
+insights to researchers and practitioners developing similar systems using two
+distinct approaches: OpenAI's Assistant API with GPT Series and Llama's
+open-source models. The practical implications of this research lie in
+enhancing the reliability of generative AI systems in various sectors where
+domain-specific knowledge and real-time information retrieval is important. The
+Python code used in this work is also available at:
+https://github.com/GPT-Laboratory/RAG-LLM-Development-Guidebook-from-PDFs.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:58.880756,False
+http://arxiv.org/abs/2408.11058v1,LLM Agents Improve Semantic Code Search,"  Code Search is a key task that many programmers often have to perform while
+developing solutions to problems. Current methodologies suffer from an
+inability to perform accurately on prompts that contain some ambiguity or ones
+that require additional context relative to a code-base. We introduce the
+approach of using Retrieval Augmented Generation (RAG) powered agents to inject
+information into user prompts allowing for better inputs into embedding models.
+By utilizing RAG, agents enhance user queries with relevant details from GitHub
+repositories, making them more informative and contextually aligned.
+Additionally, we introduce a multi-stream ensemble approach which when paired
+with agentic workflow can obtain improved retrieval accuracy, which we deploy
+on application called repo-rift.com. Experimental results on the CodeSearchNet
+dataset demonstrate that RepoRift significantly outperforms existing methods,
+achieving an 78.2% success rate at Success@10 and a 34.6% success rate at
+Success@1. This research presents a substantial advancement in semantic code
+search, highlighting the potential of agentic LLMs and RAG to enhance code
+retrieval systems.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:41:59.767682,False
+http://arxiv.org/abs/2406.18676v2,"Understand What LLM Needs: Dual Preference Alignment for
+  Retrieval-Augmented Generation","  Retrieval-augmented generation (RAG) has demonstrated effectiveness in
+mitigating the hallucination problem of large language models (LLMs). However,
+the difficulty of aligning the retriever with the diverse LLMs' knowledge
+preferences inevitably poses an inevitable challenge in developing a reliable
+RAG system. To address this issue, we propose DPA-RAG, a universal framework
+designed to align diverse knowledge preferences within RAG systems.
+Specifically, we initially introduce a preference knowledge construction
+pipline and incorporate five novel query augmentation strategies to alleviate
+preference data scarcity. Based on preference data, DPA-RAG accomplishes both
+external and internal preference alignment: 1) It jointly integrate pair-wise,
+point-wise, and contrastive preference alignment abilities into the reranker,
+achieving external preference alignment among RAG components. 2) It further
+introduces a pre-aligned stage before vanilla Supervised Fine-tuning (SFT),
+enabling LLMs to implicitly capture knowledge aligned with their reasoning
+preferences, achieving LLMs' internal alignment. Experimental results across
+four knowledge-intensive QA datasets demonstrate that DPA-RAG outperforms all
+baselines and seamlessly integrates both black-box and open-sourced LLM
+readers. Further qualitative analysis and discussions also provide empirical
+guidance for achieving reliable RAG systems. Our code is publicly available at
+https://github.com/dongguanting/DPA-RAG.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:15.284347,False
+http://arxiv.org/abs/2405.06681v1,"Leveraging Lecture Content for Improved Feedback: Explorations with
+  GPT-4 and Retrieval Augmented Generation","  This paper presents the use of Retrieval Augmented Generation (RAG) to
+improve the feedback generated by Large Language Models for programming tasks.
+For this purpose, corresponding lecture recordings were transcribed and made
+available to the Large Language Model GPT-4 as external knowledge source
+together with timestamps as metainformation by using RAG. The purpose of this
+is to prevent hallucinations and to enforce the use of the technical terms and
+phrases from the lecture. In an exercise platform developed to solve
+programming problems for an introductory programming lecture, students can
+request feedback on their solutions generated by GPT-4. For this task GPT-4
+receives the students' code solution, the compiler output, the result of unit
+tests and the relevant passages from the lecture notes available through the
+use of RAG as additional context. The feedback generated by GPT-4 should guide
+students to solve problems independently and link to the lecture content, using
+the time stamps of the transcript as meta-information. In this way, the
+corresponding lecture videos can be viewed immediately at the corresponding
+positions. For the evaluation, students worked with the tool in a workshop and
+decided for each feedback whether it should be extended by RAG or not. First
+results based on a questionnaire and the collected usage data show that the use
+of RAG can improve feedback generation and is preferred by students in some
+situations. Due to the slower speed of feedback generation, the benefits are
+situation dependent.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:15.793367,False
+http://arxiv.org/abs/2410.11321v1,Self-adaptive Multimodal Retrieval-Augmented Generation,"  Traditional Retrieval-Augmented Generation (RAG) methods are limited by their
+reliance on a fixed number of retrieved documents, often resulting in
+incomplete or noisy information that undermines task performance. Although
+recent adaptive approaches alleviated these problems, their application in
+intricate and real-world multimodal tasks remains limited. To address these, we
+propose a new approach called Self-adaptive Multimodal Retrieval-Augmented
+Generation (SAM-RAG), tailored specifically for multimodal contexts. SAM-RAG
+not only dynamically filters relevant documents based on the input query,
+including image captions when needed, but also verifies the quality of both the
+retrieved documents and the output. Extensive experimental results show that
+SAM-RAG surpasses existing state-of-the-art methods in both retrieval accuracy
+and response generation. By further ablation experiments and effectiveness
+analysis, SAM-RAG maintains high recall quality while improving overall task
+performance in multimodal RAG task. Our codes are available at
+https://github.com/SAM-RAG/SAM_RAG.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:17.352093,False
+http://arxiv.org/abs/2410.09662v1,"Exploring Demonstration Retrievers in RAG for Coding Tasks: Yeas and
+  Nays!","  Retrieval-Augmented Generation (RAG) enhances Large Language Models (LLMs) by
+integrating external knowledge bases, achieving state-of-the-art results in
+various coding tasks. The core of RAG is retrieving demonstration examples,
+which is essential to balance effectiveness (generation quality) and efficiency
+(retrieval time) for optimal performance. However, the high-dimensional nature
+of code representations and large knowledge bases often create efficiency
+bottlenecks, which are overlooked in previous research. This paper
+systematically evaluates the efficiency-effectiveness trade-off of retrievers
+across three coding tasks: Program Synthesis, Commit Message Generation, and
+Assertion Generation. We examined six retrievers: two sparse (BM25 and BM25L)
+and four dense retrievers, including one exhaustive dense retriever (SBERT's
+Semantic Search) and three approximate dense retrievers (ANNOY, LSH, and HNSW).
+Our findings show that while BM25 excels in effectiveness, it suffers in
+efficiency as the knowledge base grows beyond 1000 entries. In large-scale
+retrieval, efficiency differences become more pronounced, with approximate
+dense retrievers offering the greatest gains. For instance, in Commit
+Generation task, HNSW achieves a 44x speed up, while only with a 1.74% drop in
+RougeL compared with BM25. Our results also show that increasing the number of
+demonstrations in the prompt doesn't always improve the effectiveness and can
+increase latency and lead to incorrect outputs. Our findings provide valuable
+insights for practitioners aiming to build efficient and effective RAG systems
+for coding tasks.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:17.858418,False
+http://arxiv.org/abs/2210.02627v1,"Improving the Domain Adaptation of Retrieval Augmented Generation (RAG)
+  Models for Open Domain Question Answering","  Retrieval Augment Generation (RAG) is a recent advancement in Open-Domain
+Question Answering (ODQA). RAG has only been trained and explored with a
+Wikipedia-based external knowledge base and is not optimized for use in other
+specialized domains such as healthcare and news. In this paper, we evaluate the
+impact of joint training of the retriever and generator components of RAG for
+the task of domain adaptation in ODQA. We propose \textit{RAG-end2end}, an
+extension to RAG, that can adapt to a domain-specific knowledge base by
+updating all components of the external knowledge base during training. In
+addition, we introduce an auxiliary training signal to inject more
+domain-specific knowledge. This auxiliary signal forces \textit{RAG-end2end} to
+reconstruct a given sentence by accessing the relevant information from the
+external knowledge base. Our novel contribution is unlike RAG, RAG-end2end does
+joint training of the retriever and generator for the end QA task and domain
+adaptation. We evaluate our approach with datasets from three domains:
+COVID-19, News, and Conversations, and achieve significant performance
+improvements compared to the original RAG model. Our work has been open-sourced
+through the Huggingface Transformers library, attesting to our work's
+credibility and technical consistency.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:18.371268,False
+http://arxiv.org/abs/2403.10059v2,Repoformer: Selective Retrieval for Repository-Level Code Completion,"  Recent advances in retrieval-augmented generation (RAG) have initiated a new
+era in repository-level code completion. However, the invariable use of
+retrieval in existing methods exposes issues in both efficiency and robustness,
+with a large proportion of the retrieved contexts proving unhelpful or harmful
+to code language models (code LMs). In this paper, we propose a selective RAG
+framework to avoid retrieval when unnecessary. To power this framework, we
+design a self-supervised learning approach to enable a code LM to accurately
+self-evaluate whether retrieval can improve its output quality and robustly
+leverage the potentially noisy retrieved contexts. Using this LM as both the
+selective RAG policy and the generation model, our framework achieves
+state-of-the-art repository-level code completion performance on diverse
+benchmarks including RepoEval, CrossCodeEval, and CrossCodeLongEval, a new
+long-form code completion benchmark. Meanwhile, our analyses show that
+selectively retrieving brings as much as 70% inference speedup in the online
+serving setting without harming the performance. We further demonstrate that
+our framework is able to accommodate different generation models, retrievers,
+and programming languages. These advancements position our framework as an
+important step towards more accurate and efficient repository-level code
+completion.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:18.877801,False
+http://arxiv.org/abs/2407.19619v1,"Enhancing Code Translation in Language Models with Few-Shot Learning via
+  Retrieval-Augmented Generation","  The advent of large language models (LLMs) has significantly advanced the
+field of code translation, enabling automated translation between programming
+languages. However, these models often struggle with complex translation tasks
+due to inadequate contextual understanding. This paper introduces a novel
+approach that enhances code translation through Few-Shot Learning, augmented
+with retrieval-based techniques. By leveraging a repository of existing code
+translations, we dynamically retrieve the most relevant examples to guide the
+model in translating new code segments. Our method, based on
+Retrieval-Augmented Generation (RAG), substantially improves translation
+quality by providing contextual examples from which the model can learn in
+real-time. We selected RAG over traditional fine-tuning methods due to its
+ability to utilize existing codebases or a locally stored corpus of code, which
+allows for dynamic adaptation to diverse translation tasks without extensive
+retraining. Extensive experiments on diverse datasets with open LLM models such
+as Starcoder, Llama3-70B Instruct, CodeLlama-34B Instruct, Granite-34B Code
+Instruct, and Mixtral-8x22B, as well as commercial LLM models like GPT-3.5
+Turbo and GPT-4o, demonstrate our approach's superiority over traditional
+zero-shot methods, especially in translating between Fortran and CPP. We also
+explored varying numbers of shots i.e. examples provided during inference,
+specifically 1, 2, and 3 shots and different embedding models for RAG,
+including Nomic-Embed, Starencoder, and CodeBERT, to assess the robustness and
+effectiveness of our approach.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:19.379514,False
+http://arxiv.org/abs/2311.09476v2,"ARES: An Automated Evaluation Framework for Retrieval-Augmented
+  Generation Systems","  Evaluating retrieval-augmented generation (RAG) systems traditionally relies
+on hand annotations for input queries, passages to retrieve, and responses to
+generate. We introduce ARES, an Automated RAG Evaluation System, for evaluating
+RAG systems along the dimensions of context relevance, answer faithfulness, and
+answer relevance. By creating its own synthetic training data, ARES finetunes
+lightweight LM judges to assess the quality of individual RAG components. To
+mitigate potential prediction errors, ARES utilizes a small set of
+human-annotated datapoints for prediction-powered inference (PPI). Across eight
+different knowledge-intensive tasks in KILT, SuperGLUE, and AIS, ARES
+accurately evaluates RAG systems while using only a few hundred human
+annotations during evaluation. Furthermore, ARES judges remain effective across
+domain shifts, proving accurate even after changing the type of queries and/or
+documents used in the evaluated RAG systems. We make our code and datasets
+publicly available on Github.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:20.980905,False
+http://arxiv.org/abs/2408.09199v1,TC-RAG:Turing-Complete RAG's Case study on Medical LLM Systems,"  In the pursuit of enhancing domain-specific Large Language Models (LLMs),
+Retrieval-Augmented Generation (RAG) emerges as a promising solution to
+mitigate issues such as hallucinations, outdated knowledge, and limited
+expertise in highly specialized queries. However, existing approaches to RAG
+fall short by neglecting system state variables, which are crucial for ensuring
+adaptive control, retrieval halting, and system convergence. In this paper, we
+introduce the TC-RAG through rigorous proof, a novel framework that addresses
+these challenges by incorporating a Turing Complete System to manage state
+variables, thereby enabling more efficient and accurate knowledge retrieval. By
+leveraging a memory stack system with adaptive retrieval, reasoning, and
+planning capabilities, TC-RAG not only ensures the controlled halting of
+retrieval processes but also mitigates the accumulation of erroneous knowledge
+via Push and Pop actions. In the case study of the medical domain, our
+extensive experiments on real-world healthcare datasets demonstrate the
+superiority of TC-RAG over existing methods in accuracy by over 7.20\%. Our
+dataset and code have been available at
+https://https://github.com/Artessay/SAMA.git.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:21.496075,False
+http://arxiv.org/abs/2409.11242v2,"Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded
+  Attributions and Learning to Refuse","  LLMs are an integral component of retrieval-augmented generation (RAG)
+systems. While many studies focus on evaluating the overall quality of
+end-to-end RAG systems, there is a gap in understanding the appropriateness of
+LLMs for the RAG task. To address this, we introduce Trust-Score, a holistic
+metric that evaluates the trustworthiness of LLMs within the RAG framework. Our
+results show that various prompting methods, such as in-context learning, fail
+to effectively adapt LLMs to the RAG task as measured by Trust-Score.
+Consequently, we propose Trust-Align, a method to align LLMs for improved
+Trust-Score performance. The LLaMA-3 family, aligned using our method,
+significantly outperforms open-source LLMs of similar sizes on ASQA (up 14.0),
+QAMPARI (up 28.9), and ELI5 (up 13.7). We also demonstrate the effectiveness of
+Trust-Align across different open-weight models, including the LLaMA series (1b
+to 8b), Qwen-2.5 series (0.5b to 7b), and Phi3.5 (3.8b). We release our code at
+\url{https://anonymous.4open.science/r/trust-align}
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:22.004790,False
+http://arxiv.org/abs/2409.19804v1,"Does RAG Introduce Unfairness in LLMs? Evaluating Fairness in
+  Retrieval-Augmented Generation Systems","  RAG (Retrieval-Augmented Generation) have recently gained significant
+attention for their enhanced ability to integrate external knowledge sources in
+open-domain question answering (QA) tasks. However, it remains unclear how
+these models address fairness concerns, particularly with respect to sensitive
+attributes such as gender, geographic location, and other demographic factors.
+First, as language models evolve to prioritize utility, like improving exact
+match accuracy, fairness may have been largely overlooked. Second, RAG methods
+are complex pipelines, making it hard to identify and address biases, as each
+component is optimized for different goals. In this paper, we aim to
+empirically evaluate fairness in several RAG methods. We propose a fairness
+evaluation framework tailored to RAG methods, using scenario-based questions
+and analyzing disparities across demographic attributes. The experimental
+results indicate that, despite recent advances in utility-driven optimization,
+fairness issues persist in both the retrieval and generation stages,
+highlighting the need for more targeted fairness interventions within RAG
+pipelines. We will release our dataset and code upon acceptance of the paper.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:47.504739,False
+http://arxiv.org/abs/2409.13694v1,"A Knowledge-Centric Benchmarking Framework and Empirical Study for
+  Retrieval-Augmented Generation","  Retrieval-Augmented Generation (RAG) enhances generative models by
+integrating retrieval mechanisms, which allow these models to access and
+utilize external knowledge sources. Despite its advantages, RAG encounters
+significant challenges, particularly in effectively handling real-world queries
+and mitigating hallucinations. The KDD Cup 2024 CRAG competition brings these
+issues to the forefront by incorporating both web pages and a mock API as
+knowledge sources, adding the complexity of parsing HTML before large language
+models (LLMs) can process the information. In this paper, we propose a novel
+RAG benchmark designed to address these challenges. Our work provides a
+comprehensive set of experimental results, offering valuable insights for the
+study of RAG. We thoroughly examine the entire RAG process, including knowledge
+source selection, retrieval, organization, and reasoning. Key findings from our
+study include the impact of automated knowledge source selection using agents
+and the influence of noise chunks on RAG reasoning. Additionally, we conduct
+detailed experiments to analyze the effects of various hyperparameters on RAG
+performance. To support further research, we have made our results, the
+associated code, and a parsed version of the CRAG dataset publicly
+available\footnote{https://github.com/USTCAGI/RAG-X}, contributing to the
+advancement of RAG methodologies and establishing a solid foundation for future
+work in this domain.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:48.084845,False
+http://arxiv.org/abs/2410.01782v1,"Open-RAG: Enhanced Retrieval-Augmented Reasoning with Open-Source Large
+  Language Models","  Retrieval-Augmented Generation (RAG) has been shown to enhance the factual
+accuracy of Large Language Models (LLMs), but existing methods often suffer
+from limited reasoning capabilities in effectively using the retrieved
+evidence, particularly when using open-source LLMs. To mitigate this gap, we
+introduce a novel framework, Open-RAG, designed to enhance reasoning
+capabilities in RAG with open-source LLMs. Our framework transforms an
+arbitrary dense LLM into a parameter-efficient sparse mixture of experts (MoE)
+model capable of handling complex reasoning tasks, including both single- and
+multi-hop queries. Open-RAG uniquely trains the model to navigate challenging
+distractors that appear relevant but are misleading. As a result, Open-RAG
+leverages latent learning, dynamically selecting relevant experts and
+integrating external knowledge effectively for more accurate and contextually
+relevant responses. In addition, we propose a hybrid adaptive retrieval method
+to determine retrieval necessity and balance the trade-off between performance
+gain and inference speed. Experimental results show that the Llama2-7B-based
+Open-RAG outperforms state-of-the-art LLMs and RAG models such as ChatGPT,
+Self-RAG, and Command R+ in various knowledge-intensive tasks. We open-source
+our code and models at https://openragmoe.github.io/
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:48.594702,False
+http://arxiv.org/abs/2406.10263v1,"A Lightweight Framework for Adaptive Retrieval In Code Completion With
+  Critique Model","  Recent advancements in Retrieval-Augmented Generation have significantly
+enhanced code completion at the repository level. Various RAG-based code
+completion systems are proposed based on different design choices. For
+instance, gaining more effectiveness at the cost of repeating the
+retrieval-generation process multiple times. However, the indiscriminate use of
+retrieval in current methods reveals issues in both efficiency and
+effectiveness, as a considerable portion of retrievals are unnecessary and may
+introduce unhelpful or even harmful suggestions to code language models. To
+address these challenges, we introduce CARD, a lightweight critique method
+designed to provide insights into the necessity of retrievals and select the
+optimal answer from multiple predictions. CARD can seamlessly integrate into
+any RAG-based code completion system. Our evaluation shows that CARD saves 21%
+to 46% times of retrieval for Line completion, 14% to 40% times of retrieval
+for API completion, and 6% to 46.5% times of retrieval for function completion
+respectively, while improving the accuracy. CARD reduces latency ranging from
+16% to 83%. CARD is generalizable to different LMs, retrievers, and programming
+languages. It is lightweight with training in few seconds and inference in few
+milliseconds.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:49.621269,False
+http://arxiv.org/abs/2403.00820v1,"Retrieval Augmented Generation Systems: Automatic Dataset Creation,
+  Evaluation and Boolean Agent Setup","  Retrieval Augmented Generation (RAG) systems have seen huge popularity in
+augmenting Large-Language Model (LLM) outputs with domain specific and time
+sensitive data. Very recently a shift is happening from simple RAG setups that
+query a vector database for additional information with every user input to
+more sophisticated forms of RAG. However, different concrete approaches compete
+on mostly anecdotal evidence at the moment. In this paper we present a rigorous
+dataset creation and evaluation workflow to quantitatively compare different
+RAG strategies. We use a dataset created this way for the development and
+evaluation of a boolean agent RAG setup: A system in which a LLM can decide
+whether to query a vector database or not, thus saving tokens on questions that
+can be answered with internal knowledge. We publish our code and generated
+dataset online.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:50.129860,False
+http://arxiv.org/abs/2407.10670v1,"Enhancing Retrieval and Managing Retrieval: A Four-Module Synergy for
+  Improved Quality and Efficiency in RAG Systems","  Retrieval-augmented generation (RAG) techniques leverage the in-context
+learning capabilities of large language models (LLMs) to produce more accurate
+and relevant responses. Originating from the simple 'retrieve-then-read'
+approach, the RAG framework has evolved into a highly flexible and modular
+paradigm. A critical component, the Query Rewriter module, enhances knowledge
+retrieval by generating a search-friendly query. This method aligns input
+questions more closely with the knowledge base. Our research identifies
+opportunities to enhance the Query Rewriter module to Query Rewriter+ by
+generating multiple queries to overcome the Information Plateaus associated
+with a single query and by rewriting questions to eliminate Ambiguity, thereby
+clarifying the underlying intent. We also find that current RAG systems exhibit
+issues with Irrelevant Knowledge; to overcome this, we propose the Knowledge
+Filter. These two modules are both based on the instruction-tuned Gemma-2B
+model, which together enhance response quality. The final identified issue is
+Redundant Retrieval; we introduce the Memory Knowledge Reservoir and the
+Retriever Trigger to solve this. The former supports the dynamic expansion of
+the RAG system's knowledge base in a parameter-free manner, while the latter
+optimizes the cost for accessing external knowledge, thereby improving resource
+utilization and response efficiency. These four RAG modules synergistically
+improve the response quality and efficiency of the RAG system. The
+effectiveness of these modules has been validated through experiments and
+ablation studies across six common QA datasets. The source code can be accessed
+at https://github.com/Ancientshi/ERM4.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:51.708389,False
+http://arxiv.org/abs/2410.10594v1,"VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality
+  Documents","  Retrieval-augmented generation (RAG) is an effective technique that enables
+large language models (LLMs) to utilize external knowledge sources for
+generation. However, current RAG systems are solely based on text, rendering it
+impossible to utilize vision information like layout and images that play
+crucial roles in real-world multi-modality documents. In this paper, we
+introduce VisRAG, which tackles this issue by establishing a vision-language
+model (VLM)-based RAG pipeline. In this pipeline, instead of first parsing the
+document to obtain text, the document is directly embedded using a VLM as an
+image and then retrieved to enhance the generation of a VLM. Compared to
+traditional text-based RAG, VisRAG maximizes the retention and utilization of
+the data information in the original documents, eliminating the information
+loss introduced during the parsing process. We collect both open-source and
+synthetic data to train the retriever in VisRAG and explore a variety of
+generation methods. Experiments demonstrate that VisRAG outperforms traditional
+RAG in both the retrieval and generation stages, achieving a 25--39\%
+end-to-end performance gain over traditional text-based RAG pipeline. Further
+analysis reveals that VisRAG is effective in utilizing training data and
+demonstrates strong generalization capability, positioning it as a promising
+solution for RAG on multi-modality documents. Our code and data are available
+at https://github.com/openbmb/visrag .
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:52.234103,False
+http://arxiv.org/abs/2411.00300v1,"Rationale-Guided Retrieval Augmented Generation for Medical Question
+  Answering","  Large language models (LLM) hold significant potential for applications in
+biomedicine, but they struggle with hallucinations and outdated knowledge.
+While retrieval-augmented generation (RAG) is generally employed to address
+these issues, it also has its own set of challenges: (1) LLMs are vulnerable to
+irrelevant or incorrect context, (2) medical queries are often not
+well-targeted for helpful information, and (3) retrievers are prone to bias
+toward the specific source corpus they were trained on. In this study, we
+present RAG$^2$ (RAtionale-Guided RAG), a new framework for enhancing the
+reliability of RAG in biomedical contexts. RAG$^2$ incorporates three key
+innovations: a small filtering model trained on perplexity-based labels of
+rationales, which selectively augments informative snippets of documents while
+filtering out distractors; LLM-generated rationales as queries to improve the
+utility of retrieved snippets; a structure designed to retrieve snippets evenly
+from a comprehensive set of four biomedical corpora, effectively mitigating
+retriever bias. Our experiments demonstrate that RAG$^2$ improves the
+state-of-the-art LLMs of varying sizes, with improvements of up to 6.1\%, and
+it outperforms the previous best medical RAG model by up to 5.6\% across three
+medical question-answering benchmarks. Our code is available at
+https://github.com/dmis-lab/RAG2.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:52.756982,False
+http://arxiv.org/abs/2409.13122v2,"RepoGenReflex: Enhancing Repository-Level Code Completion with Verbal
+  Reinforcement and Retrieval-Augmented Generation","  In real-world software engineering tasks, solving a problem often requires
+understanding and modifying multiple functions, classes, and files across a
+large codebase. Therefore, on the repository level, it is crucial to extract
+the relevant information to achieve accurate code completion effectively.
+Existing code completion tools have achieved some success, but they struggle to
+optimize the retrieval and generation process dynamically. In this paper, we
+propose RepoGenReflex, a generic, dynamic, effective framework to address this
+challenge. By leveraging the Retrieval-Augmented Generation (RAG) enhanced with
+Verbal Reinforcement Learning (VRL), it can dynamically choose the optimal
+results for repository-level code completion. RepoGenReflex uses Reflector to
+give directional feedback to the next loop. RepoGenReflex chooses the optimal
+results stored in the Experience cache based on the RAG-VRL loop. To validate
+the framework's generalization ability, we propose a new benchmark RepoGenEval,
+which consists of the latest, high-quality real-world repositories in line
+completion scenarios. Our experiments demonstrate that RepoGenReflex achieves
+significant improvements after optimizing the Reflector component, resulting in
+enhanced accuracy and relevance of code completions. Additionally,
+RepoGenReflex consistently demonstrates superior performance and effectiveness
+across standard code completion tasks, highlighting the robustness and
+adaptability of our framework.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:53.271133,False
+http://arxiv.org/abs/2409.11190v2,"SuperCoder2.0: Technical Report on Exploring the feasibility of LLMs as
+  Autonomous Programmer","  We present SuperCoder2.0, an advanced autonomous system designed to enhance
+software development through artificial intelligence. The system combines an
+AI-native development approach with intelligent agents to enable fully
+autonomous coding. Key focus areas include a retry mechanism with error output
+traceback, comprehensive code rewriting and replacement using Abstract Syntax
+Tree (ast) parsing to minimize linting issues, code embedding technique for
+retrieval-augmented generation, and a focus on localizing methods for
+problem-solving rather than identifying specific line numbers. The methodology
+employs a three-step hierarchical search space reduction approach for code base
+navigation and bug localization:utilizing Retrieval Augmented Generation (RAG)
+and a Repository File Level Map to identify candidate files, (2) narrowing down
+to the most relevant files using a File Level Schematic Map, and (3) extracting
+'relevant locations' within these files. Code editing is performed through a
+two-part module comprising CodeGeneration and CodeEditing, which generates
+multiple solutions at different temperature values and replaces entire methods
+or classes to maintain code integrity. A feedback loop executes
+repository-level test cases to validate and refine solutions. Experiments
+conducted on the SWE-bench Lite dataset demonstrate SuperCoder2.0's
+effectiveness, achieving correct file localization in 84.33% of cases within
+the top 5 candidates and successfully resolving 34% of test instances. This
+performance places SuperCoder2.0 fourth globally on the SWE-bench leaderboard.
+The system's ability to handle diverse repositories and problem types
+highlights its potential as a versatile tool for autonomous software
+development. Future work will focus on refining the code editing process and
+exploring advanced embedding models for improved natural language to code
+mapping.
+",na,"(Rag AND (code OR program OR script)) AND (""code generation"" OR code development OR software coding)",2024-11-18 14:42:53.798263,False
+http://arxiv.org/abs/2405.07530v1,Prompt-based Code Completion via Multi-Retrieval Augmented Generation,"  Automated code completion, aiming at generating subsequent tokens from
+unfinished code, has been significantly benefited from recent progress in
+pre-trained Large Language Models (LLMs). However, these models often suffer
+from coherence issues and hallucinations when dealing with complex code logic
+or extrapolating beyond their training data. Existing Retrieval Augmented
+Generation (RAG) techniques partially address these issues by retrieving
+relevant code with a separate encoding model where the retrieved snippet serves
+as contextual reference for code completion. However, their retrieval scope is
+subject to a singular perspective defined by the encoding model, which largely
+overlooks the complexity and diversity inherent in code semantics. To address
+this limitation, we propose ProCC, a code completion framework leveraging
+prompt engineering and the contextual multi-armed bandits algorithm to flexibly
+incorporate and adapt to multiple perspectives of code. ProCC first employs a
+prompt-based multi-retriever system which crafts prompt templates to elicit LLM
+knowledge to understand code semantics with multiple retrieval perspectives.
+Then, it adopts the adaptive retrieval selection algorithm to incorporate code
+similarity into the decision-making process to determine the most suitable
+retrieval perspective for the LLM to complete the code. Experimental results
+demonstrate that ProCC outperforms state-of-the-art code completion technique
+by 8.6% on our collected open-source benchmark suite and 10.1% on the
+private-domain benchmark suite collected from a billion-user e-commerce company
+in terms of Exact Match. ProCC also allows augmenting fine-tuned techniques in
+a plug-and-play manner, yielding 5.6% improvement over our studied fine-tuned
+model.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:13.588572,False
+http://arxiv.org/abs/2411.01751v1,RAGViz: Diagnose and Visualize Retrieval-Augmented Generation,"  Retrieval-augmented generation (RAG) combines knowledge from domain-specific
+sources into large language models to ground answer generation. Current RAG
+systems lack customizable visibility on the context documents and the model's
+attentiveness towards such documents. We propose RAGViz, a RAG diagnosis tool
+that visualizes the attentiveness of the generated tokens in retrieved
+documents. With a built-in user interface, retrieval index, and Large Language
+Model (LLM) backbone, RAGViz provides two main functionalities: (1) token and
+document-level attention visualization, and (2) generation comparison upon
+context document addition and removal. As an open-source toolkit, RAGViz can be
+easily hosted with a custom embedding model and HuggingFace-supported LLM
+backbone. Using a hybrid ANN (Approximate Nearest Neighbor) index,
+memory-efficient LLM inference tool, and custom context snippet method, RAGViz
+operates efficiently with a median query time of about 5 seconds on a moderate
+GPU node. Our code is available at https://github.com/cxcscmu/RAGViz. A demo
+video of RAGViz can be found at https://youtu.be/cTAbuTu6ur4.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:14.911282,False
+http://arxiv.org/abs/2406.19215v1,"SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented
+  Generation","  This paper introduces Self-aware Knowledge Retrieval (SeaKR), a novel
+adaptive RAG model that extracts self-aware uncertainty of LLMs from their
+internal states. SeaKR activates retrieval when the LLMs present high
+self-aware uncertainty for generation. To effectively integrate retrieved
+knowledge snippets, SeaKR re-ranks them based on LLM's self-aware uncertainty
+to preserve the snippet that reduces their uncertainty to the utmost. To
+facilitate solving complex tasks that require multiple retrievals, SeaKR
+utilizes their self-aware uncertainty to choose among different reasoning
+strategies. Our experiments on both complex and simple Question Answering
+datasets show that SeaKR outperforms existing adaptive RAG methods. We release
+our code at https://github.com/THU-KEG/SeaKR.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:21.985551,False
+http://arxiv.org/abs/2410.07176v1,"Astute RAG: Overcoming Imperfect Retrieval Augmentation and Knowledge
+  Conflicts for Large Language Models","  Retrieval-Augmented Generation (RAG), while effective in integrating external
+knowledge to address the limitations of large language models (LLMs), can be
+undermined by imperfect retrieval, which may introduce irrelevant, misleading,
+or even malicious information. Despite its importance, previous studies have
+rarely explored the behavior of RAG through joint analysis on how errors from
+imperfect retrieval attribute and propagate, and how potential conflicts arise
+between the LLMs' internal knowledge and external sources. We find that
+imperfect retrieval augmentation might be inevitable and quite harmful, through
+controlled analysis under realistic conditions. We identify the knowledge
+conflicts between LLM-internal and external knowledge from retrieval as a
+bottleneck to overcome in the post-retrieval stage of RAG. To render LLMs
+resilient to imperfect retrieval, we propose Astute RAG, a novel RAG approach
+that adaptively elicits essential information from LLMs' internal knowledge,
+iteratively consolidates internal and external knowledge with source-awareness,
+and finalizes the answer according to information reliability. Our experiments
+using Gemini and Claude demonstrate that Astute RAG significantly outperforms
+previous robustness-enhanced RAG methods. Notably, Astute RAG is the only
+approach that matches or exceeds the performance of LLMs without RAG under
+worst-case scenarios. Further analysis reveals that Astute RAG effectively
+resolves knowledge conflicts, improving the reliability and trustworthiness of
+RAG systems.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:25.349948,False
+http://arxiv.org/abs/2408.10343v1,"LegalBench-RAG: A Benchmark for Retrieval-Augmented Generation in the
+  Legal Domain","  Retrieval-Augmented Generation (RAG) systems are showing promising potential,
+and are becoming increasingly relevant in AI-powered legal applications.
+Existing benchmarks, such as LegalBench, assess the generative capabilities of
+Large Language Models (LLMs) in the legal domain, but there is a critical gap
+in evaluating the retrieval component of RAG systems. To address this, we
+introduce LegalBench-RAG, the first benchmark specifically designed to evaluate
+the retrieval step of RAG pipelines within the legal space. LegalBench-RAG
+emphasizes precise retrieval by focusing on extracting minimal, highly relevant
+text segments from legal documents. These highly relevant snippets are
+preferred over retrieving document IDs, or large sequences of imprecise chunks,
+both of which can exceed context window limitations. Long context windows cost
+more to process, induce higher latency, and lead LLMs to forget or hallucinate
+information. Additionally, precise results allow LLMs to generate citations for
+the end user. The LegalBench-RAG benchmark is constructed by retracing the
+context used in LegalBench queries back to their original locations within the
+legal corpus, resulting in a dataset of 6,858 query-answer pairs over a corpus
+of over 79M characters, entirely human-annotated by legal experts. We also
+introduce LegalBench-RAG-mini, a lightweight version for rapid iteration and
+experimentation. By providing a dedicated benchmark for legal retrieval,
+LegalBench-RAG serves as a critical tool for companies and researchers focused
+on enhancing the accuracy and performance of RAG systems in the legal domain.
+The LegalBench-RAG dataset is publicly available at
+https://github.com/zeroentropy-cc/legalbenchrag.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:25.901545,False
+http://arxiv.org/abs/2401.05856v1,"Seven Failure Points When Engineering a Retrieval Augmented Generation
+  System","  Software engineers are increasingly adding semantic search capabilities to
+applications using a strategy known as Retrieval Augmented Generation (RAG). A
+RAG system involves finding documents that semantically match a query and then
+passing the documents to a large language model (LLM) such as ChatGPT to
+extract the right answer using an LLM. RAG systems aim to: a) reduce the
+problem of hallucinated responses from LLMs, b) link sources/references to
+generated responses, and c) remove the need for annotating documents with
+meta-data. However, RAG systems suffer from limitations inherent to information
+retrieval systems and from reliance on LLMs. In this paper, we present an
+experience report on the failure points of RAG systems from three case studies
+from separate domains: research, education, and biomedical. We share the
+lessons learned and present 7 failure points to consider when designing a RAG
+system. The two key takeaways arising from our work are: 1) validation of a RAG
+system is only feasible during operation, and 2) the robustness of a RAG system
+evolves rather than designed in at the start. We conclude with a list of
+potential research directions on RAG systems for the software engineering
+community.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:26.443590,False
+http://arxiv.org/abs/2410.20753v1,Plan$\times$RAG: Planning-guided Retrieval Augmented Generation,"  We introduce Planning-guided Retrieval Augmented Generation
+(Plan$\times$RAG), a novel framework that augments the
+\emph{retrieve-then-reason} paradigm of existing RAG frameworks to
+\emph{plan-then-retrieve}. Plan$\times$RAG formulates a reasoning plan as a
+directed acyclic graph (DAG), decomposing queries into interrelated atomic
+sub-queries. Answer generation follows the DAG structure, allowing significant
+gains in efficiency through parallelized retrieval and generation. While
+state-of-the-art RAG solutions require extensive data generation and
+fine-tuning of language models (LMs), Plan$\times$RAG incorporates frozen LMs
+as plug-and-play experts to generate high-quality answers. Compared to existing
+RAG solutions, Plan$\times$RAG demonstrates significant improvements in
+reducing hallucinations and bolstering attribution due to its structured
+sub-query decomposition. Overall, Plan$\times$RAG offers a new perspective on
+integrating external knowledge in LMs while ensuring attribution by design,
+contributing towards more reliable LM-based systems.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:27.534497,False
+http://arxiv.org/abs/2404.00657v1,Observations on Building RAG Systems for Technical Documents,"  Retrieval augmented generation (RAG) for technical documents creates
+challenges as embeddings do not often capture domain information. We review
+prior art for important factors affecting RAG and perform experiments to
+highlight best practices and potential challenges to build RAG systems for
+technical documents.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:28.085280,False
+http://arxiv.org/abs/2410.03537v1,Ward: Provable RAG Dataset Inference via LLM Watermarks,"  Retrieval-Augmented Generation (RAG) improves LLMs by enabling them to
+incorporate external data during generation. This raises concerns for data
+owners regarding unauthorized use of their content in RAG systems. Despite its
+importance, the challenge of detecting such unauthorized usage remains
+underexplored, with existing datasets and methodologies from adjacent fields
+being ill-suited for its study. In this work, we take several steps to bridge
+this gap. First, we formalize this problem as (black-box) RAG Dataset Inference
+(RAG-DI). To facilitate research on this challenge, we further introduce a
+novel dataset specifically designed for benchmarking RAG-DI methods under
+realistic conditions, and propose a set of baseline approaches. Building on
+this foundation, we introduce Ward, a RAG-DI method based on LLM watermarks
+that enables data owners to obtain rigorous statistical guarantees regarding
+the usage of their dataset in a RAG system. In our experimental evaluation, we
+show that Ward consistently outperforms all baselines across many challenging
+settings, achieving higher accuracy, superior query efficiency and robustness.
+Our work provides a foundation for future studies of RAG-DI and highlights LLM
+watermarks as a promising approach to this problem.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:28.619793,False
+http://arxiv.org/abs/2407.11005v1,"RAGBench: Explainable Benchmark for Retrieval-Augmented Generation
+  Systems","  Retrieval-Augmented Generation (RAG) has become a standard architectural
+pattern for incorporating domain-specific knowledge into user-facing chat
+applications powered by Large Language Models (LLMs). RAG systems are
+characterized by (1) a document retriever that queries a domain-specific corpus
+for context information relevant to an input query, and (2) an LLM that
+generates a response based on the provided query and context. However,
+comprehensive evaluation of RAG systems remains a challenge due to the lack of
+unified evaluation criteria and annotated datasets. In response, we introduce
+RAGBench: the first comprehensive, large-scale RAG benchmark dataset of 100k
+examples. It covers five unique industry-specific domains and various RAG task
+types. RAGBench examples are sourced from industry corpora such as user
+manuals, making it particularly relevant for industry applications. Further, we
+formalize the TRACe evaluation framework: a set of explainable and actionable
+RAG evaluation metrics applicable across all RAG domains. We release the
+labeled dataset at https://huggingface.co/datasets/rungalileo/ragbench.
+RAGBench explainable labels facilitate holistic evaluation of RAG systems,
+enabling actionable feedback for continuous improvement of production
+applications. Thorough extensive benchmarking, we find that LLM-based RAG
+evaluation methods struggle to compete with a finetuned RoBERTa model on the
+RAG evaluation task. We identify areas where existing approaches fall short and
+propose the adoption of RAGBench with TRACe towards advancing the state of RAG
+evaluation systems.
+",na,RAG AND (code generation OR code snippet OR source code),2024-11-18 14:43:29.204645,False
+http://arxiv.org/abs/2409.11598v1,"Towards Fair RAG: On the Impact of Fair Ranking in Retrieval-Augmented
+  Generation","  Many language models now enhance their responses with retrieval capabilities,
+leading to the widespread adoption of retrieval-augmented generation (RAG)
+systems. However, despite retrieval being a core component of RAG, much of the
+research in this area overlooks the extensive body of work on fair ranking,
+neglecting the importance of considering all stakeholders involved. This paper
+presents the first systematic evaluation of RAG systems integrated with fair
+rankings. We focus specifically on measuring the fair exposure of each relevant
+item across the rankings utilized by RAG systems (i.e., item-side fairness),
+aiming to promote equitable growth for relevant item providers. To gain a deep
+understanding of the relationship between item-fairness, ranking quality, and
+generation quality in the context of RAG, we analyze nine different RAG systems
+that incorporate fair rankings across seven distinct datasets. Our findings
+indicate that RAG systems with fair rankings can maintain a high level of
+generation quality and, in many cases, even outperform traditional RAG systems,
+despite the general trend of a tradeoff between ensuring fairness and
+maintaining system-effectiveness. We believe our insights lay the groundwork
+for responsible and equitable RAG systems and open new avenues for future
+research. We publicly release our codebase and dataset at
+https://github.com/kimdanny/Fair-RAG.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:49.521933,False
+http://arxiv.org/abs/2401.11246v1,"Prompt-RAG: Pioneering Vector Embedding-Free Retrieval-Augmented
+  Generation in Niche Domains, Exemplified by Korean Medicine","  We propose a natural language prompt-based retrieval augmented generation
+(Prompt-RAG), a novel approach to enhance the performance of generative large
+language models (LLMs) in niche domains. Conventional RAG methods mostly
+require vector embeddings, yet the suitability of generic LLM-based embedding
+representations for specialized domains remains uncertain. To explore and
+exemplify this point, we compared vector embeddings from Korean Medicine (KM)
+and Conventional Medicine (CM) documents, finding that KM document embeddings
+correlated more with token overlaps and less with human-assessed document
+relatedness, in contrast to CM embeddings. Prompt-RAG, distinct from
+conventional RAG models, operates without the need for embedding vectors. Its
+performance was assessed through a Question-Answering (QA) chatbot application,
+where responses were evaluated for relevance, readability, and informativeness.
+The results showed that Prompt-RAG outperformed existing models, including
+ChatGPT and conventional vector embedding-based RAGs, in terms of relevance and
+informativeness. Despite challenges like content structuring and response
+latency, the advancements in LLMs are expected to encourage the use of
+Prompt-RAG, making it a promising tool for other domains in need of RAG
+methods.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:52.765941,False
+http://arxiv.org/abs/2410.03780v1,Reward-RAG: Enhancing RAG with Reward Driven Supervision,"  In this paper, we introduce Reward-RAG, a novel approach designed to enhance
+the Retrieval-Augmented Generation (RAG) model through Reward-Driven
+Supervision. Unlike previous RAG methodologies, which focus on training
+language models (LMs) to utilize external knowledge retrieved from external
+sources, our method adapts retrieval information to specific domains by
+employing CriticGPT to train a dedicated reward model. This reward model
+generates synthesized datasets for fine-tuning the RAG encoder, aligning its
+outputs more closely with human preferences. The versatility of our approach
+allows it to be effectively applied across various domains through
+domain-specific fine-tuning. We evaluate Reward-RAG on publicly available
+benchmarks from multiple domains, comparing it to state-of-the-art methods. Our
+experimental results demonstrate significant improvements in performance,
+highlighting the effectiveness of Reward-RAG in improving the relevance and
+quality of generated responses. These findings underscore the potential of
+integrating reward models with RAG to achieve superior outcomes in natural
+language generation tasks.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:53.229282,False
+http://arxiv.org/abs/2410.12837v1,"A Comprehensive Survey of Retrieval-Augmented Generation (RAG):
+  Evolution, Current Landscape and Future Directions","  This paper presents a comprehensive study of Retrieval-Augmented Generation
+(RAG), tracing its evolution from foundational concepts to the current state of
+the art. RAG combines retrieval mechanisms with generative language models to
+enhance the accuracy of outputs, addressing key limitations of LLMs. The study
+explores the basic architecture of RAG, focusing on how retrieval and
+generation are integrated to handle knowledge-intensive tasks. A detailed
+review of the significant technological advancements in RAG is provided,
+including key innovations in retrieval-augmented language models and
+applications across various domains such as question-answering, summarization,
+and knowledge-based tasks. Recent research breakthroughs are discussed,
+highlighting novel methods for improving retrieval efficiency. Furthermore, the
+paper examines ongoing challenges such as scalability, bias, and ethical
+concerns in deployment. Future research directions are proposed, focusing on
+improving the robustness of RAG models, expanding the scope of application of
+RAG models, and addressing societal implications. This survey aims to serve as
+a foundational resource for researchers and practitioners in understanding the
+potential of RAG and its trajectory in natural language processing.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:53.685346,False
+http://arxiv.org/abs/2404.02103v1,"CLAPNQ: Cohesive Long-form Answers from Passages in Natural Questions
+  for RAG systems","  Retrieval Augmented Generation (RAG) has become a popular application for
+large language models. It is preferable that successful RAG systems provide
+accurate answers that are supported by being grounded in a passage without any
+hallucinations. While considerable work is required for building a full RAG
+pipeline, being able to benchmark performance is also necessary. We present
+ClapNQ, a benchmark Long-form Question Answering dataset for the full RAG
+pipeline. ClapNQ includes long answers with grounded gold passages from Natural
+Questions (NQ) and a corpus to perform either retrieval, generation, or the
+full RAG pipeline. The ClapNQ answers are concise, 3x smaller than the full
+passage, and cohesive, with multiple pieces of the passage that are not
+contiguous. RAG models must adapt to these properties to be successful at
+ClapNQ. We present baseline experiments and analysis for ClapNQ that highlight
+areas where there is still significant room for improvement in grounded RAG.
+CLAPNQ is publicly available at https://github.com/primeqa/clapnq
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:54.601102,False
+http://arxiv.org/abs/2410.20878v1,"AutoRAG: Automated Framework for optimization of Retrieval Augmented
+  Generation Pipeline","  Using LLMs (Large Language Models) in conjunction with external documents has
+made RAG (Retrieval-Augmented Generation) an essential technology. Numerous
+techniques and modules for RAG are being researched, but their performance can
+vary across different datasets. Finding RAG modules that perform well on
+specific datasets is challenging. In this paper, we propose the AutoRAG
+framework, which automatically identifies suitable RAG modules for a given
+dataset. AutoRAG explores and approximates the optimal combination of RAG
+modules for the dataset. Additionally, we share the results of optimizing a
+dataset using AutoRAG. All experimental results and data are publicly available
+and can be accessed through our GitHub repository
+https://github.com/Marker-Inc-Korea/AutoRAG_ARAGOG_Paper .
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:55.613349,False
+http://arxiv.org/abs/2406.00944v2,A Theory for Token-Level Harmonization in Retrieval-Augmented Generation,"  Retrieval-augmented generation (RAG) utilizes retrieved texts to enhance
+large language models (LLMs). Studies show that while RAG provides valuable
+external information (benefit), it may also mislead LLMs (detriment) with noisy
+or incorrect retrieved texts. Although many existing methods attempt to
+preserve benefit and avoid detriment, they lack a theoretical explanation for
+RAG. The benefit and detriment in the next token prediction of RAG remain a
+black box that cannot be quantified or compared in an explainable manner, so
+existing methods are data-driven, need additional utility evaluators or
+post-hoc. This paper takes the first step towards providing a theory to explain
+and trade off the benefit and detriment in RAG. First, we model RAG as the
+fusion between distribution of LLMs knowledge and distribution of retrieved
+texts. Then, we formalize the trade-off between the value of external knowledge
+(benefit) and its potential risk of misleading LLMs (detriment) in next token
+prediction of RAG by distribution difference in this fusion. Finally, we prove
+that the actual effect of RAG on the token, which is the comparison between
+benefit and detriment, can be predicted without any training or accessing the
+utility of retrieval. Based on our theory, we propose a practical novel method,
+Tok-RAG, which achieves collaborative generation between the pure LLM and RAG
+at token level to preserve benefit and avoid detriment. Experiments in
+real-world tasks using LLMs such as OPT, LLaMA-2, and Mistral show the
+effectiveness of our method and support our theoretical findings.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:56.738162,False
+http://arxiv.org/abs/2404.13948v2,"Typos that Broke the RAG's Back: Genetic Attack on RAG Pipeline by
+  Simulating Documents in the Wild via Low-level Perturbations","  The robustness of recent Large Language Models (LLMs) has become increasingly
+crucial as their applicability expands across various domains and real-world
+applications. Retrieval-Augmented Generation (RAG) is a promising solution for
+addressing the limitations of LLMs, yet existing studies on the robustness of
+RAG often overlook the interconnected relationships between RAG components or
+the potential threats prevalent in real-world databases, such as minor textual
+errors. In this work, we investigate two underexplored aspects when assessing
+the robustness of RAG: 1) vulnerability to noisy documents through low-level
+perturbations and 2) a holistic evaluation of RAG robustness. Furthermore, we
+introduce a novel attack method, the Genetic Attack on RAG (\textit{GARAG}),
+which targets these aspects. Specifically, GARAG is designed to reveal
+vulnerabilities within each component and test the overall system functionality
+against noisy documents. We validate RAG robustness by applying our
+\textit{GARAG} to standard QA datasets, incorporating diverse retrievers and
+LLMs. The experimental results show that GARAG consistently achieves high
+attack success rates. Also, it significantly devastates the performance of each
+component and their synergy, highlighting the substantial risk that minor
+textual inaccuracies pose in disrupting RAG systems in the real world.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:43:57.305385,False
+http://arxiv.org/abs/2409.19019v1,RAGProbe: An Automated Approach for Evaluating RAG Applications,"  Retrieval Augmented Generation (RAG) is increasingly being used when building
+Generative AI applications. Evaluating these applications and RAG pipelines is
+mostly done manually, via a trial and error process. Automating evaluation of
+RAG pipelines requires overcoming challenges such as context misunderstanding,
+wrong format, incorrect specificity, and missing content. Prior works therefore
+focused on improving evaluation metrics as well as enhancing components within
+the pipeline using available question and answer datasets. However, they have
+not focused on 1) providing a schema for capturing different types of
+question-answer pairs or 2) creating a set of templates for generating
+question-answer pairs that can support automation of RAG pipeline evaluation.
+In this paper, we present a technique for generating variations in
+question-answer pairs to trigger failures in RAG pipelines. We validate 5
+open-source RAG pipelines using 3 datasets. Our approach revealed the highest
+failure rates when prompts combine multiple questions: 91% for questions when
+spanning multiple documents and 78% for questions from a single document;
+indicating a need for developers to prioritise handling these combined
+questions. 60% failure rate was observed in academic domain dataset and 53% and
+62% failure rates were observed in open-domain datasets. Our automated approach
+outperforms the existing state-of-the-art methods, by increasing the failure
+rate by 51% on average per dataset. Our work presents an automated approach for
+continuously monitoring the health of RAG pipelines, which can be integrated
+into existing CI/CD pipelines, allowing for improved quality.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:05.010026,False
+http://arxiv.org/abs/2404.07220v2,"Blended RAG: Improving RAG (Retriever-Augmented Generation) Accuracy
+  with Semantic Search and Hybrid Query-Based Retrievers","  Retrieval-Augmented Generation (RAG) is a prevalent approach to infuse a
+private knowledge base of documents with Large Language Models (LLM) to build
+Generative Q\&A (Question-Answering) systems. However, RAG accuracy becomes
+increasingly challenging as the corpus of documents scales up, with Retrievers
+playing an outsized role in the overall RAG accuracy by extracting the most
+relevant document from the corpus to provide context to the LLM. In this paper,
+we propose the 'Blended RAG' method of leveraging semantic search techniques,
+such as Dense Vector indexes and Sparse Encoder indexes, blended with hybrid
+query strategies. Our study achieves better retrieval results and sets new
+benchmarks for IR (Information Retrieval) datasets like NQ and TREC-COVID
+datasets. We further extend such a 'Blended Retriever' to the RAG system to
+demonstrate far superior results on Generative Q\&A datasets like SQUAD, even
+surpassing fine-tuning performance.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:05.600092,False
+http://arxiv.org/abs/2410.07589v1,"No Free Lunch: Retrieval-Augmented Generation Undermines Fairness in
+  LLMs, Even for Vigilant Users","  Retrieval-Augmented Generation (RAG) is widely adopted for its effectiveness
+and cost-efficiency in mitigating hallucinations and enhancing the
+domain-specific generation capabilities of large language models (LLMs).
+However, is this effectiveness and cost-efficiency truly a free lunch? In this
+study, we comprehensively investigate the fairness costs associated with RAG by
+proposing a practical three-level threat model from the perspective of user
+awareness of fairness. Specifically, varying levels of user fairness awareness
+result in different degrees of fairness censorship on the external dataset. We
+examine the fairness implications of RAG using uncensored, partially censored,
+and fully censored datasets. Our experiments demonstrate that fairness
+alignment can be easily undermined through RAG without the need for fine-tuning
+or retraining. Even with fully censored and supposedly unbiased external
+datasets, RAG can lead to biased outputs. Our findings underscore the
+limitations of current alignment methods in the context of RAG-based LLMs and
+highlight the urgent need for new strategies to ensure fairness. We propose
+potential mitigations and call for further research to develop robust fairness
+safeguards in RAG-based LLMs.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:41.341099,False
+http://arxiv.org/abs/2403.09040v2,"RAGGED: Towards Informed Design of Retrieval Augmented Generation
+  Systems","  Retrieval-augmented generation (RAG) can significantly improve the
+performance of language models (LMs) by providing additional context for tasks
+such as document-based question answering (DBQA). However, the effectiveness of
+RAG is highly dependent on its configuration. To systematically find the
+optimal configuration, we introduce RAGGED, a framework for analyzing RAG
+configurations across various DBQA tasks. Using the framework, we discover
+distinct LM behaviors in response to varying context quantities, context
+qualities, and retrievers. For instance, while some models are robust to noisy
+contexts, monotonically performing better with more contexts, others are more
+noise-sensitive and can effectively use only a few contexts before declining in
+performance. This framework also provides a deeper analysis of these
+differences by evaluating the LMs' sensitivity to signal and noise under
+specific context quality conditions. Using RAGGED, researchers and
+practitioners can derive actionable insights about how to optimally configure
+their RAG systems for their specific question-answering tasks.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:41.840164,False
+http://arxiv.org/abs/2404.15939v3,"Telco-RAG: Navigating the Challenges of Retrieval-Augmented Language
+  Models for Telecommunications","  The application of Large Language Models (LLMs) and Retrieval-Augmented
+Generation (RAG) systems in the telecommunication domain presents unique
+challenges, primarily due to the complex nature of telecom standard documents
+and the rapid evolution of the field. The paper introduces Telco-RAG, an
+open-source RAG framework designed to handle the specific needs of
+telecommunications standards, particularly 3rd Generation Partnership Project
+(3GPP) documents. Telco-RAG addresses the critical challenges of implementing a
+RAG pipeline on highly technical content, paving the way for applying LLMs in
+telecommunications and offering guidelines for RAG implementation in other
+technical domains.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:42.363015,False
+http://arxiv.org/abs/2407.16833v2,"Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive
+  Study and Hybrid Approach","  Retrieval Augmented Generation (RAG) has been a powerful tool for Large
+Language Models (LLMs) to efficiently process overly lengthy contexts. However,
+recent LLMs like Gemini-1.5 and GPT-4 show exceptional capabilities to
+understand long contexts directly. We conduct a comprehensive comparison
+between RAG and long-context (LC) LLMs, aiming to leverage the strengths of
+both. We benchmark RAG and LC across various public datasets using three latest
+LLMs. Results reveal that when resourced sufficiently, LC consistently
+outperforms RAG in terms of average performance. However, RAG's significantly
+lower cost remains a distinct advantage. Based on this observation, we propose
+Self-Route, a simple yet effective method that routes queries to RAG or LC
+based on model self-reflection. Self-Route significantly reduces the
+computation cost while maintaining a comparable performance to LC. Our findings
+provide a guideline for long-context applications of LLMs using RAG and LC.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:42.861938,False
+http://arxiv.org/abs/2410.21943v1,"Beyond Text: Optimizing RAG with Multimodal Inputs for Industrial
+  Applications","  Large Language Models (LLMs) have demonstrated impressive capabilities in
+answering questions, but they lack domain-specific knowledge and are prone to
+hallucinations. Retrieval Augmented Generation (RAG) is one approach to address
+these challenges, while multimodal models are emerging as promising AI
+assistants for processing both text and images. In this paper we describe a
+series of experiments aimed at determining how to best integrate multimodal
+models into RAG systems for the industrial domain. The purpose of the
+experiments is to determine whether including images alongside text from
+documents within the industrial domain increases RAG performance and to find
+the optimal configuration for such a multimodal RAG system. Our experiments
+include two approaches for image processing and retrieval, as well as two LLMs
+(GPT4-Vision and LLaVA) for answer synthesis. These image processing strategies
+involve the use of multimodal embeddings and the generation of textual
+summaries from images. We evaluate our experiments with an LLM-as-a-Judge
+approach. Our results reveal that multimodal RAG can outperform single-modality
+RAG settings, although image retrieval poses a greater challenge than text
+retrieval. Additionally, leveraging textual summaries from images presents a
+more promising approach compared to the use of multimodal embeddings, providing
+more opportunities for future advancements.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:43.374837,False
+http://arxiv.org/abs/2410.02338v2,How Much Can RAG Help the Reasoning of LLM?,"  Retrieval-Augmented Generation (RAG) has gained significant popularity in
+modern Large Language Models (LLMs) due to its effectiveness in introducing new
+knowledge and reducing hallucinations. However, the deep understanding of RAG
+remains limited, how does RAG help the reasoning process and can RAG help
+improve the reasoning capability remains question. While external documents are
+typically considered as a method to incorporate domain-specific information,
+they also contain intermediate reasoning results related to the query, this
+suggests that documents could enhance the reasoning capability of LLMs, which
+has not been previously explored. In this paper, we investigate this issue in
+depth and find that while RAG can assist with reasoning, the help is limited.
+If we conceptualize the reasoning process as a tree with fixed depth, then RAG
+struggles to assist LLMs in performing deeper reasoning. Additionally, the
+information in the documents requires preprocessing to filter out noise. We
+demonstrate that this preprocessing is difficult to achieve simply fine-tuning
+of the LLM, it often necessitates numerous additional transformer layers to
+solve the problem. To simplify the problem, we propose DPrompt tuning, which
+effectively resolves the issue within just limited transformer layers, leading
+to improved performance.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:43.870135,False
+http://arxiv.org/abs/2410.15438v1,"Unveiling and Consulting Core Experts in Retrieval-Augmented MoE-based
+  LLMs","  Retrieval-Augmented Generation (RAG) significantly improved the ability of
+Large Language Models (LLMs) to solve knowledge-intensive tasks. While existing
+research seeks to enhance RAG performance by retrieving higher-quality
+documents or designing RAG-specific LLMs, the internal mechanisms within LLMs
+that contribute to the effectiveness of RAG systems remain underexplored. In
+this paper, we aim to investigate these internal mechanisms within the popular
+Mixture-of-Expert (MoE)-based LLMs and demonstrate how to improve RAG by
+examining expert activations in these LLMs. Our controlled experiments reveal
+that several core groups of experts are primarily responsible for RAG-related
+behaviors. The activation of these core experts can signify the model's
+inclination towards external/internal knowledge and adjust its behavior. For
+instance, we identify core experts that can (1) indicate the sufficiency of the
+model's internal knowledge, (2) assess the quality of retrieved documents, and
+(3) enhance the model's ability to utilize context. Based on these findings, we
+propose several strategies to enhance RAG's efficiency and effectiveness
+through expert activation. Experimental results across various datasets and
+MoE-based LLMs show the effectiveness of our method.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:44.361078,False
+http://arxiv.org/abs/2411.03538v1,Long Context RAG Performance of Large Language Models,"  Retrieval Augmented Generation (RAG) has emerged as a crucial technique for
+enhancing the accuracy of Large Language Models (LLMs) by incorporating
+external information. With the advent of LLMs that support increasingly longer
+context lengths, there is a growing interest in understanding how these models
+perform in RAG scenarios. Can these new long context models improve RAG
+performance? This paper presents a comprehensive study of the impact of
+increased context length on RAG performance across 20 popular open source and
+commercial LLMs. We ran RAG workflows while varying the total context length
+from 2,000 to 128,000 tokens (and 2 million tokens when possible) on three
+domain-specific datasets, and report key insights on the benefits and
+limitations of long context in RAG applications. Our findings reveal that while
+retrieving more documents can improve performance, only a handful of the most
+recent state of the art LLMs can maintain consistent accuracy at long context
+above 64k tokens. We also identify distinct failure modes in long context
+scenarios, suggesting areas for future research.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:44.843131,False
+http://arxiv.org/abs/2411.07396v1,Toward Optimal Search and Retrieval for RAG,"  Retrieval-augmented generation (RAG) is a promising method for addressing
+some of the memory-related challenges associated with Large Language Models
+(LLMs). Two separate systems form the RAG pipeline, the retriever and the
+reader, and the impact of each on downstream task performance is not
+well-understood. Here, we work towards the goal of understanding how retrievers
+can be optimized for RAG pipelines for common tasks such as Question Answering
+(QA). We conduct experiments focused on the relationship between retrieval and
+RAG performance on QA and attributed QA and unveil a number of insights useful
+to practitioners developing high-performance RAG pipelines. For example,
+lowering search accuracy has minor implications for RAG performance while
+potentially increasing retrieval speed and memory efficiency.
+",na,RAG AND (code generation OR code snippet OR code template),2024-11-18 14:44:45.326380,False
