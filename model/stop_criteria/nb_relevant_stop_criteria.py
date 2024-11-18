@@ -7,4 +7,4 @@ class NbRelevantStopCriteria(AbstractStopCriteria) :
         self.nb_max_fetched = nb_max_fetched
 
     def is_reached(self, crawl_session):
-        return(self.nb_max_fetched <= len(crawl_session.fetched_pages))
+        return(self.nb_max_fetched < len(crawl_session.fetched_pages)-len(crawl_session.seed_pages))

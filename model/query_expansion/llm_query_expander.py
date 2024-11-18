@@ -10,9 +10,7 @@ class LLMQueryExpander(AbstractQueryExpander):
         prompt = self.template.complete(crawl_session)
         print(prompt)
         try : 
-            response = self.llm.generate(prompt)
-            
-
+            response = self.llm.generate_expanded_query(prompt)
         except Exception as e:
             print(f"Erreur lors de l'appel au LLM : {e}")
             response = crawl_session.current_query

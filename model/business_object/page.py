@@ -1,17 +1,25 @@
 class Page:
-    def __init__(self, url, title, description, links, publication_date, authors, language, notes, score=0):
+    def __init__(self, url, title, description):
         self.url = url  # The URL of the page
         self.title = title  # The title of the page
         self.description = description  # A brief description of the page
-        self.links = links  # The links contained on the page 
-        self.publication_date = publication_date  # The publication date of the page
-        self.authors = authors  # A list of authors of the page
-        self.language = language  # The language the page is written in
-        self.notes = notes  # notes
-        self.score = score
+        self.score = 'na'
+        self.get_with_query = ''
+        self.is_seed = False
 
     def __eq__(self, other):
         # Compare only if the other object is an instance of Page
         if isinstance(other, Page):
             return (self.url == other.url)
         return False
+    
+    def __str__(self):
+        # links_str = '\n'.join(self.links)
+        links_str = ''
+        return (
+            f"Title: {self.title}\n"
+            f"URL: {self.url}\n"
+            f"Description: {self.description}\n"
+            f"Score: {self.score}\n"
+            f"Query: {self.get_with_query}\n"
+        )

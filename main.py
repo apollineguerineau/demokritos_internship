@@ -1,57 +1,71 @@
-import os
-from dotenv import load_dotenv
-import pandas as pd
-
-from model.query_expansion.no_query_expander import NoQueryExpander
-from model.query_expansion.llm_query_expander import LLMQueryExpander
-
-from model.llm.openai_llm import OpenAILLM
-from model.llm.hugging_face_llm import HuggingFaceLLM
-from model.llm.ollama_llm import OllamaLLM
-
-from model.llm.template.seed_query_based_template import SeedQueryBasedTemplate
-from model.llm.template.current_query_based_template import CurrentQueryBasedTemplate
-
-from model.searcher.zenodo_searcher import ZenodoSearcher
-from model.sorter.random_sorter import RandomSorter
-# from model.sorter.classifier.transformer_based_classifier import FineTunedClassifier
-from model.sorter.classifier_sorter import ClassifierSorter
 from model.client_crawler import ClientCrawler
+
 from model.business_object.crawl_session import CrawlSession
 from model.business_object.page import Page
 
-from db.crawler_session_dao import CrawlSessionDAO
+from model.classifier.similarity_classifier import SimilarityClassifier
+from model.classifier.hyde_similarity_classifier import HydeSimilarityClassifier
+
+from model.llm.template.seed_query_based_template import SeedQueryBasedTemplate
+from model.llm.template.most_relevant_pages_based import MostRelevantPagesBasedTemplate
+from model.llm.template.hyde_based_template import HydeBasedTemplate
+
+from model.llm.ollama_llm import OllamaLLM
+
+from model.query_expansion.llm_query_expander import LLMQueryExpander
+
+from model.hyde_generator.llm_hyde_generator import LLMHydeGenerator
+
+from model.searcher.arxiv_searcher import ArxivSearcher
+from model.searcher.chemrxiv_searcher import ChemRxivSearcher
+
+from model.stop_criteria.duration_stop_criteria import DurationStopCriteria
 from model.stop_criteria.nb_relevant_stop_criteria import NbRelevantStopCriteria
 
-load_dotenv()
-ZENODO_ACCESS_TOKEN = os.getenv('ZENODO_TOKEN')
-OPENAI_ACCESS_TOKEN = os.getenv('OPENAI_TOKEN')
-HUGGINGFACE_ACCESS_TOKEN = os.getenv('HUGGINGFACE_TOKEN')
+query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
+llm = OllamaLLM(model='llama3.2')
+stop_criteria = DurationStopCriteria(maximum_duration=120)
+searcher = ChemRxivSearcher()
 
-# 1. Choice of searcher
-searcher = ZenodoSearcher(3, ZENODO_ACCESS_TOKEN)
+#################################### PARAMETERS ####################################
+nb_pages_per_request = [10, 50, 100]
 
-# 2. Choice of sorter
-sorter = RandomSorter()
+# Classifier
+sim_classifier = SimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
+threshold_sim = [0.84, 0.85, 0.86]
 
-# classifier_model = FineTunedClassifier(name='bert fine tuned', path_to_model='./fine_tuned_model', path_to_tokenizer='google-bert/bert-base-cased')
-# sorter = ClassifierSorter(classifier_model=classifier_model)
+hyde_classifier = HydeSimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
+threshold_hyde = [0.84, 0.85, 0.86]
 
-# 3. Choice of query expansor
-query_expander = NoQueryExpander()
+# Query expansor
+template_expansion_on_seed = SeedQueryBasedTemplate()
+template_expansion_best_page = MostRelevantPagesBasedTemplate(nb_pages=1)
+query_expander_on_seed = LLMQueryExpander(llm=llm, template=template_expansion_on_seed)
+query_expander_best_page = LLMQueryExpander(llm=llm, template=template_expansion_best_page)
 
-# llm = OllamaLLM('llama3.2')
-# template_script = 'Your task is to expand this request : {}. Please generate one additional term that might help retrieve more relevant results in a broader context. The goal is to give a synonym, a related term, or any other variation that could improve the search results. Your response must be only one term and the output must be in json format with key "related_term".'
-# template = SeedQueryBasedTemplate(template_script)
-# query_expander = LLMQueryExpander(llm, template)
+# Hyde generator
+template_hyde = HydeBasedTemplate()
+hyde_generator = LLMHydeGenerator(llm=llm, template=template_hyde)
 
-# 4. Choice of initial parameters
-name_session = 'test_llm_expansion'
-query = 'alloy'
-seed_pages = [Page(url='a url', title='a title', description='a description', links='some links', publication_date='11/10/24', authors='authors', language='eng', notes='a fake page just to try', score=1)]
-crawl_session = CrawlSession(name_session, sorter, query_expander, searcher, query, seed_pages)
-stop_criteria = NbRelevantStopCriteria(crawl_session, 20)
+#####################################################################################
 
-# Crawl
-crawler = ClientCrawler(crawl_session, stop_criteria)
-crawler.crawl()
+crawl_session = CrawlSession(session_name='test', query=query)
+
+crawler_client = ClientCrawler(folder = "/Users/apollineguerineau/Documents/ENSAI/3A/Greece/internship/eval/test",
+                               crawl_session=crawl_session, 
+                               stop_criteria=stop_criteria,
+                               searcher=searcher, 
+                               nb_pages_per_request=10, 
+                               threshold=0.8,
+                               classifier=sim_classifier,
+                               query_expander=query_expander_on_seed, 
+                               hyde_generator=None,
+                               seed_urls=[]
+                               )
+
+crawler_client.crawl()
+print('Nombre de pages récupérées : ')
+print(len(crawler_client.crawl_session.fetched_pages))
+
+
+
