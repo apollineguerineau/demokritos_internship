@@ -1,0 +1,22 @@
+.env
+venv/
+
+__pycache__/
+*.py[cod]
+
+*.pyo
+*.pyd
+*.pydist
+*.egg-info/
+dist/
+build/
+
+*.log
+
+.vscode/
+.idea/
+
+.pytest_cache/
+
+.DS_Store  # macOS
+Thumbs.db  # Windows

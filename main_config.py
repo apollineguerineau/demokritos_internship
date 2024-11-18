@@ -25,20 +25,23 @@ from itertools import product
 
 from itertools import product
 import os
+import time
+from tqdm import tqdm
 
 # Configuration de base
-base_output_dir = "/Users/apollineguerineau/Documents/ENSAI/3A/Greece/internship/eval/test/"
-query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
+base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/RAG/"
+query = '''RAG AND "code generation"'''
 llm = OllamaLLM(model='llama3.2')
-stop_criteria = DurationStopCriteria(maximum_duration=120)
+maximum_duration = 120
+stop_criteria = DurationStopCriteria(maximum_duration=maximum_duration)
 searcher = ChemRxivSearcher()
 
 # Classifiers et leurs seuils
 sim_classifier = SimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
-threshold_sim = 0.85
+threshold_sim = 0.8022592372014438
 
 hyde_classifier = HydeSimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
-threshold_hyde = 0.902
+threshold_hyde = 0.8817781945392197
 
 # Query expansion configurations
 query_expander_none = None
@@ -55,8 +58,8 @@ classifiers_and_thresholds = [
     (sim_classifier, threshold_sim),  # Similarity classifier
     (hyde_classifier, threshold_hyde),  # Hyde classifier
 ]
-nb_pages_per_requests_options = [10, 50, 100]
-
+# nb_pages_per_requests_options = [10, 50, 100]
+nb_pages_per_requests_options = [10]
 # Initialisation des configurations
 configurations = []
 
@@ -64,7 +67,7 @@ configurations = []
 for query_expander, (classifier, threshold) in product(query_expanders, classifiers_and_thresholds):
     if query_expander is None :
         # Cas particulier : seulement nb_pages_per_requests = 100
-        nb_pages_per_requests = [100]
+        nb_pages_per_requests = [10]
     else:
         # Tous les autres cas
         nb_pages_per_requests = nb_pages_per_requests_options
@@ -78,7 +81,8 @@ for query_expander, (classifier, threshold) in product(query_expanders, classifi
             "hyde_generator": hyde_generator if classifier == hyde_classifier else None,
         }
         configurations.append(config)
-print(len(configurations))
+
+print(f'{len(configurations)} configurations to test')
 
 # Création des folders et lancement des crawlers
 for i, config in enumerate(configurations, 1):
@@ -109,6 +113,7 @@ for i, config in enumerate(configurations, 1):
     folder_path = base_output_dir + folder_name
 
     if not os.path.exists(folder_path) : 
+        print(folder_name)
     
         # Lancer le crawler
         crawl_session = CrawlSession(session_name=f'test_config_{i}', query=query)
@@ -125,6 +130,9 @@ for i, config in enumerate(configurations, 1):
             hyde_generator=config["hyde_generator"],
             seed_urls=[]
         )
-        
+
         crawler_client.crawl()
+        print('-----------------------------------------------')
+
+
 

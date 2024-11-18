@@ -20,11 +20,9 @@ class OllamaLLM(AbstractLLM):
         abstract = abstract.replace('"', "")
         abstract = abstract.replace('\n', "")
         hyde_page = {'title':title, 'abstract':abstract}
-        print(hyde_page)
         return(hyde_page)
     
     def generate_expanded_query(self, prompt):
         response_str = ollama.chat(model=self.model, messages=[{'role': 'user', 'content': prompt}])
-        print(response_str['message']['content'])
         response_dict = ast.literal_eval(response_str['message']['content'])
         return(response_dict['expanded_query'])

@@ -6,11 +6,9 @@ class LLMHydeGenerator:
     
     def generate_hyde(self, crawl_session):
         prompt = self.template.complete(crawl_session)
-        print(prompt)
+        response = self.llm.generate_hyde(prompt)
         try : 
             response = self.llm.generate_hyde(prompt)
         except Exception as e:
-            print(f"Erreur lors de l'appel au LLM : {e}")
             response = ''
-        print(response)
         return(response)

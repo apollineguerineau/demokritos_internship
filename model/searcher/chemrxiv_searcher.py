@@ -11,7 +11,6 @@ class ChemRxivSearcher(AbstractSearcher) :
 
     def get_max_results(self, query):
         url = "https://chemrxiv.org/engage/chemrxiv/public-api/v1/items?term=" + query
-        print(url)
         data = requests.get(url + '&limit=1')
         total_results = data.json()['totalCount']
         return(total_results)

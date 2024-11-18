@@ -2,6 +2,7 @@ from model.business_object.crawl_session import CrawlSession
 import csv
 import os
 from datetime import datetime
+import sys
 
 class ClientCrawler :
     def __init__(self, folder, crawl_session, stop_criteria, searcher, nb_pages_per_request=100, threshold=0.8, classifier=None, query_expander=None, hyde_generator=None, seed_urls=[]) :
@@ -17,16 +18,19 @@ class ClientCrawler :
 
         if classifier : 
             if classifier.require_hyde : 
+                
                 if not hyde_generator :
                     print('Need to choose hyde generator')
                 else : 
-                    print('generation of hyde paper')
+                    hyde = hyde_generator.generate_hyde(self.crawl_session)
+                    self.crawl_session.hyde = hyde
                     try : 
                         hyde = hyde_generator.generate_hyde(self.crawl_session)
                         self.crawl_session.hyde = hyde
+                        print(hyde)
                     except : 
                         print('Error while generating hyde paper')
-
+            self.crawl_session.start_time = datetime.now()
          # for url in seed_urls : 
         #     page = self.searcher.get_page_url(url)
         #     page.is_seed=True
@@ -55,12 +59,13 @@ class ClientCrawler :
        
 
     def crawl(self):
+        start = datetime.now()
         i=0 
         while not self.stop_criteria.is_reached(self.crawl_session) : 
+            
             if self.query_expander :
                 if i>0:
                     #expand query
-                    print('--- query expansion ---')
                     new_query = self.query_expander.expand_query(self.crawl_session)
                     self.crawl_session.current_query = new_query
                     self.crawl_session.all_queries += ';' + self.crawl_session.current_query
@@ -72,8 +77,6 @@ class ClientCrawler :
                 page = self.searcher.get_page(self.crawl_session.current_query, num_page=j)
                 # if page.url not in [fetched_page.url for fetched_page in self.crawl_session.fetched_pages] : 
                 if page not in self.crawl_session.fetched_pages :
-                    print(j)
-                    print(True)
                     page.get_with_query=self.crawl_session.current_query
                     if self.classifier : 
                         score = self.classifier.attribute_score(self.crawl_session, page)
@@ -82,12 +85,23 @@ class ClientCrawler :
                             self.crawl_session.add_fetched_page(page)
                             self.write_page(self.folder + '/fetched_pages.csv', page)
                             nb_new_pages+=1   
-                            print(f'{nb_new_pages} added')
+                            current_count = len(self.crawl_session.fetched_pages)
+                            actual = datetime.now()
+                            time_diff = actual - start
+                            minutes_elapsed = time_diff.total_seconds() // 60 
+                            sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
+                            sys.stdout.flush()
+
                     else : 
                         self.crawl_session.add_fetched_page(page)
                         self.write_page(self.folder + '/fetched_pages.csv', page)
-                        nb_new_pages+=1   
-                        print(f'{nb_new_pages} added')
+                        nb_new_pages+=1  
+                        current_count = len(self.crawl_session.fetched_pages)
+                        actual = datetime.now()
+                        time_diff = actual - start
+                        minutes_elapsed = time_diff.total_seconds() // 60 
+                        sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
+                        sys.stdout.flush()
                 j += 1
             i +=1 
         end = datetime.now()
@@ -132,4 +146,3 @@ class ClientCrawler :
                              len(self.crawl_session.seed_pages),
                              len(self.crawl_session.fetched_pages),
                              duration])
-    
