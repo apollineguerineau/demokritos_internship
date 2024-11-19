@@ -32,20 +32,25 @@ from itertools import product
 import os
 
 # Configuration de base
-base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/MOF/"
-query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
+# base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/MOF/"
+# query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
+base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/RAG/"
+query = '''RAG AND "code generation"'''
 llm = OllamaLLM(model='llama3.2')
-maximum_duration = 120
+maximum_duration = 5
 stop_criteria = DurationStopCriteria(maximum_duration=maximum_duration)
-searcher = ChemRxivSearcher()
+# searcher = ChemRxivSearcher()
+searcher = ArxivSearcher()
+nb_pages = 50
 
 # Classifiers et leurs seuils
 sim_classifier = SimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
-threshold_sim = 0.85070133468372
+# threshold_sim = 0.85070133468372
+threshold_sim = 0.8022592372014438
 
 hyde_classifier = HydeSimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
-threshold_hyde = 0.9087440326574849
-
+# threshold_hyde = 0.9087440326574849
+threshold_hyde = 0.8817781945392197
 # Query expansion configurations
 query_expander_none = None
 query_expander_on_seed = LLMQueryExpander(llm=llm, template=SeedQueryBasedTemplate())
@@ -54,40 +59,67 @@ query_expander_best_page = LLMQueryExpander(llm=llm, template=MostRelevantPagesB
 # Hyde generator
 hyde_generator = LLMHydeGenerator(llm=llm, template=HydeBasedTemplate())
 
-# Combinaisons possibles
-query_expanders = [query_expander_none]
-#query_expander_on_seed, query_expander_best_page
-classifiers_and_thresholds = [
-    (None, None),  # Pas de classificateur
-    (sim_classifier, threshold_sim),  # Similarity classifier
-    (hyde_classifier, threshold_hyde),  # Hyde classifier
-]
-nb_pages_per_requests_options = [100]
-# 50, 100 
-# Initialisation des configurations
+## Configurations
 configurations = []
 
-# Génération des configurations
-for query_expander, (classifier, threshold) in product(query_expanders, classifiers_and_thresholds):
-    # Vérification : query_expander_best_page nécessite un classificateur
-    if query_expander == query_expander_best_page and classifier is None:
-        continue  # Sauter cette combinaison invalide
-    
-    # Définir nb_pages_per_requests selon les cas
-    if query_expander is None:
-        nb_pages_per_requests = [100]  # Cas particulier : seulement nb_pages_per_requests = 100
-    else:
-        nb_pages_per_requests = nb_pages_per_requests_options  # Tous les autres cas
+## NO EXPANDER
+configurations.append({
+"query_expander" : None,
+"classifier" : None,
+"threshold": None,
+"nb_pages_per_requests": None,
+"hyde_generator": None
+})
 
-    for nb_pages in nb_pages_per_requests:
-        config = {
-            "query_expander": query_expander,
-            "classifier": classifier,
-            "threshold": threshold,
-            "nb_pages_per_requests": nb_pages,
-            "hyde_generator": hyde_generator if classifier == hyde_classifier else None,
-        }
-        configurations.append(config)
+configurations.append({
+"query_expander" : None,
+"classifier" : sim_classifier,
+"threshold": threshold_sim,
+"nb_pages_per_requests": None,
+"hyde_generator": None
+})
+
+configurations.append({
+"query_expander" : None,
+"classifier" : hyde_classifier,
+"threshold": threshold_hyde,
+"nb_pages_per_requests": None,
+"hyde_generator": hyde_generator
+})
+
+## EXPANDER ON SEED QUERY
+configurations.append({
+"query_expander" : query_expander_on_seed,
+"classifier" : sim_classifier,
+"threshold": threshold_sim,
+"nb_pages_per_requests": nb_pages,
+"hyde_generator": None
+})
+
+configurations.append({
+"query_expander" : query_expander_on_seed,
+"classifier" : hyde_classifier,
+"threshold": threshold_hyde,
+"nb_pages_per_requests": nb_pages,
+"hyde_generator": hyde_generator
+})
+
+## EXPANDER ON BEST PAGES
+configurations.append({
+"query_expander" : query_expander_best_page,
+"classifier" : sim_classifier,
+"threshold": threshold_sim,
+"nb_pages_per_requests": nb_pages,
+"hyde_generator": None
+})
+
+configurations.append({
+"query_expander" : query_expander_best_page,
+"classifier" : hyde_classifier,
+"threshold": threshold_hyde,
+"nb_pages_per_requests": nb_pages,
+"hyde_generator": hyde_generator
+})
 
 print(f'{len(configurations)} configurations to test')
 

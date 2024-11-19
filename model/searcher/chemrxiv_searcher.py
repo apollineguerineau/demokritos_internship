@@ -30,8 +30,6 @@ class ChemRxivSearcher(AbstractSearcher) :
                         page = self.read_chemrxiv_page(data_page['item'])
                         pages.append(page)
                         nb_fetched+=1
-                        sys.stdout.write(f"\r{nb_fetched}/{end-start} fetched pages on {self.name}")
-                        sys.stdout.flush()
             else :
                 break
         return(pages)
