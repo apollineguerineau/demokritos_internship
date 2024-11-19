@@ -1,2 +1,0 @@
-session_name,searcher,query_expansion,classifier,threshold,nb_pages_per_request,stop_criteria,hyde,all_queries,nb_seed_pages,nb_fetched_pages,duration
-test_config_2,Arxiv API,no expansion,cosine similarity,0.8022592372014438,100,1 minutes,,"RAG AND ""code generation""",0,22,0:01:00.302210
