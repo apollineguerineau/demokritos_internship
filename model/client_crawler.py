@@ -15,6 +15,7 @@ class ClientCrawler :
         self.query_expander = query_expander
         self.folder = folder
         self.create_folder_and_docs()
+        self.start = None
 
         if classifier : 
             if classifier.require_hyde : 
@@ -59,19 +60,34 @@ class ClientCrawler :
        
 
     def crawl(self):
-        start = datetime.now()
-        i=0 
-        while not self.stop_criteria.is_reached(self.crawl_session) : 
-            current_count = len(self.crawl_session.fetched_pages)
-            actual = datetime.now()
-            time_diff = actual - start
-            minutes_elapsed = time_diff.total_seconds() // 60 
-            sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
-            sys.stdout.flush()
-            
-            if self.query_expander :
-                if i>0:
-                    #expand query
+        self.start = datetime.now()
+
+        #Get all pages with the first query
+        print("Get all pages with the first query")
+        new_pages = self.searcher.get_all_pages(self.crawl_session.current_query)
+        print('------------------------------------------------')
+        for page in new_pages : 
+            if not self.stop_criteria.is_reached(self.crawl_session) :
+                if page and page not in self.crawl_session.fetched_pages and page not in self.crawl_session.rejected_pages:
+                    page.get_with_query=self.crawl_session.current_query
+                    if self.classifier : 
+                        score = self.classifier.attribute_score(self.crawl_session, page)
+                        if score >= self.threshold : 
+                            page.score = score
+                            self.crawl_session.add_fetched_page(page)
+                            self.write_page(self.folder + '/fetched_pages.csv', page)  
+                            self.printout()
+                        else : 
+                            self.crawl_session.add_rejected_page(page)
+                    else : 
+                        self.crawl_session.add_fetched_page(page)
+                        self.write_page(self.folder + '/fetched_pages.csv', page)
+                        self.printout() 
+
+        
+        #Expand the query to get new pages
+        if self.query_expander :
+            while not self.stop_criteria.is_reached(self.crawl_session) : 
                     new_query = self.query_expander.expand_query(self.crawl_session)
                     self.crawl_session.current_query = new_query
                     self.crawl_session.all_queries += ';' + self.crawl_session.current_query
@@ -79,44 +95,39 @@ class ClientCrawler :
             max_results = self.searcher.get_max_results(self.crawl_session.current_query)
             nb_new_pages = 0
             j=0
-            while j<=max_results-1 and nb_new_pages<self.nb_pages_per_request and not self.stop_criteria.is_reached(self.crawl_session) :
-                try : 
-                    page = self.searcher.get_page(self.crawl_session.current_query, num_page=j)
-                    if page and page not in self.crawl_session.fetched_pages and page not in self.crawl_session.rejected_pages:
-                        page.get_with_query=self.crawl_session.current_query
-                        if self.classifier : 
-                            score = self.classifier.attribute_score(self.crawl_session, page)
-                            if score >= self.threshold : 
-                                page.score = score
+            while j<max_results and nb_new_pages<self.nb_pages_per_request and not self.stop_criteria.is_reached(self.crawl_session) :
+                pages = self.searcher.get_n_pages(query, j, j+50)
+                for page in pages : 
+                    if nb_new_pages<self.nb_pages_per_request : 
+                        if page not in self.crawl_session.fetched_pages and page not in self.crawl_session.rejected_pages and not self.stop_criteria.is_reached(self.crawl_session) : 
+                            page.get_with_query=self.crawl_session.current_query
+                            if self.classifier : 
+                                score = self.classifier.attribute_score(self.crawl_session, page)
+                                if score >= self.threshold : 
+                                    page.score = score
+                                    self.crawl_session.add_fetched_page(page)
+                                    self.write_page(self.folder + '/fetched_pages.csv', page)
+                                    nb_new_pages+=1   
+                                    self.printout()
+                                else : 
+                                    self.crawl_session.add_rejected_page(page)
+                            else : 
                                 self.crawl_session.add_fetched_page(page)
                                 self.write_page(self.folder + '/fetched_pages.csv', page)
-                                nb_new_pages+=1   
-                                current_count = len(self.crawl_session.fetched_pages)
-                                actual = datetime.now()
-                                time_diff = actual - start
-                                minutes_elapsed = time_diff.total_seconds() // 60 
-                                sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
-                                sys.stdout.flush()
-                            else : 
-                                self.crawl_session.add_rejected_page(page)
-                        else : 
-                            self.crawl_session.add_fetched_page(page)
-                            self.write_page(self.folder + '/fetched_pages.csv', page)
-                            nb_new_pages+=1  
-                            current_count = len(self.crawl_session.fetched_pages)
-                            actual = datetime.now()
-                            time_diff = actual - start
-                            minutes_elapsed = time_diff.total_seconds() // 60 
-                            sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
-                            sys.stdout.flush()
-                except : 
-                    pass
-                finally : 
+                                nb_new_pages+=1  
                     j += 1
             i +=1 
         end = datetime.now()
         duration = end - self.crawl_session.start_time
         self.write_crawl_session(self.folder + '/session_infos.csv', duration=duration)
+        
+    def printout(self):
+        current_count = len(self.crawl_session.fetched_pages)
+        actual = datetime.now()
+        time_diff = actual - self.start
+        minutes_elapsed = time_diff.total_seconds() // 60 
+        sys.stdout.write(f"\rTime elapsed: {int(minutes_elapsed)} minutes - Pages Crawled: {current_count}")
+        sys.stdout.flush()
 
     def write_page(self, filename, page):
         if page.is_seed : 

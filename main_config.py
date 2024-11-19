@@ -32,19 +32,19 @@ from itertools import product
 import os
 
 # Configuration de base
-base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/RAG/"
-query = '''RAG AND "code generation"'''
+base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/MOF/"
+query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
 llm = OllamaLLM(model='llama3.2')
 maximum_duration = 120
 stop_criteria = DurationStopCriteria(maximum_duration=maximum_duration)
-searcher = ArxivSearcher()
+searcher = ChemRxivSearcher()
 
 # Classifiers et leurs seuils
 sim_classifier = SimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
-threshold_sim = 0.8022592372014438
+threshold_sim = 0.85070133468372
 
 hyde_classifier = HydeSimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
-threshold_hyde = 0.8817781945392197
+threshold_hyde = 0.9087440326574849
 
 # Query expansion configurations
 query_expander_none = None
@@ -55,14 +55,14 @@ query_expander_best_page = LLMQueryExpander(llm=llm, template=MostRelevantPagesB
 hyde_generator = LLMHydeGenerator(llm=llm, template=HydeBasedTemplate())
 
 # Combinaisons possibles
-query_expanders = [query_expander_on_seed, query_expander_best_page]
-# query_expander_none, 
+query_expanders = [query_expander_none]
+#query_expander_on_seed, query_expander_best_page
 classifiers_and_thresholds = [
     (None, None),  # Pas de classificateur
     (sim_classifier, threshold_sim),  # Similarity classifier
     (hyde_classifier, threshold_hyde),  # Hyde classifier
 ]
-nb_pages_per_requests_options = [10]
+nb_pages_per_requests_options = [100]
 # 50, 100 
 # Initialisation des configurations
 configurations = []

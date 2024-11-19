@@ -1,0 +1,2 @@
+session_name,searcher,query_expansion,classifier,threshold,nb_pages_per_request,stop_criteria,hyde,all_queries,nb_seed_pages,nb_fetched_pages,duration
+test_config_1,ChemRxiv API,no expansion,no classifier,,100,120 minutes,,"""Machine Learning"" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR ""metal-organic frameworks"" OR COFs OR ""covalent-organic frameworks)",0,5936,0:03:22.082491
