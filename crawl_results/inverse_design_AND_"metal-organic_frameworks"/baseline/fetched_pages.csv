@@ -1,0 +1,1887 @@
+url,title,description,score,get_with_query,time_fetch,is_seed
+http://arxiv.org/abs/2009.08203v1,"The Origin of the Glass-like Thermal Conductivity in Crystalline
+  Metal-Organic Frameworks","  It is textbookly regarded that phonons, i.e., an energy quantum of
+propagating lattice waves, are the main heat carriers in perfect crystals. As a
+result, in many crystals, e.g., bulk silicon, the temperature-dependent thermal
+conductivity shows the classical 1/T relationship because of the dominant
+Umklapp phonon-phonon scattering in the systems. However, the thermal
+conductivity of many crystalline metal-organic frameworks is very low and shows
+no, a weakly negative and even a weakly positive temperature dependence
+(glass-like thermal conductivity). It has been in debate whether the thermal
+transport can be still described by phonons in metal-organic frameworks. Here,
+by studying two typical systems, i.e., crystal zeolitic imidazolate framework-4
+(cZIF-4) and crystal zeolitic imidazolate framework-62 (c-ZIF62), we prove that
+the ultralow thermal conductivity in metal-organic frameworks is resulting from
+the strong phonon intrinsic structure scattering due to the large mass
+difference and the large cavity between Zn and N atoms. Our mean free path
+spectrum analysis shows that both propagating and non-propagating anharmonic
+vibrational modes exist in the systems, and contribute largely to the thermal
+conductivity. The corresponding weakly negative or positive temperature
+dependence of the thermal conductivity is stemming from the competition between
+the propagating and non-propagating anharmonic vibrational modes. Our study
+here provides a fundamental understanding of thermal transport in metal-organic
+frameworks and will guide the design of the thermal-related applications using
+metal-organic frameworks, e.g., inflammable gas storage, chemical catalysis,
+solar thermal conversion and so on.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.275880,False
+http://arxiv.org/abs/2011.07088v1,"Metal-organic Frameworks: Possible New Two-Dimensional Magnetic and
+  Topological materials","  Finding new two-dimensional (2D) materials with novel quantum properties is
+highly desirable for technological innovations. In this work, we studied a
+series of metal-organic frameworks (MOFs) with different metal cores and
+discovered various attractive properties, such as room-temperature magnetic
+ordering, strong perpendicular magnetic anisotropy, huge topological band gap
+(>200meV), and excellent spin-filtering performance. As many MOFs have been
+successfully synthesized in experiments, our results suggest realistic new 2D
+functional materials for the design of spintronic nanodevices.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.276492,False
+http://arxiv.org/abs/2310.12417v1,"Metadata for Scientific Experiment Reporting: A Case Study in
+  Metal-Organic Frameworks","  Research methods and procedures are core aspects of the research process.
+Metadata focused on these components is critical to supporting the FAIR
+principles, particularly reproducibility. The research reported on in this
+paper presents a methodological framework for metadata documentation supporting
+the reproducibility of research producing Metal Organic Frameworks (MOFs). The
+MOF case study involved natural language processing to extract key synthesis
+experiment information from a corpus of research literature. Following, a
+classification activity was performed by domain experts to identify
+entity-relation pairs. Results include: 1) a research framework for metadata
+design, 2) a metadata schema that includes nine entities and two relationships
+for reporting MOF synthesis experiments, and 3) a growing database of MOF
+synthesis reports structured by our metadata scheme. The metadata schema is
+intended to support discovery and reproducibility of metal-organic framework
+research and the FAIR principles. The paper provides background information,
+identifies the research goals and objectives, research design, results, a
+discussion, and the conclusion.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.276734,False
+http://arxiv.org/abs/1904.09497v1,"Interplay between Defects, Disorder and Flexibility in Metal-Organic
+  Frameworks","  Metal-organic frameworks are a novel family of chemically diverse materials,
+which are of interest across engineering, physics, chemistry, biology, and
+medicine-based disciplines. Since the development of the field in its current
+form more than two decades ago, priority has been placed on the synthesis of
+new structures. However, more recently, a clear trend has emerged in shifting
+the emphasis from material design to exploring the chemical and physical
+properties of those already known. In particular --- while such nanoporous
+materials were traditionally seen as rigid crystalline structures --- there is
+growing evidence that large-scale flexibility, the presence of defects and
+long-range disorder, are not the exception, but rather the norm, in
+metal-organic frameworks. Here we offer some perspective into how these
+concepts are perhaps inescapably intertwined, highlight recent advances in our
+understanding, and discuss how a consideration of the interfaces between them
+may lead to enhancements of the materials' functionalities.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.276947,False
+http://arxiv.org/abs/1711.01128v1,Two-dimensional band structure in honeycomb metal-organic frameworks,"  Metal-organic frameworks (MOFs) are an important class of materials that
+present intriguing opportunities in the fields of sensing, gas storage,
+catalysis, and optoelectronics. Very recently, two-dimensional (2D) MOFs have
+been proposed as a flexible material platform for realizing exotic quantum
+phases including topological and anomalous quantum Hall insulators.
+Experimentally, direct synthesis of 2D MOFs has been essentially confined to
+metal substrates, where the interaction with the substrate masks the intrinsic
+electronic properties of the MOF. Here, we demonstrate synthesis of 2D
+honeycomb metal-organic frameworks on a weakly interacting epitaxial graphene
+substrate. Using low-temperature scanning tunneling microscopy (STM) and atomic
+force microscopy (AFM) complemented by density-functional theory (DFT)
+calculations, we show the formation of 2D band structure in the MOF decoupled
+from the substrate. These results open the experimental path towards MOF-based
+designer quantum materials with complex, engineered electronic structures.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277041,False
+http://arxiv.org/abs/1510.04851v1,"Thermodynamics of the Oxygen Evolution Electrocatalysis in Metal-Organic
+  Frameworks","  Metal-organic frameworks (MOFs) provide a versatile and tailorable material
+platform that embody many desirable attributes for photocatalytic
+water-splitting. The approach taken in this study was to use Density Functional
+Theory (DFT) to predict the thermodynamic energy barriers of the oxygen
+evolution reaction (OER) for three MOF functionalizations. A Zr-MIL-125 MOF
+design was selected for this study that incorporates three linker designs, a
+1,4-benzenedicarboxylate (BDC), BDC functionalized with an amino group
+(BDC+NH2), and BDC functionalized with nitro group (BDC+NO2). The study found
+several key differences between homogeneous planar catalyst thermodynamics and
+MOF based thermodynamics, the most significant being the non-unique or
+heterogeneity of reaction sites. Additionally, the funcationalization of the
+MOF was found to significantly influence the hydroperoxyl binding energy, which
+proves to be the largest hurdle for both oxide and MOF based catalyst. Both of
+these findings provide evidance that many of the limitations precluding planar
+homogeneous catalysts can be surpassed with a MOF based catalyst. While none of
+the MOF designs selected for this study out-performed state-of-the-art oxide
+based catalysts, the BDC+NH2 proved to be the best with a predicted
+over-potential for spontaneous OER evolution to be 3.03eV.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277122,False
+http://arxiv.org/abs/2011.07090v1,Electrostatic design of polar metal-organic framework thin films,"  In recent years, optical and electronic properties of metal-organic
+frameworks (MOFs) have increasingly shifted into the focus of interest of the
+scientific community. Here, we discuss a strategy for conveniently tuning these
+properties through electrostatic design. More specifically, based on
+quantum-mechanical simulations, we suggest an approach for creating a gradient
+of the electrostatic potential within a MOF thin film exploiting collective
+electrostatic effects. With a suitable orientation of the polar apical linkers,
+the resulting non-centrosymmetric packing results in an energy staircase of the
+frontier electronic states reminiscent of the situation in a pin-photodiode.
+This 1-D gradient of the electrostatic potential causes a closure of the global
+energy gap and also shifts core-level energies by an energy equaling the size
+of the original band gap. The realization of such assemblies could be based on
+so-called pillared layer MOFs, grown in an oriented fashion on a solid
+substrate employing layer by layer growth techniques. In this context, the
+simulations provide guidelines regarding the design of the polar apical linker
+molecules that would allow the realization of MOF thin films with the (vast
+majority of the) molecular dipole moments pointing in the same direction.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277254,False
+http://arxiv.org/abs/1701.08572v2,Magnetodielectric coupling in a non-perovskite metal-organic framework,"  Multiferroicity and magnetodielectric coupling in metal-organic-frameworks
+(MOFs) is rare and so far restricted mainly to formate-based systems with
+perovskite structure. In the course of this work we designed a tetragonal
+framework [Co(C16H15N5O2)], exhibiting spin-chains of Co2+ ions, which are
+bridged by an organic linker containing a dipolar nitrobenzene moiety. This
+compound shows relaxor-like ferroelectricity at 100 K, which is followed by the
+onset of complex magnetic order at 15 K, indicative of weak ferromagnetism. The
+clear anomaly of the dielectric constant at the magnetic ordering transition
+indicates magnetodielectric coupling, which is also confirmed by magnetic-field
+dependent dielectric measurements. Weak ferromagnetism and magnetodielectric
+coupling, both probably result from a significant Dzyaloshinskii-Moriya
+interaction, which cants the spin structure and locally breaks inversion
+symmetry. We document that the introduction of dipolar nitrobenzene as building
+block in the crystal structure paths the way to design new multiferroic and
+magnetodielectric MOFs.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277352,False
+http://arxiv.org/abs/2110.13503v1,A Two-Dimensional Metal-Organic Framework on Superconducting NbSe$_2$,"  The combination of two-dimensional (2D) materials into vertical
+heterostructures has emerged as a promising path to designer quantum materials
+with exotic properties. Here, we extend this concept from inorganic 2D
+materials to 2D metal-organic frameworks (MOFs) that offer additional
+flexibility in realizing designer heterostructures. We successfully fabricate a
+monolayer 2D Cu-dicyanoanthracene MOF on a 2D van der Waals NbSe$_2$
+superconducting substrate. The structural and electronic properties of two
+different phases of the 2D MOF are characterized by low-temperature scanning
+tunneling microscopy (STM) and spectroscopy (STS), complemented by
+density-functional theory (DFT) calculations. These experiments allow us to
+follow the formation of the kagome bandstructure from Star of David -shaped
+building blocks. This work extends the synthesis and electronic tuneability of
+2D MOFs beyond the electronically less relevant metal and semiconducting
+surfaces to superconducting substrates, which are needed for the development of
+emerging quantum materials such as topological superconductors.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277437,False
+http://arxiv.org/abs/2309.05465v1,"""Toward"" Metal-Organic Framework Design by Quantum Computing","  The article summarizes the study performed in the context of the Deloitte
+Quantum Climate Challenge in 2023. We present a hybrid quantum-classical method
+for calculating Potential Energy Surface scans, which are essential for
+designing Metal-Organic Frameworks for Direct Air Capture applications. The
+primary objective of this challenge was to highlight the potential advantages
+of employing quantum computing. To evaluate the performance of the model, we
+conducted total energy calculations using various computing frameworks and
+methods. The results demonstrate, at a small scale, the potential advantage of
+quantum computing-based models. We aimed to define relevant classical computing
+model references for method benchmarking. The most important benefits of using
+the PISQ approach for hybrid quantum-classical computational model development
+and assessment are demonstrated.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277545,False
+http://arxiv.org/abs/2310.10732v1,MOFDiff: Coarse-grained Diffusion for Metal-Organic Framework Design,"  Metal-organic frameworks (MOFs) are of immense interest in applications such
+as gas storage and carbon capture due to their exceptional porosity and tunable
+chemistry. Their modular nature has enabled the use of template-based methods
+to generate hypothetical MOFs by combining molecular building blocks in
+accordance with known network topologies. However, the ability of these methods
+to identify top-performing MOFs is often hindered by the limited diversity of
+the resulting chemical space. In this work, we propose MOFDiff: a
+coarse-grained (CG) diffusion model that generates CG MOF structures through a
+denoising diffusion process over the coordinates and identities of the building
+blocks. The all-atom MOF structure is then determined through a novel assembly
+algorithm. Equivariant graph neural networks are used for the diffusion model
+to respect the permutational and roto-translational symmetries. We
+comprehensively evaluate our model's capability to generate valid and novel MOF
+structures and its effectiveness in designing outstanding MOF materials for
+carbon capture applications with molecular simulations.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277627,False
+http://arxiv.org/abs/2407.09514v2,"Machine Learning Based Prediction of Proton Conductivity in
+  Metal-Organic Frameworks","  Recently, metal-organic frameworks (MOFs) have demonstrated their potential
+as solid-state electrolytes in proton exchange membrane fuel cells. However,
+the number of MOFs reported to exhibit proton conductivity remains limited, and
+the mechanisms underlying this phenomenon are not fully elucidated,
+complicating the design of proton-conductive MOFs. In response, we developed a
+comprehensive database of proton-conductive MOFs and applied machine learning
+techniques to predict their proton conductivity. Our approach included the
+construction of both descriptor-based and transformer-based models. Notably,
+the transformer-based transfer learning (Freeze) model performed the best with
+a mean absolute error (MAE) of 0.91, suggesting that the proton conductivity of
+MOFs can be estimated within one order of magnitude using this model.
+Additionally, we employed feature importance and principal component analysis
+to explore the factors influencing proton conductivity. The insights gained
+from our database and machine learning model are expected to facilitate the
+targeted design of proton-conductive MOFs.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277708,False
+http://arxiv.org/abs/1903.03646v2,"Layertronic control of topological states in multilayer metal-organic
+  frameworks","  We investigate the layer localization control of two-dimensional states in
+multilayer metal-organic frameworks (MOFs). For finite stackings of (NiC4S4)3
+MOFs, the weak van der Waals coupling between adjacent layers leads to a Fermi
+level dependent distribution of the electronic states in the monolayers. Such
+distribution is reflected in the topological edge states of multilayer
+nanoribbons. Moreover, by applying an external electric field, parallel to the
+stacking direction, the spacial localization of the electronic states can be
+controlled for a chosen Fermi energy. This localization behavior is studied
+comparing density functional theory calculations with a kagome lattice
+tight-binding model. Furthermore, for infinite stacked nanoribbons, a new
+V-gutter Dirac state is found in the side surfaces, which allows anisotropic
+current control by tuning the Fermi energy. Our results can be immediately
+extended to other kagome MOFs with eclipsed stackings, introducing a new degree
+of freedom (layer localization) to materials design.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277803,False
+http://arxiv.org/abs/1605.04471v4,Designing Kitaev spin liquids in metal-organic frameworks,"  Kitaev's honeycomb lattice spin model is a remarkable exactly solvable model,
+which has a particular type of spin liquid (Kitaev spin liquid) as the ground
+state. Although its possible realization in iridates and $\alpha$-RuCl$_3$ has
+been vigorously discussed recently, these materials have substantial non-Kitaev
+direct exchange interactions and do not have a spin liquid ground state. We
+propose metal-organic frameworks (MOFs) with Ru$^{3+}$ (or Os$^{3+}$) forming
+the honeycomb lattice as promising candidates for a more ideal realization of
+Kitaev-type spin models where the direct exchange interaction is strongly
+suppressed. The great flexibility of MOFs allows generalization to other
+three-dimensional lattices, for potential realization of a variety of spin
+liquids such as a Weyl spin liquid.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277922,False
+http://arxiv.org/abs/2002.00683v1,"Time-Resolved In Situ Liquid-Phase Atomic Force Microscopy and Infrared
+  Nanospectroscopy during the Formation of Metal-Organic Framework Thin Films","  Metal-organic framework (MOF) thin-films show unmatched promise as smart
+membranes and photo-catalytic coatings. However, their nucleation and growth
+resulting from intricate molecular assembly processes are not well understood,
+yet crucial to control the thin-film properties. Here, we directly observe the
+nucleation and growth behaviour of HKUST-1 thin-films by real-time in-situ AFM
+at different temperatures in the Cu-BTC solution. In combination with ex-situ
+infrared (nano-)spectroscopy, synthesis at 25{\deg}C reveals initial nucleation
+of rapidly growing HKUST-1 islands surrounded by a continuously nucleating, but
+slowly growing HKUST-1 carpet. Monitoring at 13{\deg}C and 50{\deg}C shows the
+strong impact of temperature on thin-film formation, resulting in (partial)
+nucleation and growth inhibition. The nucleation and growth mechanisms as well
+as their kinetics provide insights to aid in future rational design of MOF
+thin-films.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.277990,False
+http://arxiv.org/abs/1704.06526v3,Liquid Metal-Organic Frameworks,"  Metal--organic frameworks (MOFs) are a family of chemically diverse
+materials, with applications in a wide range of fields covering engineering,
+physics, chemistry, biology and medicine. Research so far has focused almost
+entirely on crystalline structures, yet a clear trend has emerged shifting the
+emphasis onto disordered states of MOFs, including ""defective by design""
+crystals, as well as amorphous phases such as glasses and gels. Here we
+introduce a MOF liquid, a strongly associated liquid obtained by melting a
+zeolitic imidazolate framework (ZIF), with retention of chemical configuration,
+coordinative bonding modes, and porosity of the parent crystalline framework.
+We combine in-situ variable temperature X-ray, ex-situ neutron pair
+distribution function experiments, and first principles molecular dynamics
+simulations to study the melting phenomenon and the nature of the liquid
+obtained, focusing on structural characterization at the molecular scale,
+dynamics of the species, and thermodynamics of the solid--liquid transition.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278055,False
+http://arxiv.org/abs/2007.04926v2,"Near-field infrared nanospectroscopy reveals guest confinement in
+  metal-organic framework single crystals","  Metal-organic frameworks (MOFs) can provide exceptional porosity for
+molecular guest encapsulation useful for emergent applications in sensing, gas
+storage, drug delivery and optoelectronics. Central to the realisation of such
+applications however is the successful incorporation of a functional guest
+confined within the host framework. Here we demonstrate, for the first time,
+the feasibility of scattering-type scanning near-field optical microscopy
+(s-SNOM) and nano-Fourier transform infrared (nanoFTIR) spectroscopy, in
+concert with density functional theory (DFT) calculations to reveal the
+vibrational characteristics of the Guest@MOF systems. Probing individual MOF
+crystals, we pinpoint the local molecular vibrations and thus, shed new light
+on the host-guest interactions at the nanoscale. Our strategy not only confirms
+the successful encapsulation of luminescent guest molecules in the porous host
+framework in single crystals, but further provides a new methodology for
+nanoscale-resolved physical and chemical identification of wide-ranging
+framework materials and designer porous systems for advanced applications.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278152,False
+http://arxiv.org/abs/2206.13473v1,"Metal-Organic Frameworks in Semiconductor Devices: Recent Advancements
+  and a Bright Future","  Metal-organic frameworks (MOFs) symbolize the particular class of hybrid
+crystalline, nano-porous materials made of either discrete metal ions or
+clusters with organic linkers. Past studies on MOFs-based materials largely
+focused on porosity, chemical and structural diversity, gas sorption, sensing,
+drug delivery, catalysis, and separation applications. However, initial efforts
+either neglected or have not gained much attention to refine the electrical
+conductivity of MOFs materials. MOFs reported earlier with poor electrical
+conductivity impeded to employ in electronics, optoelectronics, and renewable
+energy storage applications. To overcome this issue, the MOFs community has
+been engaged in improving electrical conductivity by adopting several
+intriguing strategies. We shed light on the charge transport mechanisms which
+are mainly two processes, either through a bond or through space. This review
+aims to showcase the current scenario on creatively designed MOF materials
+followed by fabrication advancement of high-quality molecular thin films, and
+semiconductor device fabrication for stimuli-responsive current-voltage (I-V)
+studies. Overall, the review addresses the pros and cons of the MOFs-based
+electronics, followed by our prediction on improvement MOFs composition,
+mechanically stable interfaces, device stacking, further relevant experiments
+which can be of great interest to the MOFs researchers in improving further
+devices performances.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278224,False
+http://arxiv.org/abs/2012.03723v1,"Towards explainable message passing networks for predicting carbon
+  dioxide adsorption in metal-organic frameworks","  Metal-organic framework (MOFs) are nanoporous materials that could be used to
+capture carbon dioxide from the exhaust gas of fossil fuel power plants to
+mitigate climate change. In this work, we design and train a message passing
+neural network (MPNN) to predict simulated CO$_2$ adsorption in MOFs. Towards
+providing insights into what substructures of the MOFs are important for the
+prediction, we introduce a soft attention mechanism into the readout function
+that quantifies the contributions of the node representations towards the graph
+representations. We investigate different mechanisms for sparse attention to
+ensure only the most relevant substructures are identified.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278308,False
+http://arxiv.org/abs/2108.06667v3,"Realizing the Data-Driven, Computational Discovery of Metal-Organic
+  Framework Catalysts","  Metal-organic frameworks (MOFs) have been widely investigated for challenging
+catalytic transformations due to their well-defined structures and high degree
+of synthetic tunability. These features, at least in principle, make MOFs
+ideally suited for a computational approach towards catalyst design and
+discovery. Nonetheless, the widespread use of data science and machine learning
+to accelerate the discovery of MOF catalysts has yet to be substantially
+realized. In this review, we provide an overview of recent work that sets the
+stage for future high-throughput computational screening and machine learning
+studies involving MOF catalysts. This is followed by a discussion of several
+challenges currently facing the broad adoption of data-centric approaches in
+MOF computational catalysis, and we share possible solutions that can help
+propel the field forward.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278405,False
+http://arxiv.org/abs/2210.10368v1,"Guest-induced structural deformation in Cu-based Metal-Organic Framework
+  upon hydrocarbon adsorption","  In a world where capture and separation processes represent above 10% of
+global energy consumption, novel porous materials, such as Metal-Organic
+Frameworks (MOFs) used in adsorption-based processes are a promising
+alternative to dethrone the high-energy-demanding distillation. Shape and size
+tailor-made pores in combination with Lewis acidic sites can enhance the
+adsorbate-adsorbent interactions. Understanding the underlying mechanisms of
+adsorption is essential to designing and optimizing capture and separation
+processes. Herein, we analyze the adsorption behaviour of light hydrocarbons
+(methane, ethane, ethylene, propane, and propylene) in two synthesized
+copper-based MOFs, Cu-MOF-74 and URJC-1. The experimental and computational
+adsorption curves reveal a limited effect of the exposed metal centers on the
+olefins. The lower interaction Cu-olefin is also reflected in the calculated
+enthalpy of adsorption and binding geometries. Moreover, the diamond-shaped
+pores' deformation upon external stimuli is first reported in URJC-1. This
+phenomenon is highlighted as the key to understanding the adsorbent's
+responsive mechanisms and potential in future industrial applications.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278480,False
+http://arxiv.org/abs/2210.12489v1,"In situ micropillar compression of an anisotropic metal-organic
+  framework single crystal","  Understanding of the complex mechanical behavior of metal-organic frameworks
+(MOF) beyond their elastic limit will allow the design of real-world
+applications in chemical engineering, optoelectronics, energy conversion
+apparatus, and sensing devices. Through in situ compression of micropillars,
+the uniaxial stress-strain curves of a copper paddlewheel MOF (HKUST-1) were
+determined along two unique crystallographic directions, namely the (100) and
+(111) facets. We show strongly anisotropic elastic response where the ratio of
+the Young's moduli are E(111) ~ 3.6 x E(100), followed by extensive plastic
+flows. Likewise, the yield strengths are considerably different, in which
+Y(111) ~ 2 x Y(100) because of the underlying framework anisotropy. We measure
+the fracture toughness using micropillar splitting. While in situ tests
+revealed differential cracking behavior, the resultant toughness values of the
+two facets are comparable, yielding Kc ~ 0.5 MPa m^1/2. This work provides new
+insights of porous framework ductility at the micron scale and failure by bonds
+breakage.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278572,False
+http://arxiv.org/abs/2309.12946v1,"Unraveling Medium-Range Order and Melting Mechanism of ZIF-4 under High
+  Temperature","  Glass formation in Zeolitic Imidazolate Frameworks (ZIFs) has garnered
+significant attention in the field of Metal-Organic Frameworks (MOFs) in recent
+years. Numerous works have been conducted to investigate the microscopic
+mechanisms involved in the melting-quenching process of ZIFs. Understanding the
+density variations that occur during the melting process of ZIFs is crucial for
+comprehending the origins of glass formation. However, conducting large-scale
+simulations has been challenging due to limitations in computational resources.
+In this work, we utilized deep learning methods to accurately construct a
+potential function that describes the atomic-scale melting behavior of Zeolitic
+Imidazolate Framework-4 (ZIF-4). The results revealed the spatial heterogeneity
+associated with the formation of low-density phases during the melting process
+of ZIF-4. This work discusses the advantages and limitations of applying deep
+learning simulation methods to complex structures like ZIFs, providing valuable
+insights for the development of machine learning approaches in designing
+Metal-Organic Framework glasses.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278655,False
+http://arxiv.org/abs/2311.12411v1,Quantum Simulations for Carbon Capture on Metal-Organic Frameworks,"  Direct air capture of Carbon Dioxide is a technical solution that does not
+rely on natural processes to capture CO2 from the atmosphere. In DAC, the
+filter material is designed to specifically bind CO2 molecules. Hence a
+high-capacity filter is sought. We aim to leverage the potential of quantum
+computing to improve the filters used in DAC. Metal-Organic Frameworks (MOFs)
+have high surface area and tunable pore sizes which makes them an attractive
+material for gas storage and separation. Using the variational quantum
+eigensolver (VQE) algorithm, we find the minimum of the potential energy
+surface (PES) by first considering only the active site of the MOF (the metal
+ion). For complex systems, we employ Density Matrix Embedding Theory and use
+VQE as a fragment solver at the binding site. Techniques like
+deparameterisation are used to minimise the count of trainable parameters. We
+present results of ideal and noisy simulations as well as from a real hardware
+device. Resources are estimated for MOFs unit cell. The findings from our study
+demonstrates the potential of quantum computing to effectively perform quantum
+simulations of strongly correlated fragments.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278752,False
+http://arxiv.org/abs/2312.13846v1,"Enhanced elastic stability of a topologically disordered crystalline
+  metal--organic framework","  By virtue of their open network structures and low densities, metal--organic
+frameworks (MOFs) are soft materials that exhibit elastic instabilities at low
+applied stresses. The conventional strategy for improving elastic stability is
+to increase the connectivity of the underlying MOF network, which necessarily
+increases material density and reduces porosity. Here we demonstrate an
+alternative paradigm, whereby elastic stability is enhanced in a MOF with an
+aperiodic network topology. We use a combination of variable-pressure
+single-crystal X-ray diffraction measurements and coarse-grained
+lattice-dynamical calculations to interrogate the high-pressure behaviour of
+the topologically aperiodic system TRUMOF-1, which we compare against that of
+its ordered congener MOF-5. We show that the topology of the former quenches
+the elastic instability responsible for pressure-induced framework collapse in
+the latter, much as irregularity in the shapes and sizes of stones acts to
+prevent cooperative mechanical failure in drystone walls. Our results establish
+aperiodicity as a counterintuitive design motif in engineering the mechanical
+properties of framework structures, relevant to MOFs and larger-scale
+architectures alike.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278835,False
+http://arxiv.org/abs/2405.06465v1,"Quantum-Accurate Machine Learning Potentials for Metal-Organic
+  Frameworks using Temperature Driven Active Learning","  Understanding how structural flexibility affects the properties of
+metal-organic frameworks (MOFs) is crucial for the design of better MOFs for
+targeted applications. Flexible MOFs can be studied with molecular dynamics
+simulations, whose accuracy depends on the force-field used to describe the
+interatomic interactions. Density functional theory (DFT) and quantum-chemistry
+methods are highly accurate, but the computational overheads limit their use in
+long time-dependent simulations for large systems. In contrast, classical force
+fields usually struggle with the description of coordination bonds.
+  In this work we develop a DFT-accurate machine-learning spectral neighbor
+analysis potential, trained on DFT energies, forces and stress tensors, for two
+representative MOFs, namely ZIF-8 and MOF-5. Their structural and vibrational
+properties are then studied as a function of temperature and tightly compared
+with available experimental data. Most importantly, we demonstrate an
+active-learning algorithm, based on mapping the relevant internal coordinates,
+which drastically reduces the number of training data to be computed at the DFT
+level. Thus, the workflow presented here appears as an efficient strategy for
+the study of flexible MOFs with DFT accuracy, but at a fraction of the DFT
+computational cost.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.278928,False
+http://arxiv.org/abs/2408.02356v1,"Metal-Organic Framework-Derived Sugarcoated Haws-like AgNWs/ZIF-8/Pd for
+  Plasmon-Promoted Photocatalytic Hydrogenation","  The conversion of biomass-derived materials into value-added products via
+photocatalysis holds significant promise in driving the development of
+renewable resources. However, since catalytic processes often require high
+temperatures and pressures, most catalysts are quite difficult to meet the
+requirements of high selectivity and high activity simultaneously. Herein, a
+plasmon-promoted photocatalyst, integrating Ag nanowires with metal-organic
+frameworks (MOFs)-confined Pd nanoparticles, is rationally designed to afford
+AgNWs/ZIF-8/Pd which achieve highly selective and efficient catalytic
+hydrogenation toward 2(5H)-Furanone under mild conditions. The plasmonic
+AgNWs/ZIF-8/Pd exhibited much stronger photocatalytic activity and higher
+selectivity compared with AgNWS/ZIF-8 and ZIF-8/Pd. The enhanced activity can
+be attributed to the synergistic coupling between Pd nanoparticles and AgNWs,
+and the possible reaction mechanism is proposed. This work provides a new
+approach to constructing efficient photocatalysts and offers new insights into
+the understanding of the influence of the plasmonic effect on photocatalytic
+hydrogenation reactions.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.279459,False
+http://arxiv.org/abs/2409.10776v1,"Research evolution of metal organic frameworks: A scientometric approach
+  with human-in-the-loop","  This paper reports on a scientometric analysis bolstered by human in the
+loop, domain experts, to examine the field of metal organic frameworks (MOFs)
+research. Scientometric analyses reveal the intellectual landscape of a field.
+The study engaged MOF scientists in the design and review of our research
+workflow. MOF materials are an essential component in next generation renewable
+energy storage and biomedical technologies. The research approach demonstrates
+how engaging experts, via human in the loop processes, can help develop a
+comprehensive view of a field research trends, influential works, and
+specialized topics.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.279605,False
+http://arxiv.org/abs/1701.05394v2,"Design of Porous Metal-Organic Frameworks for Adsorption Driven Thermal
+  Batteries","  Thermal batteries based on a reversible adsorption-desorption of a working
+fluid rather than the conventional vapor compression is a promising alternative
+to exploit waste thermal energy for heat reallocation. In this context, there
+is an increasing interest to find novel porous solids able to adsorb a high
+energy density of working fluid under low relative vapor pressure condition
+combined with an easy ability of regeneration (desorption) at low temperature,
+which are the major requirements for adsorption driven heat pumps and chillers.
+The porous crystalline hybrid materials named Metal-Organic Frameworks (MOF)
+represent a great source of inspiration for sorption based-applications owing
+to their tunable chemical and topological features associated with a large
+variability of pore sizes. Recently, we have designed a new MOF (named
+MIL-160), isostructural do CAU-10, built from the assembly of corner sharing
+aluminum chains octahedra AlO4(OH)2 with the 2,5-furandicarboxylic linker
+substituting the pristine organic linker, 1,4-benzenedicarboxylate. This ligand
+replacement strategy proved to enhance both the hydrophilicity of the MOF and
+its amount of water adsorbed at low p-p0. This designed solid was synthesized
+and its chemical stability/adsorption performances verified. Here, we have
+extended this study by incorporating other polar heterocyclic linkers and a
+comparative computational study of the water adsorption performances of these
+novel structures has been performed. To that purpose, the cell and geometry
+optimizations of all hypothetical frameworks were first performed at the
+density functional theory level and their water adsorption isotherms were
+further predicted by using force-field based Grand-Canonical Monte Carlo
+simulations. This study reveals the ease tunable water affinity of MOF for the
+desired application.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.279706,False
+http://arxiv.org/abs/1711.04648v1,"Ab-initio Study of the Electron Mobility in a Functionalized UiO-66
+  Metal Organic Framework","  This study leverages density function theory (DFT) accompanied with Boltzmann
+transport equation approaches to investigate the electronic mobility as a
+function of inorganic substitution and functionalization in a thermally stable
+UiO-66 metal organic framework (MOF). The MOFs investigated are based on
+Zr-UiO-66 MOF with three functionalization groups of benzene dicarboxylate
+(BDC), BDC functionalized with an amino group (BDC + NH$_2$) and a nitro group
+(BDC + NO$_2$). The design space of this study is bound by UiO-66(M)-R, [M=Zr,
+Ti, Hf; R=BDC, BDC+NO$_2$, BDC+NH$_2$]. The elastic modulus was not found to
+vary significantly over the structural modification of the design space for
+either functionalization and inorganic substitution. However, the
+electron-phonon scattering potential was found to be controllable by up to 30\%
+through controlled inorganic substitution in the metal clusters of the MOF
+structure. The highest electron mobility was predicted for a
+UiO-66(Hf$_5$Zr$_1$) achieving a value of approximately 1.4x10$^{-3}$
+cm$^2$/V-s. It was determined that functionalization provides a controlled
+method of modulating the charge density, while inorganic substitution provides
+a controlled method of modulating the electronic mobility. Within the proposed
+design space the electrical conductivity was able to be increased by
+approximately three times the base conductivity through a combination of
+inorganic substitution and functionalization.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.279842,False
+http://arxiv.org/abs/2405.11783v1,"Inverse Design of Metal-Organic Frameworks Using Quantum Natural
+  Language Processing","  In this study, we explore the potential of using quantum natural language
+processing (QNLP) to inverse design metal-organic frameworks (MOFs) with
+targeted properties. Specifically, by analyzing 150 hypothetical MOF structures
+consisting of 10 metal nodes and 15 organic ligands, we categorize these
+structures into four distinct classes for pore volume and $H_{2}$ uptake
+values. We then compare various QNLP models (i.e. the bag-of-words, DisCoCat
+(Distributional Compositional Categorical), and sequence-based models) to
+identify the most effective approach to process the MOF dataset. Using a
+classical simulator provided by the IBM Qiskit, the bag-of-words model is
+identified to be the optimum model, achieving validation accuracies of 85.7%
+and 86.7% for binary classification tasks on pore volume and $H_{2}$ uptake,
+respectively. Further, we developed multi-class classification models tailored
+to the probabilistic nature of quantum circuits, with average test accuracies
+of 88.4% and 80.7% across different classes for pore volume and $H_{2}$ uptake
+datasets. Finally, the performance of generating MOF with target properties
+showed accuracies of 93.5% for pore volume and 89% for $H_{2}$ uptake,
+respectively. Although our investigation covers only a fraction of the vast MOF
+search space, it marks a promising first step towards using quantum computing
+for materials design, offering a new perspective through which to explore the
+complex landscape of MOFs.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.279942,False
+http://arxiv.org/abs/1703.10853v3,"Giant Ferrimagnetism and Polarization in a Mixed Metal Perovskite
+  Metal-Organic Framework","  Perovskite metal-organic frameworks (MOFs) have recently emerged as potential
+candidates for multiferroicity. However, the compounds synthesized so far
+possess only weak ferromagnetism and low polarization. Additionally, the very
+low magnetic transition temperatures ($T_c$) also pose a challenge to the
+application of the materials. We have computationally designed a mixed metal
+perovskite MOF -[C(NH2)3][(Cu0.5Mn0.5)(HCOO)3]- that is predicted to have
+magnetization two orders of magnitude larger than its parent
+([C(NH2)3][Cu(HCOO)3]), a significantly larger polarization (9.9 {\mu}C/cm2),
+and an enhanced $T_c$ of up to 56 K, unprecedented in perovskite MOFs. A
+detailed study of the magnetic interactions revealed a novel mechanism leading
+to the large moments as well as the increase in the $T_c$. Mixing a
+non-Jahn-Teller ion (Mn$^{2+}$) into a Jahn-Teller host (Cu$^{2+}$) leads to
+competing lattice distortions which are possibly responsible for the enhanced
+polarization. The MOF is thermodynamically stable as evidenced by the computed
+enthalpy of formation, and can likely be synthesized. Our work represents a
+first step towards rational design of multiferroic perovskite MOFs through the
+largely unexlpored mixed metal approach.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280057,False
+http://arxiv.org/abs/1510.00164v3,"First-Principles Design of a Half-Filled Flat Band of the Kagome Lattice
+  in Two-Dimensional Metal-Organic Frameworks","  We design from first principles a new type of two-dimensional metal-organic
+frameworks (MOFs) using phenalenyl-based ligands to exhibit a half-filled flat
+band of the kagome lattice, which is one of the lattice family that shows
+Lieb-Mielke-Tasaki's flat-band ferromagnetism. Among various MOFs, we find that
+$\textit{trans}$-Au-THTAP(trihydroxytriaminophenalenyl) has such an ideal band
+structure, where the Fermi energy is adjusted right at the flat band due to
+unpaired electrons of radical phenalenyl. The spin-orbit coupling opens a band
+gap giving a non-zero Chern number to the nearly flat band, as confirmed by the
+presence of the edge states in first-principles calculations and by fitting to
+the tight-binding model. This is a novel and realistic example of a system in
+which a nearly flat band is both ferromagnetic $\textit{and}$ topologically
+non-trivial.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280150,False
+http://arxiv.org/abs/1403.3059v1,"Study of van der Waals bonding and interactions in metal organic
+  framework materials","  Metal organic framework (MOF) materials have attracted a lot of attention due
+to their numerous applications in fields such as hydrogen storage, carbon
+capture, and gas sequestration. In all these applications, van der Waals forces
+dominate the interaction between the small guest molecules and the walls of the
+MOFs. In this review article, we describe how a combined theoretical and
+experimental approach can successfully be used to study those weak interactions
+and elucidate the adsorption mechanisms important for various applications. On
+the theory side, we show that, while standard density functional theory is not
+capable of correctly describing van der Waals interactions, functionals
+especially designed to include van der Waals forces exist, yielding results in
+remarkable agreement with experiment. From the experimental point of view, we
+show examples in which IR adsorption and Raman spectroscopy are essential to
+study molecule/MOF interactions. Importantly, we emphasize throughout this
+review that a combination of theory and experiment is crucial to effectively
+gain further understanding. In particular, we review such combined studies for
+the adsorption mechanism of small molecules in MOFs, the chemical stability of
+MOFs under humid conditions, water cluster formation inside MOFs, and the
+diffusion of small molecules into MOFs. The understanding of these phenomena is
+critical for the rational design of new MOFs with desired properties.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280229,False
+http://arxiv.org/abs/2110.14368v2,"Frenkel/charge transfer Holstein Hamiltonian applied to energy transfer
+  in 2D layered metal-organic frameworks","  Optimizing energy and charge transport is key in design and implementation of
+efficient two-dimensional (2D) conductive metal-organic frameworks (MOFs) for
+practical applications. In this work, for the first time, we investigate the
+role of both long-range excitonic and short-range charge transfer (CT) coupling
+as well as their dependency on reorganization energy on through-space transport
+properties in 2D MOFs. A pi-stacked model system is built based on the
+archetypal Ni3(HITP)2 2D MOF and a Frenkel/CT Holstein Hamiltonian is developed
+that takes into account both electronic coupling and intramolecular vibrations.
+The dependency of the long and short-range couplings of both secondary building
+units (SBUs) and organic linkers to different dynamical motions in 2D MOFs are
+evaluated which predicts that photophysical properties of 2D MOFs critically
+depend on the degree of ordering between layers. Using the model system, we
+show that the impact of the two coupling sources in these materials can be
+discerned or enhanced by sliding of the SBU in a cofacial configuration along
+the long- or short molecular axis. The effects of vibronic spectral signatures
+are examined for integrated Frenkel/CT systems in both perturbative and
+resonance regimes. Although to the best of our knowledge sliding engineering in
+2D MOFs currently remains beyond reach, the findings reported here offer new
+details on the photophysical structure-property relationships on 2D MOFs and
+provide suggestions into how to combine elements of molecular design and
+engineering to achieve desirable properties and functions for nano- and
+mesoscale optoelectronic applications.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280434,False
+http://arxiv.org/abs/2111.10903v1,"Nanoconfinement of Tetraphenylethylene in Zeolitic Metal-Organic
+  Framework for Turn-on Mechanofluorochromic Stress Sensing","  Mechanofluorochromic materials are of great significance for the fabrication
+of innovative sensors and optoelectronics. However, efficient
+mechanofluorochromic materials are rarely explored due to the deficiency of
+existing design strategies. Here, we demonstrate the incarceration of
+aggregation-induced emission (AIE) materials within metal-organic framework
+(MOF) single crystals to construct a composite system with turn-on
+mechanofluorochromism. A new type of AIE@MOF material was designed: integrating
+a zeolitic MOF (ZIF-71) and tetraphenylethylene (TPE, a topical AIE material)
+to generate a TPE@ZIF-71 system with exceptional turn-on type
+mechanofluorochromism. Using terahertz vibrational spectroscopy, we show the
+unique fluorochromism emanates from the enhanced nanoconfinement effect exerted
+by ZIF-71 host on TPE guest under pressure and its permanent fluorescence after
+stress release. Compared with pure TPE, we demonstrate the nanoconfinement in
+AIE@MOF not only changes the TPE's turn-off type sensing behavior to a turn-on
+type, but boosts the original sensitivity markedly by tenfold. Significantly,
+because ZIF-71 prevents the spontaneous recrystallization of TPE upon
+unloading, this allows TPE@ZIF-71 to record the stress history. This is the
+first demonstration of the Guest@MOF system combining the concepts of AIE and
+MOF; its promising properties and potential engineering applications will
+stimulate new directions pertaining to luminescent stress sensors and smart
+optics.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280525,False
+http://arxiv.org/abs/2306.08695v2,"A generative artificial intelligence framework based on a molecular
+  diffusion model for the design of metal-organic frameworks for carbon capture","  Metal-organic frameworks (MOFs) exhibit great promise for CO2 capture.
+However, finding the best performing materials poses computational and
+experimental grand challenges in view of the vast chemical space of potential
+building blocks. Here, we introduce GHP-MOFassemble, a generative artificial
+intelligence (AI), high performance framework for the rational and accelerated
+design of MOFs with high CO2 adsorption capacity and synthesizable linkers.
+GHP-MOFassemble generates novel linkers, assembled with one of three
+pre-selected metal nodes (Cu paddlewheel, Zn paddlewheel, Zn tetramer) into
+MOFs in a primitive cubic topology. GHP-MOFassemble screens and validates
+AI-generated MOFs for uniqueness, synthesizability, structural validity, uses
+molecular dynamics simulations to study their stability and chemical
+consistency, and crystal graph neural networks and Grand Canonical Monte Carlo
+simulations to quantify their CO2 adsorption capacities. We present the top six
+AI-generated MOFs with CO2 capacities greater than 2 $m mol/g$, i.e., higher
+than 96.9% of structures in the hypothetical MOF dataset.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280634,False
+http://arxiv.org/abs/1001.1332v1,Structure and properties of an amorphous metal--organic framework,"  We show that ZIF-4, a metal-organic framework (MOF) with a zeolitic
+structure, undergoes a crystal--amorphous transition on heating to 300
+$^\circ$C. The amorphous form, which we term a-ZIF, is recoverable to ambient
+conditions or may be converted to a dense crystalline phase of the same
+composition by heating to 400 $^\circ$C. Neutron and X-ray total scattering
+data collected during the amorphization process are used as a basis for reverse
+Monte Carlo refinement of an atomistic model of the structure of a-ZIF. We show
+that the structure is best understood in terms of a continuous random network
+analogous to that of a-SiO$_2$. Optical microscopy, electron diffraction and
+nanoindentation measurements reveal a-ZIF to be an isotropic glass-like phase
+capable of plastic flow on its formation. Our results suggest an avenue for
+designing broad new families of amorphous and glass-like materials that exploit
+the chemical and structural diversity of MOFs.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280700,False
+http://arxiv.org/abs/1612.00699v1,Gel-Based Morphological Design of Zirconium Metal-organic Frameworks,"  The ability of metal-organic frameworks (MOFs) to gelate under specific
+synthetic conditions opens up new opportunities in the preparation and shaping
+of hierarchically porous MOF monoliths, which could be directly implemented for
+catalytic and adsorptive applications. In this work, we present the first
+examples of xero- or aerogel monoliths consisting solely of nanoparticles of
+several prototypical Zr4+-based MOFs: UiO-66-X (X = H, NH2, NO2, (OH)2),
+UiO-67, MOF-801, MOF-808 and NU-1000. High reactant and water concentrations
+during synthesis were observed to induce the formation of gels, which were
+converted to monolithic materials by drying in air or supercritical CO2.
+Electron microscopy, combined with N2 physisorption experiments, was used to
+show that an irregular nanoparticle packing leads to pure MOF monoliths with
+hierarchical pore systems, featuring both intraparticle micropores and
+interparticle mesopores. Finally, UiO-66 gels were shaped into monolithic
+spheres of 600 micrometer diameter using an oil-drop method, creating promising
+candidates for packed-bed catalytic or adsorptive applications, where
+hierarchical pore systems can greatly mitigate mass transfer limitations.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280761,False
+http://arxiv.org/abs/1901.03770v1,"Modeling the structural and thermal properties of loaded metal-organic
+  frameworks. An interplay of quantum and anharmonic fluctuations","  Metal-organic frameworks show both fundamental interest and great promise for
+applications in adsorption-based technologies, such as the separation and
+storage of gases. The flexibility and complexity of the molecular scaffold
+poses a considerable challenge to atomistic modeling, especially when also
+considering the presence of guest molecules. We investigate the role played by
+quantum and anharmonic fluctuations in the archetypical case of MOF-5,
+comparing the material at various levels of methane loading. Accurate path
+integral simulations of such effects are made affordable by the introduction of
+an accelerated simulation scheme and the use of an optimized force field based
+on first-principles reference calculations. We find that the level of
+statistical treatment that is required for predictive modeling depends
+significantly on the property of interest. The thermal properties of the
+lattice are generally well described by a quantum harmonic treatment, with the
+adsorbate behaving in a classical but strongly anharmonic manner. The heat
+capacity of the loaded framework - which plays an important role in the
+characterization of the framework and in determining its stability to thermal
+fluctuations during adsorption/desorption cycles - requires, however, a full
+quantum and anharmonic treatment, either by path integral methods or by a
+simple but approximate scheme. We also present molecular-level insight into the
+nanoscopic interactions contributing to the material's properties and suggest
+design principles to optimize them
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.280943,False
+http://arxiv.org/abs/2110.00069v1,Sequential Design of Adsorption Simulations in Metal-Organic Frameworks,"  The large number of possible structures of metal-organic frameworks (MOFs)
+and their limitless potential applications has motivated molecular modelers and
+researchers to develop methods and models to efficiently assess MOF
+performance. Some of the techniques include large-scale high-throughput
+molecular simulations and machine learning models. Despite those advances, the
+number of possible materials and the potential conditions that could be used
+still pose a formidable challenge for model development requiring large data
+sets. Therefore, there is a clear need for algorithms that can efficiently
+explore the spaces while balancing the number of simulations with prediction
+accuracy. Here, we present how active learning can sequentially select
+simulation conditions for gas adsorption, ultimately resulting in accurate
+adsorption predictions with an order of magnitude less number of simulations.
+We model adsorption of pure components methane and carbon dioxide in Cu-BTC. We
+employ Gaussian process regression (GPR) and use the resulting uncertainties in
+the predictions to guide the next sampling point for molecular simulation. We
+outline the procedure and demonstrate how this model can emulate adsorption
+isotherms at 300 K from $10^{-6}$ to 300 bar (methane)/100 bar (carbon
+dioxide). We also show how this procedure can be used for predicting adsorption
+on a temperature-pressure phase space for a temperature range of 100 to 300 K,
+and pressure range of $10^{-6}$ to 300 bar (methane)/100 bar (carbon dioxide)
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281016,False
+http://arxiv.org/abs/2010.00532v2,"Machine learning with persistent homology and chemical word embeddings
+  improves prediction accuracy and interpretability in metal-organic frameworks","  Machine learning has emerged as a powerful approach in materials discovery.
+Its major challenge is selecting features that create interpretable
+representations of materials, useful across multiple prediction tasks. We
+introduce an end-to-end machine learning model that automatically generates
+descriptors that capture a complex representation of a material's structure and
+chemistry. This approach builds on computational topology techniques (namely,
+persistent homology) and word embeddings from natural language processing. It
+automatically encapsulates geometric and chemical information directly from the
+material system. We demonstrate our approach on multiple nanoporous
+metal-organic framework datasets by predicting methane and carbon dioxide
+adsorption across different conditions. Our results show considerable
+improvement in both accuracy and transferability across targets compared to
+models constructed from the commonly-used, manually-curated features,
+consistently achieving an average 25-30% decrease in
+root-mean-squared-deviation and an average increase of 40-50% in R2 scores. A
+key advantage of our approach is interpretability: Our model identifies the
+pores that correlate best to adsorption at different pressures, which
+contributes to understanding atomic-level structure--property relationships for
+materials design.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281089,False
+http://arxiv.org/abs/2106.09654v1,"Quasi-solid-state sodium-ion hybrid capacitors enabled by
+  UiO-66@PVDF-HFP multifunctional separators: selective charge transfer and
+  high safety","  The practical application of sodium-ion hybrid capacitors is limited by their
+low energy densities resulted from the kinetics mismatch between cathodes and
+anodes, and the fire safety related to the flammable electrolyte-separator
+system. Hence, we report a rational design of metal-organic frameworks (MOFs,
+UiO-66) modified PVDF-HFP separator. High tensile strength and dimensional
+thermal stability of the separator reduce the risk of electrode short circuit
+caused by the separator deformation. MCC test demonstrates a reduction of 75%
+in peak heat release rate (pHRR), indicating an enhanced fire-resistant
+property of the separator. This is due to the transformation of UiO-66 into
+ZrO2 accompanied by the consumption of oxygen and the formation of the barrier
+char that suppresses further heat release. Quasi-solid-state electrolyte
+prepared based on this separator presents an enhanced ionic conductivity of
+2.44 mS*cm-1 and Na-ion transference number of 0.55, which are related to the
+high porosity ( >70%) and electrolyte uptake (~ 320%) of the separator.
+Moreover, the open metal sites of UiO-66 can capture PF6- and consequently
+liberate the Na+ for faster migration, thus reducing the kinetics mismatch
+between cathodes and anodes. Such multifunctional separator enables the
+quasi-solid-state Na-ion hybrid capacitor to achieve high energy density (182
+Wh*kg-1 @31 W*kg-1) and power density (5280 W*kg-1 @22 Wh*kg-1), as well as
+excellent cyclic stability (10000 cycles @1000 mA*g-1).
+  Keywords: Quasi-solid-state; PVDF-HFP; Metal-organic frameworks; Dimensional
+thermal stability; Fire safety; Selective charge transfer
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281186,False
+http://arxiv.org/abs/2208.06891v2,"Chern insulators and high Curie temperature Dirac half-metal in
+  two-dimensional metal-organic frameworks","  Two-dimensional (2D) magnetic materials with nontrivial topological states
+have drawn considerable attention recently. Among them, 2D metal-organic
+frameworks (MOFs) are standing out due to their advantages, such as the easy
+synthesis in practice and less sensitivity to oxidation that are distinctly
+different from inorganic materials. By means of density-functional theory
+calculations, we systematically investigate the electronic and topological
+properties of a class of 2D MOFs X(C21H15N3) (X = transition metal element from
+3d to 5d). Excitingly, we find that X(C21H15N3) (X = Ti, Zr, Ag, Au) are Chern
+insulators with sizable band gaps (~7.1 meV). By studying a four-band effective
+model, it is revealed that the Chern insulator phase in X(C21H15N3) (X = Ti,
+Zr, Ag, Au) is caused cooperatively by the band inversion of the p orbitals of
+the C21H15N3 molecule and the intrinsic ferromagnetism of X(C21H15N3).
+Additionally, Mn(C21H15N3) is a Dirac half-metal ferromagnet with a high Curie
+temperature up to 156 K. Our work demonstrates that 2D MOFs X(C21H15N3) are
+good platforms for realizing Quantum anomalous Hall effect and designing novel
+spintronic devices based on half-metals with high-speed and long-distance spin
+transport.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281265,False
+http://arxiv.org/abs/2307.04489v1,"Designing of Organic Bridging Linkers of Metal-Organic Frameworks for
+  Enhanced Carbon Dioxide Adsorption","  The global rate of anthropogenic CO2 emission is rising, which urges the
+development of efficient carbon capture and storage (CCS) technologies. Among
+the various CO2 capture methods, adsorption by the linkers of the Metal-Organic
+Frameworks (MOFs) materials has received more interest as excellent CO2
+adsorbents because of their important role in understanding the interaction
+mechanism for CO2 adsorption. Here, we investigate the adsorption of CO2
+molecules at the center and side positions of several MOF-linkers using
+molecular cluster models. The interaction between CO2 and the linkers is
+approximated by computing the binding enthalpy ({\Delta}H) through the first
+principles-based Density Functional Theory with Grimmes dispersion correction
+(i.e., B3LYP-D3) and second-order Moller Plesset Theory (MP2). The computed
+values of {\Delta}H indicate the weak nature of CO2 adsorption on the pristine
+linkers, hence the strategy of lithium decoration is used to see its impact on
+the binding strength. Among the various linkers tested, CO2 adsorbing at the
+side position of the DFBDC-2 linker has strong adsorption with {\Delta}H value
+of about -35.32 kJ/mol computed by the B3LYP-D3 method. The Energy
+Decomposition Analysis (EDA) study reveals that among all the energy terms, the
+contribution of electrostatic and polarization energy terms to the {\Delta}H
+value are the most dominant one. Furthermore, the results of Frontier Molecular
+Orbital Analysis (FMO) revealed that all the linkers remained stable even after
+Li-decoration. The results of our investigations will direct towards the
+development and synthesis of novel adsorbents with enhanced CO2 adsorption.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281366,False
+http://arxiv.org/abs/2311.16158v1,"CarbNN: A Novel Active Transfer Learning Neural Network To Build De Novo
+  Metal Organic Frameworks (MOFs) for Carbon Capture","  Over the past decade, climate change has become an increasing problem with
+one of the major contributing factors being carbon dioxide (CO2) emissions;
+almost 51% of total US carbon emissions are from factories. Current materials
+used in CO2 capture are lacking either in efficiency, sustainability, or cost.
+  Electrocatalysis of CO2 is a new approach where CO2 can be reduced and the
+components used industrially as fuel, saving transportation costs, creating
+financial incentives. Metal Organic Frameworks (MOFs) are crystals made of
+organo-metals that adsorb, filter, and electrocatalyze CO2. The current
+available MOFs for capture & electrocatalysis are expensive to manufacture and
+inefficient at capture. The goal therefore is to computationally design a MOF
+that can adsorb CO2 and catalyze carbon monoxide & oxygen with low cost.
+  A novel active transfer learning neural network was developed, utilizing
+transfer learning due to limited available data on 15 MOFs. Using the Cambridge
+Structural Database with 10,000 MOFs, the model used incremental mutations to
+fit a trained fitness hyper-heuristic function. Eventually, a Selenium MOF
+(C18MgO25Se11Sn20Zn5) was converged on. Through analysis of predictions &
+literature, the converged MOF was shown to be more effective & more
+synthetically accessible than existing MOFs, showing the model had an
+understanding of effective electrocatalytic structures in the material space.
+This novel network can be implemented for other gas separations and catalysis
+applications that have limited training accessible datasets.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281445,False
+http://arxiv.org/abs/2401.08148v1,Metal-organic Frameworks in Semiconductor Devices: A Revised Version,"  Metal-organic frameworks (MOFs) are a specific class of hybrid, crystalline,
+nano-porous materials made of metal-ion-based nodes and organic linkers. Most
+of the studies on MOFs largely focused on porosity, chemical and structural
+diversity, gas sorption, sensing, drug delivery, catalysis, and separation
+applications. In contrast, much less reports paid attention to understanding
+and tuning the electrical properties of MOFs. Poor electrical conductivity of
+MOFs reported in earlier studies, impeded their applications in electronics,
+optoelectronics, and renewable energy storage. To overcome this drawback, the
+MOF community has adopted several intriguing strategies for electronic
+applications. The present review focuses on creatively designed bulk MOFs and
+surface-anchored MOFs (SURMOFs) with different metal nodes (from transition
+metals to lanthanides), ligand functionalities, and doping entities, allowing
+tuning and enhancement of electrical conductivity. Diverse platforms for
+MOFs-based electronic device fabrications, conductivity measurements, and
+underlying charge transport mechanisms are also addressed. Overall, the review
+highlights the pros and cons of MOFs-based electronics, followed by an analysis
+of the future directions of research, including optimization of the MOF
+compositions, heterostructures, electrical contacts, device stacking, and
+further relevant options which can be of interest for MOF researchers and
+result in improved devices performance.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281545,False
+http://arxiv.org/abs/2402.07733v1,"Tuning Structural and Electronic Properties of Metal-Organic Framework 5
+  by Metal Substitution and Linker Functionalization","  The chemical flexibility of metal-organic frameworks (MOFs) offers an ideal
+platform to tune structure and composition for specific applications, from gas
+sensing to catalysis and from photoelectric conversion to energy storage. This
+variability gives rise to a large configurational space that can be efficiently
+explored using high-throughput computational methods. In this work, we
+investigate from first principles the structural and electronic properties of
+MOF-5 variants obtained by replacing Zn with Be, Mg, Cd, Ca, Sr, and Ba, and by
+functionalizing the originally H-passivated linkers with CH$_3$, NO$_2$, Cl,
+Br, NH$_2$, OH, and COOH groups. To build and analyze the resulting 56
+structures, we employ density-functional theory calculations embedded in an
+in-house developed library for automatized calculations. Our findings reveal
+that structural properties are mainly defined by metal atoms and large
+functional groups which distort the lattice and modify coordination. Stability
+is largely influenced by functionalization and enhanced by COOH and OH groups
+which promote the formation of hydrogen bonds. The charge distribution within
+the linker is especially influenced by functional groups with
+electron-withdrawing character while the metal nodes play a minor role.
+Likewise, the band-gap size is crucially determined by ligand
+functionalization. The smallest gaps are found with NH$_2$ and OH groups which
+introduce localized orbitals at the top of the valence band. This
+characteristic makes these functionalizations particularly promising for the
+design of MOF-5 variants with enhanced gas uptake and sensing properties.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281614,False
+http://arxiv.org/abs/2405.17899v1,"Near IR bandgap semiconductive 2D conjugated metal-organic framework
+  with rhombic lattice and high mobility","  Two-dimensional conjugated metal-organic frameworks (2D c-MOFs) are emerging
+as a unique class of 2D electronic materials. However, intrinsically
+semiconducting 2D c-MOFs with gaps in the Vis-NIR and high charge carrier
+mobility have been rare. Most of the reported semiconducting 2D c-MOFs are
+metallic (i.e. gapless), which limits their use in applications where larger
+band gaps are needed for logic devices. Herein, we design a new D2h-geometric
+ligand, 2,3,6,7,11,12,15,16-octahydroxyphenanthro(9,10b)triphenylene (OHPTP),
+and synthesize the first example of a 2D c-MOF single crystal (OHPTP-Cu) with a
+rhombohedral pore geometry after coordination with copper. The continuous
+rotation electron diffraction (cRED) analysis unveils the orthorhombic crystal
+structure at the atomic level with a unique AB layer stacking. The resultant
+Cu2(OHPTP) is a p-type semiconductor with an indirect band gap of about 0.50 eV
+and exhibits high electrical conductivity of 0.10 S cm-1 and high charge
+carrier mobility of 10.0 cm2V-1s-1. Density-functional theory calculations
+underline the predominant role of the out-of-plane charge transport in this
+semiquinone-based 2D c-MOFs.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281708,False
+http://arxiv.org/abs/2407.00470v1,"Unusual Pore Volume Dependence of Water Sorption in Monolithic
+  Metal-Organic Framework","  Monolithic metal-organic frameworks (MOFs), which have a continuous structure
+composed of small primary MOF particles and amorphous networks, are
+demonstrated to possess larger pore volume and thus better larger gas uptake
+capacity compared to their powder forms. Here, we systematically investigated
+the water vapor adsorption kinetics in a prototypical MOF, i.e., MOF-801. Our
+results show that the total pore volume (average pore diameter) of the
+monolithic MOF-801 is 0.831 cm3/g (5.20 nm) which is much larger than that of
+powder MOF-801, i.e., 0.488 cm3/g (1.95 nm). Unexpectedly, we find that the
+water uptake capacity of monolithic MOF-801 is much lower than that of powder
+MOF-801 when the RH ranges from 10% to 90%. Our molecular dynamics simulations
+further demonstrate that the unexpected water uptake capacity of monolithic
+MOF-801 at RH of 10%~90% is caused by the water film formed by the capillary
+condensation in these mesopores of monolithic MOF-801. The water molecules can
+overcome the capillary force when the RH is higher than 90%, and then leads to
+the increase of the corresponding water uptake capacity of monolithic MOF-801.
+Our findings reveal the underlying mechanisms for water adsorption kinetics in
+both powder and monolithic MOFs, which could motivate and benefit the new
+passive cooling or water harvesting system design based on MOFs.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281782,False
+http://arxiv.org/abs/2410.22953v1,"Observation of Anderson localization transitions in a two-dimensional
+  conjugated metal-organic framework","  Anderson localization transitions are a universal quantum phenomenon
+sensitive to the disorder and dimensionality of electronic systems. Over the
+past decades, this intriguing topic has inspired overwhelmingly more
+theoretical studies than experimental verifications due to the difficulty of
+controlling a material's disorder or dimensionality without modifying its
+fundamental electronic properties. Organic crystals with their rich disorders
+would be terrific playgrounds to investigate such disorder-driven phase
+transitions except for their low conductivities which usually prohibit
+low-temperature measurements. Here, we conduct systematic transport experiments
+in mesoscopic devices made with copper benzenehexathiol thin films across a
+wide range of thicknesses. We find metal-insulator transitions both among
+three-dimensional samples with different disorder strengths and between
+three-dimensional and quasi-two-dimensional samples. Temperature-dependence
+analysis of the conductivities corroborates the dimensionality crossover.
+Moreover, our theoretical modeling provides a basis for understanding both
+types of metal-insulator transitions within the framework of Anderson
+localization transitions. Our findings establish for the first time that
+organic crystals such as conductive metal-organic frameworks can exhibit such
+quantum interference effects. With organic materials' versatile chemical
+designs and crystalline structures, our work opens new avenues to search for
+novel quantum phenomena in organic material platforms.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281856,False
+http://arxiv.org/abs/2302.09184v1,"Rapid Design of Top-Performing Metal-Organic Frameworks with Qualitative
+  Representations of Building Blocks","  Data-driven materials design often encounters challenges where systems
+require or possess qualitative (categorical) information. Metal-organic
+frameworks (MOFs) are an example of such material systems. The representation
+of MOFs through different building blocks makes it a challenge for designers to
+incorporate qualitative information into design optimization. Furthermore, the
+large number of potential building blocks leads to a combinatorial challenge,
+with millions of possible MOFs that could be explored through time consuming
+physics-based approaches. In this work, we integrated Latent Variable Gaussian
+Process (LVGP) and Multi-Objective Batch-Bayesian Optimization (MOBBO) to
+identify top-performing MOFs adaptively, autonomously, and efficiently without
+any human intervention. Our approach provides three main advantages: (i) no
+specific physical descriptors are required and only building blocks that
+construct the MOFs are used in global optimization through qualitative
+representations, (ii) the method is application and property independent, and
+(iii) the latent variable approach provides an interpretable model of
+qualitative building blocks with physical justification. To demonstrate the
+effectiveness of our method, we considered a design space with more than 47,000
+MOF candidates. By searching only ~1% of the design space, LVGP-MOBBO was able
+to identify all MOFs on the Pareto front and more than 97% of the 50
+top-performing designs for the CO$_2$ working capacity and CO$_2$/N$_2$
+selectivity properties. Finally, we compared our approach with the Random
+Forest algorithm and demonstrated its efficiency, interpretability, and
+robustness.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.281928,False
+http://arxiv.org/abs/2210.17428v1,"EC-MOF/Phase-I: A computationally ready database of electrically
+  conductive metal-organic frameworks with high-throughput structural and
+  electronic properties","  The advent of pi-stacked layered metal-organic frameworks (MOFs) opened up
+new horizons for designing compact MOF-based devices as they offer unique
+electrical conductivity on top of permanent porosity and exceptionally high
+surface area. By taking advantage of the modular nature of these electrically
+conductive (EC) MOFs, an unlimited number of materials can be created for
+applications in electronic devices such as battery electrodes, supercapacitors,
+and spintronics. Permutation of structural building blocks including different
+metal nodes and organic linkers results in new systems with unprecedented and
+unexplored physical and chemical properties. With the ultimate goal of
+providing a platform for accelerated materials design and discovery, here, we
+lay the foundations towards creation of the first comprehensive database of
+EC-MOFs with an experimentally guided approach. The first phase of this
+database, coined EC-MOF/Phase-I, is comprised of 1,061 bulk and mono-layer
+structures built by all possible combinations of experimentally reported
+organic linkers, functional groups and metal nodes. A high-throughput screening
+(HTS) work flow is constructed to implement density functional theory
+calculations with periodic boundary conditions to optimize the structures and
+calculate some of their most significantly relevant properties. Since research
+and development in the area of EC-MOFs has long been suffering from the lack of
+appropriate initial crystal structures, all the geometries and property data
+have been made available for the use of the community through the online
+platform that is developed in the course of this work. This database provides
+comprehensive physical and chemical data of EC-MOFs as well as convenience of
+selecting appropriate materials for specific applications, thus, accelerating
+design and discovery of EC-MOF-based compact devices.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282003,False
+http://arxiv.org/abs/1910.12144v2,High-degeneracy points protected by site-permutation symmetries,"  Space group symmetries dictate the energy degeneracy of quasiparticles (e.g.,
+electronic, photonic) in crystalline structures. For spinless systems, there
+can only be double or triple degeneracies protected by these symmetries, while
+other degeneracies are usually taken as \textit{accidental}. In this Letter we
+show that it is possible to design higher degeneracies exploring site
+permutation symmetries. These design principles are shown to be satisfied in
+previously studied lattices, and new structures are proposed with three, four
+and five degeneracy points for spinless systems. The results are general and
+apply to different quasiparticle models. Here, we focus on a tight-binding
+approach for the electronic case as a proof of principle. The resulting
+high-degeneracy points are protected by the site-permutation symmetries,
+yielding pseudospin-1 and -2 Dirac fermions. The strategy proposed here can be
+used to design lattices with high-degeneracy points in electronic (e.g.
+metal-organic frameworks), photonic, phononic, magnonic and cold-atom systems.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282088,False
+http://arxiv.org/abs/2311.06297v1,STRIDE: Structure-guided Generation for Inverse Design of Molecules,"  Machine learning and especially deep learning has had an increasing impact on
+molecule and materials design. In particular, given the growing access to an
+abundance of high-quality small molecule data for generative modeling for drug
+design, results for drug discovery have been promising. However, for many
+important classes of materials such as catalysts, antioxidants, and
+metal-organic frameworks, such large datasets are not available. Such families
+of molecules with limited samples and structural similarities are especially
+prevalent for industrial applications. As is well-known, retraining and even
+fine-tuning are challenging on such small datasets. Novel, practically
+applicable molecules are most often derivatives of well-known molecules,
+suggesting approaches to addressing data scarcity. To address this problem, we
+introduce $\textbf{STRIDE}$, a generative molecule workflow that generates
+novel molecules with an unconditional generative model guided by known
+molecules without any retraining. We generate molecules outside of the training
+data from a highly specialized set of antioxidant molecules. Our generated
+molecules have on average 21.7% lower synthetic accessibility scores and also
+reduce ionization potential by 5.9% of generated molecules via guiding.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282153,False
+http://arxiv.org/abs/1907.02508v3,"Understanding Phonon Properties in Isoreticular Metal-Organic Frameworks
+  from First Principles","  Metal-organic frameworks (MOFs) are crystalline materials consisting of metal
+centers and organic linkers forming open and porous structures. They have been
+extensively studied due to various possible applications exploiting their large
+amount of internal surface area. Phonon properties of MOFs are, however, still
+largely unexplored, despite their relevance for thermal and electrical
+conductivities, thermal expansion, and mechanical properties. Here, we use
+quantum-mechanical simulations to provide an in-depth analysis of the phonon
+properties of isoreticular MOFs. We consider phonon band structures, spatial
+confinements of modes, projected densities of states, and group velocity
+distributions. We find that more complex linkers shift the spectral weight of
+the phonon density of states towards higher frequencies, while increasing the
+mass of the metal atoms in the nodes has the opposite effect. Due to the high
+porosity of MOFs, we observe a particularly pronounced polarization dependence
+of the dispersion of acoustic phonons with rather high group velocities for
+longitudinal acoustic modes. Interestingly, also for several optical phonon
+modes group velocities amounting to several thousand m/s are obtained. For
+heterogeneous systems like MOFs, correlating group velocities and the
+displacement of modes is particularly relevant. Here we find that high group
+velocities are generally associated with delocalized vibrations, while the
+inverse correlation does not necessarily hold. To quantify anharmonicities, we
+calculate mode Gr\""uneisen parameters, which we find to be significant only for
+phonons with frequencies below ~3 THz. The presented results provide the
+foundations for an in-depth understanding of the vibrational properties of MOF,
+and, thus, pave the way for a future rational design of systems with
+well-defined phonon properties.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282221,False
+http://arxiv.org/abs/2210.14188v1,"MOFormer: Self-Supervised Transformer model for Metal-Organic Framework
+  Property Prediction","  Metal-Organic Frameworks (MOFs) are materials with a high degree of porosity
+that can be used for applications in energy storage, water desalination, gas
+storage, and gas separation. However, the chemical space of MOFs is close to an
+infinite size due to the large variety of possible combinations of building
+blocks and topology. Discovering the optimal MOFs for specific applications
+requires an efficient and accurate search over an enormous number of potential
+candidates. Previous high-throughput screening methods using computational
+simulations like DFT can be time-consuming. Such methods also require
+optimizing 3D atomic structure of MOFs, which adds one extra step when
+evaluating hypothetical MOFs. In this work, we propose a structure-agnostic
+deep learning method based on the Transformer model, named as MOFormer, for
+property predictions of MOFs. The MOFormer takes a text string representation
+of MOF (MOFid) as input, thus circumventing the need of obtaining the 3D
+structure of hypothetical MOF and accelerating the screening process.
+Furthermore, we introduce a self-supervised learning framework that pretrains
+the MOFormer via maximizing the cross-correlation between its
+structure-agnostic representations and structure-based representations of
+crystal graph convolutional neural network (CGCNN) on >400k publicly available
+MOF data. Using self-supervised learning allows the MOFormer to intrinsically
+learn 3D structural information though it is not included in the input.
+Experiments show that pretraining improved the prediction accuracy of both
+models on various downstream prediction tasks. Furthermore, we revealed that
+MOFormer can be more data-efficient on quantum-chemical property prediction
+than structure-based CGCNN when training data is limited. Overall, MOFormer
+provides a novel perspective on efficient MOF design using deep learning.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282299,False
+http://arxiv.org/abs/2309.04781v2,"First-Principles Screening of Metal-Organic Frameworks for Entangled
+  Photon Pair Generation","  The transmission of strong laser light in nonlinear optical materials can
+generate output photons sources that carry quantum entanglement in multiple
+degrees of freedom, making this process a fundamentally important tool in
+optical quantum technology. However, the availability of efficient optical
+crystals for entangled light generation is severely limited in terms of
+diversity, thus reducing the prospects for the implementation of
+next-generation protocols in quantum sensing, communication and computing. To
+overcome this, we developed and implemented a multi-scale first-principles
+modeling technique for the computational discovery of novel nonlinear optical
+devices based on metal-organic framework (MOF) materials that can efficiently
+generate entangled light via spontaneous parametric down-conversion(SPDC).
+Using collinear degenerate type-I SPDC as a case study, we computationally
+screen a database of 114,373 synthesized MOF materials to establish
+correlations between the structure and chemical composition of MOFs with the
+brightness and coherence properties of entangled photon pairs. We identify a
+subset of 49 non-centrosymmetric mono-ligand MOF crystals with high chemical
+and optical stability that produce entangled photon pairs with intrinsic
+$G^{(2)}$ correlation times $\tau_c\sim 10-30$ fs and pair generation rates in
+the range $10^4-10^{8}$ s$^{-1}$mW$^{-1}$mm$^{-1}$ at 1064 nm. Conditions for
+optimal type-I phase matching are given for each MOF and relationships between
+pair brightness, crystal band gap and optical birefringence are discussed.
+Correlations between the optical properties of crystals and their constituent
+molecular ligands are also given. Our work paves the way for the computational
+design of MOF-based devices for optical quantum technology.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282374,False
+http://arxiv.org/abs/2310.15124v1,"Mixed-Variable Global Sensitivity Analysis For Knowledge Discovery And
+  Efficient Combinatorial Materials Design","  Global Sensitivity Analysis (GSA) is the study of the influence of any given
+inputs on the outputs of a model. In the context of engineering design, GSA has
+been widely used to understand both individual and collective contributions of
+design variables on the design objectives. So far, global sensitivity studies
+have often been limited to design spaces with only quantitative (numerical)
+design variables. However, many engineering systems also contain, if not only,
+qualitative (categorical) design variables in addition to quantitative design
+variables. In this paper, we integrate Latent Variable Gaussian Process (LVGP)
+with Sobol' analysis to develop the first metamodel-based mixed-variable GSA
+method. Through numerical case studies, we validate and demonstrate the
+effectiveness of our proposed method for mixed-variable problems. Furthermore,
+while the proposed GSA method is general enough to benefit various engineering
+design applications, we integrate it with multi-objective Bayesian optimization
+(BO) to create a sensitivity-aware design framework in accelerating the Pareto
+front design exploration for metal-organic framework (MOF) materials with
+many-level combinatorial design spaces. Although MOFs are constructed only from
+qualitative variables that are notoriously difficult to design, our method can
+utilize sensitivity analysis to navigate the optimization in the many-level
+large combinatorial design space, greatly expediting the exploration of novel
+MOF candidates.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282448,False
+http://arxiv.org/abs/1912.00366v1,Designing Disorder into Crystalline Materials,"  Crystals are a state of matter characterised by periodic order. Yet
+crystalline materials can harbour disorder in many guises, such as
+non-repeating variations in composition, atom displacements, bonding
+arrangements, molecular orientations, conformations, charge states, orbital
+occupancies, or magnetic structure. Disorder can sometimes be random, but more
+usually it is correlated. Frontier research into disordered crystals now seeks
+to control and exploit the unusual patterns that persist within these
+correlated disordered states in order to access functional responses
+inaccessible to conventional crystals. In this review we survey the core design
+principles at the disposal of materials chemists that allow targeted control
+over correlated disorder. We show how these principles---often informed by
+long-studied statistical mechanical models---can be applied across an
+unexpectedly broad range of materials, including organics, supramolecular
+assemblies, oxide ceramics, and metal--organic frameworks. We conclude with a
+forward-looking discussion of the exciting link to function in responsive
+media, thermoelectrics, topological phases, and information storage.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282526,False
+http://arxiv.org/abs/1910.02031v2,"Dual-Guest Functionalised ZIF-8 Framework for 3D Printing White
+  Light-Emitting Composites","  Metal-organic frameworks (MOFs) stand as a promising chemically-active host
+scaffold for the encapsulation of functional guests, because they could enhance
+luminescent properties by molecular separation of fluorophores in the nanoscale
+pores of the MOF crystals. Herein, we show simultaneous nanoconfinement of two
+fluorophores viz. (A) Fluorescein and (B) Rhodamine B in the sodalite cages of
+ZIF-8, constructed under ambient conditions through a simple one-pot reaction.
+We report a novel dual-guest@MOF system, termed: A+B@ZIF-8, which overcomes the
+intrinsic problem of aggregation caused quenching in the solid-state to gain
+bright yellow emission under UV irradiation. Subsequently, we combine this
+yellow emitter with a blue-emitting photopolymer resin, to yield a 3D printable
+luminescent composite material. We design a number of 3D printable composite
+objects for converting UV into warm white light emission, achieving a high
+quantum yield of ~44% in the solid-state 3D printed form. This research
+instigates the bespoke application of a vast range of 3D printable Guest@MOF
+designer composites targeting energy-saving lighting devices, smart sensors and
+future optoelectronics.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282590,False
+http://arxiv.org/abs/2109.12435v1,"Tailoring Zr-based metal organic frameworks by decorating UIO-66 with
+  amino group for adsorption removal of perfluorooctanoic acid from water","  As a persistent pollutant, PFOA places a serious threat to natural ecosystems
+and human health for its global distribution and residual. Currently,
+adsorption technology is a promising approach for PFOA removal. MOFs become a
+concerned adsorbent attributing to its special designability and easy modular
+synthesis. Aiming at improving hydrophobic interactions to absorb PFOA, this
+study was designed to introduce amino group to decorate Zr-based MOF UiO-66.
+And subsequently introduced GO to modify UiO-66-NH2 to explore the influence of
+hydrophobicity on PFOA adsorption removal. Based on the performance of the
+characterization of synthesized products, the adsorption removal effect of PFOA
+and the corresponding adsorption mechanism were discussed. The results indicate
+the introduction of the amino group could enlarge the pore size, but also
+display strong hydrophobic effects, significantly enhance the adsorption
+capacity(maximum capacity was 1653mg/g). This work not only provides the method
+of introducing amino group to Zr-based MOFs to strengthen the hydrophobic
+properties in purpose of removing PFOA efficiently, but also proposes the
+feasible the reference for tailoring MOFs to remove endurable organic
+pollutants in water.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282669,False
+http://arxiv.org/abs/1702.05145v1,Large elastic recovery of zinc dicyanoaurate,"  We report the mechanical properties of the `giant' negative compressibility
+material zinc(II) dicyanoaurate, as determined using a combination of
+single-crystal nanoindentation measurements and \emph{ab initio} density
+functional theory calculations. While the elastic response of zinc
+dicyanoaurate is found to be intermediate to the behaviour of dense and open
+framework structures, we discover the material to exhibit a particularly strong
+elastic recovery, which is advantageous for a range of practical applications.
+We attribute this response to the existence of supramolecular helices that
+function as atomic-scale springs, storing mechanical energy during compressive
+stress and hence inhibiting plastic deformation. Our results are consistent
+with the relationship noted in [Cheng \& Cheng, \textit{Appl. Phys. Lett.},
+1998, {\textbf{73}}, 614] between the magnitude of elastic recovery, on the one
+hand, and the ratio of material hardness to Young's modulus, on the other hand.
+Drawing on comparisons with other metal--organic frameworks containing helical
+structure motifs, we suggest helices as an attractive supramolecular motif for
+imparting resistance to plastic deformation in the design of functional
+materials.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282739,False
+http://arxiv.org/abs/1905.12098v2,"Transferable and extensible machine learning derived atomic charges for
+  modeling hybrid nanoporous materials","  Nanoporous materials have attracted significant interest as an emerging
+platform for adsorption-related applications. The high-throughput computational
+screening became a standard technique to access the performance of thousands of
+candidates, but its accuracy is highly dependent on a partial charge assignment
+method. In this study, we propose a machine learning model that can reconcile
+the benefits of two main approaches-the high accuracy of density-derived
+electrostatic and chemical charge (DDEC) method and the scalability of charge
+equilibration (Qeq) method. The mean absolute deviation of predicted partial
+charges from the original DDEC counterparts archive an excellent level of
+0.01e. The model, initially designed for metal-organic frameworks, is also
+capable of assigning charges to another class of nanoporous materials, covalent
+organic frameworks, with acceptable accuracy. Adsorption properties of carbon
+dioxide, calculated by means of machine learning derived charges, are
+consistent with the reference data obtained with DDEC charges.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282804,False
+http://arxiv.org/abs/1710.06453v2,"Coupling effect of topological states and Chern insulators in
+  two-dimensional triangular lattices","  We investigate topological states of two-dimensional (2D) triangular lattices
+with multi-orbitals. Tight-binding model calculations of a 2D triangular
+lattice based on $\emph{p}_{x}$ and \emph{p}_{y} orbitals exhibit very
+interesting doubly degenerate energy points at different positions ($\Gamma$
+and K/K$^{\prime}$) in momentum space, with quadratic non-Dirac and linear
+Dirac band dispersions, respectively. Counterintuitively, the system shows a
+global topologically trivial rather than nontrivial state with consideration of
+spin-orbit coupling due to the ""destructive interference effect"" between the
+topological states at the $\Gamma$ and K/K$^{\prime}$ points. The topologically
+nontrivial state can emerge by introducing another set of triangular lattices
+to the system (bitriangular lattices) due to the breakdown of the interference
+effect. With first-principles calculations, we predict an intrinsic Chern
+insulating behavior (quantum anomalous Hall effect) in a family of 2D
+triangular lattice metal-organic framework of Co(C$_{21}$N$_{3}$H$_{15}$)
+(TPyB-Co) from this scheme. Our results provide a different path and
+theoretical guidance for the search for and design of new 2D topological
+quantum materials.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282874,False
+http://arxiv.org/abs/2110.02990v2,"Strain Switching in van der Waals Heterostructures triggered by a
+  Spin-Crossover Metal Organic Framework","  Van der Waals heterostructures (vdWHs) combine different layered materials
+with properties of interest,1 such as two-dimensional (2D) semimetals,
+semiconductors, magnets or superconductors. These heterostructures provide the
+possibility of engineering new materials with emergent functionalities that are
+not accessible in another way. Beyond inorganic 2D materials, layered molecular
+materials remain still rather unexplored, with only few examples regarding
+their isolation as atomically thin-layers. By a proper chemical design, the
+physical properties of these systems can be tuned, as illustrated by the
+so-called spin-crossover (SCO) compounds, in which a spin transition can be
+induced by applying external stimuli like light, temperature, pressure or an
+electric field. Here, we report on vdWHs formed by SCO layers and few-layers
+graphene, being its properties modified by the strain concomitant to the spin
+transition. These molecular/inorganic vdWHs represent the deterministic
+incorporation of bistable molecular layers with other 2D materials of interest
+in the emergent field of straintronics.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.282940,False
+http://arxiv.org/abs/2207.12467v1,Reproducible Sorbent Materials Foundry for Carbon Capture at Scale,"  We envision an autonomous sorbent materials foundry (SMF) for rapidly
+evaluating materials for direct air capture of carbon dioxide (CO2),
+specifically targeting novel metal organic framework materials. Our proposed
+SMF is hierarchical, simultaneously addressing the most critical gaps in the
+inter-related space of sorbent material synthesis, processing, properties, and
+performance. The ability to collect these critical data streams in an agile,
+coordinated, and automated fashion will enable efficient end-to-end sorbent
+materials design through machine learning driven research framework.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283006,False
+http://arxiv.org/abs/2210.00241v1,"Surface modulation of metal-organic frameworks for on-demand
+  photochromism in the solid state","  Organic photoswitchable molecules have struggled in solid state form to
+fulfill their remarkable potential, in terms of photoswitching performance and
+long-term stability when compared to their inorganic counterparts. We report
+the concept of non-electron deficient host's surface with optimal porosity and
+hydrophobicity, as a priori strategy to design photoefficient organic
+solid-state photochromic materials with outstanding mechanical robustness. When
+exposed to a light stimulus including natural sunlight, the photoswitchable
+nanocomposite changes color promptly and reversibly, in a matter of seconds
+along with excellent photo-fatigue resistance, which are on a par with
+inorganic photochromes. Exemplars of commercially viable prototypes that are
+optically clear, comprising smart windows, complex photochromic sculptures, and
+self-erasing rewritable devices, were engineered by direct blending with
+resilient polymers; particularly, the use of high-stiffness polymer (> 2 GPa)
+is no longer an insurmountable challenge. Finally, photochromic films with
+anticounterfeiting features could be manufactured through precision inkjet
+printing of nanocrystals.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283064,False
+http://arxiv.org/abs/2210.12481v1,"Quantifiably Tuneable Luminescence by Ultra-Thin Metal-Organic
+  Nanosheets via Dual-Guest Energy Transfer","  Luminescent metal-organic frameworks (LMOFs) are promising materials for
+organic light-emitting diode (OLED) alternatives to silicate-based LEDs due to
+their tuneable structure and programmability. Yet, the 3D nature of LMOFs
+creates challenges for stability, optical transparency, and device integration.
+Metal-organic nanosheets (MONs) potentially overcome these limitations by
+combining the benefits of MOFs with an atomically thin morphology of large
+planar dimensions. Here, we report the bottom-up synthesis of atomically thin
+ZIF-7-III MONs via facile low-energy salt-templating. Employing guest@MOF
+design, the fluorophores Rhodamine B and Fluorescein were intercalated into
+ZIF-7 nanosheets (Z7-NS) to form light emissive systems exhibiting intense and
+highly photostable fluorescence. Aggregation and F\""orster resonance energy
+transfer, enabled by the MON framework, were revealed as the mechanisms behind
+fluorescence. By varying guest concentration, these mechanisms provided
+predictable quantified control over emission chromaticity of a dual-guest Z7-NS
+material and the definition of an 'emission chromaticity fingerprint' - a
+unique subset of the visible spectrum which a material can emit by
+fluorescence.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283129,False
+http://arxiv.org/abs/2211.03370v2,"Elastic heterogeneity governs asymmetric adsorption-desorption in a soft
+  porous crystal","  Metal--organic frameworks (MOFs), which possess a high degree of
+crystallinity and a large surface area with tunable inorganic nodes and organic
+linkers, exhibit high stimuli-responsiveness and molecular adsorption
+selectivity that enable various applications. The adsorption in MOFs changes
+the crystalline structure and elastic moduli. Thus, the coexistence of
+adsorbed/desorbed sites makes the host matrices elastically heterogeneous.
+However, the role of elastic heterogeneity in the adsorption--desorption
+transition has been overlooked. Here we show the asymmetric role of elastic
+heterogeneity in the adsorption--desorption transition. We construct a minimal
+model incorporating adsorption-induced lattice expansion/contraction and an
+increase/decrease in the elastic moduli. We discover that the transition is
+hindered by the entropic and energetic effects which become asymmetric in
+adsorption process and desorption process, leading to the strong hysteretic
+nature of the transition. Furthermore, the adsorbed/desorbed sites exhibit
+spatially heterogeneous domain formation, implying that the domain morphology
+and interfacial area between adsorbed/desorbed sites can be controlled by
+elastic heterogeneity. Our results provide a theoretical guideline for
+designing soft porous crystals with tunable adsorption hysteresis and the
+dispersion and domain morphology of adsorbates using elastic heterogeneity.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283195,False
+http://arxiv.org/abs/2302.11987v1,"Direct Observation of Tunable Thermal Conductance at Solid/porous
+  Crystalline Solid Interfaces Induced by Water Adsorbents","  Improving interfacial thermal transport is crucial for heat dissipation in
+systems. Here, we design a strategy by utilizing the water
+adsorption-desorption process in porous metal-organic frameworks (MOFs) to tune
+the interfacial heat transfer. We observe a changeable thermal conductance
+across the solid/porous MOFs interfaces owing to the dense water channel formed
+by the adsorbed water molecules in MOFs. Our experimental results show that the
+interfacial thermal conductance of Au/Cu3(BTC)2 heterointerfaces is increased
+up to 7.1 folds by this strategy, where Cu3(BTC)2 is a typical porous MOF and
+usually referred to as HKUST-1. Our molecular dynamics simulations further show
+that the surface tension of Au layer will cause the adsorbed water molecules in
+HKUST-1 to gather at the interfacial region. The dense water channel formed at
+the interfacial region can activate the high-frequency lattice vibrations and
+act as an additional thermal pathway, and then enhance heat transfer across the
+interfaces significantly. Our findings provide a new concept for tailoring
+thermal transport at the solid/porous MOFs heterointerfaces which will largely
+benefit MOF-related applications.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283263,False
+http://arxiv.org/abs/2307.15127v1,"Unravelling Negative In-plane Stretchability of 2D MOF by Large Scale
+  Machine Learning Potential Molecular Dynamics","  Two-dimensional (2D) metal-organic frameworks (MOFs) hold immense potential
+for various applications due to their distinctive intrinsic properties compared
+to their 3D analogues. Herein, we designed in silico a highly stable
+NiF$_2$(pyrazine)$_2$ 2D MOF with a two-periodic wine-rack architecture.
+Extensive first-principles calculations and Molecular Dynamics simulations
+based on a newly developed machine learning potential (MLP) revealed that this
+2D MOF exhibits huge in-plane Poisson's ratio anisotropy. This results into an
+anomalous negative in-plane stretchability, as evidenced by an uncommon
+decrease of its in-plane area upon the application of uniaxial tensile strain
+that makes this 2D MOF particularly attractive for flexible wearable
+electronics and ultra-thin sensor applications. We further demonstrated that
+the derived MLP offers a unique opportunity to effectively anticipate the
+finite temperature mechanical properties of MOFs at large scale. As a
+proof-concept, MLP-based Molecular Dynamics simulations were successfully
+achieved on 2D NiF$_2$(pyrazine)$_2$ with a dimension of 28.2$\times$28.2
+nm$^2$ relevant to the length scale experimentally attainable for the
+fabrication of MOF film.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283328,False
+http://arxiv.org/abs/2403.01198v1,"Organic solvent boosts charge storage and charging dynamics of
+  conductive MOF supercapacitors","  Conductive metal-organic frameworks (c-MOFs) and ionic liquids (ILs) have
+emerged as auspicious combinations for high-performance supercapacitors.
+However, the nanoconfinement from c-MOFs and high viscosity of ILs slow down
+the charging process. This hindrance can, however, be resolved by adding
+solvent. Here, we performed constant-potential molecular simulations to
+scrutinize the solvent impact on charge storage and charging dynamics of
+MOF-IL-based supercapacitors. We find conditions for >100% enhancement in
+capacity and ~6 times increase in charging speed. These improvements were
+confirmed by synthesizing near-ideal c-MOFs and developing multiscale models
+linking molecular simulations to electrochemical measurements. Fundamentally,
+our findings elucidate that the solvent acts as an ionophobic agent to induce a
+substantial enhancement in charge storage, and as an ion traffic police to
+eliminate convoluted counterion and co-ion motion paths and create two distinct
+ion transport highways to accelerate charging dynamics. This work paves the way
+for the optimal design of MOF supercapacitors.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283394,False
+http://arxiv.org/abs/2403.01730v1,"Atomic-scale effect of 2D π-conjugated metal-organic frameworks as
+  electrocatalysts for CO2 reduction reaction towards highly selective products","  Electrocatalytic CO2 reduction technology is key to mitigating greenhouse gas
+emissions and the energy crisis. However, controlling the selectivity of CO2RR
+products at low overpotential remains a challenge. In this paper, we predicted
+five high-performance CO2RR electrocatalysts with different product-specific
+selectivities at the theoretical level based on the advantages of the
+compositional structure and the tunable pore size of 2D {\pi}-conjugated MOFs.
+In addition, through the reaction mechanism and electronic structure analysis,
+we found that the synergistic interaction between metal atoms and organic
+linkers of 2D MOFs can effectively regulate the electronic structure of the
+active center. Their pore size as well as the diversity of carbon materials can
+regulate the spin magnetic moments of the metal atoms, thus affecting the
+improvement of their catalytic performance. Meanwhile, the oxygen or carbon
+affinity of the catalyst surface determines the differences in the formation of
+key intermediates, which ultimately determines the reaction path and product
+selectivity. These insights we present will be useful for the development and
+design of highly active CO2RR electrocatalysts.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283458,False
+http://arxiv.org/abs/2411.09662v1,On the Ferrimagnetic State of CrCl$_2$(pyz)$_2$,"  Van der Waals layered ferromagnetic compounds with high two-dimensional
+electronic conductivity holds strong potential for quantum computing, future
+unconventional superconductors, catalysts, batteries, and fuel cells. We
+suggest a minimal theoretical model to understand the magnetic properties of
+the metal-organic framework CrCl$_2$(pyz)$_2$ (pyz=pyrazine). Using a Hubbard
+model we show that the groundstate is dominated by a specific configuration of
+delocalized electrons on the pyz sites with a ferrimagnetic coupling to the
+localized spins on the Cr sites. This model suggests a magnetic moment of
+$2\mu_B$ which is remarkably close to the experimental value of $1.8 \mu_B$ [K.
+S. Pedersen et al., Nat. Chem. 10, 1056-1061 (2018)]. From Weiss mean-field
+theory we predict a weak ferromagnetic Cr-Cr coupling of $\approx 0.9$ meV.
+This is consolidated by second order perturbation theory of the RKKY
+interaction yielding a Cr-Cr coupling of $\approx 5$ meV. Understanding the
+interactions in these types of compounds can facilitate designs of
+metal-organic compounds with tailored magnetic properties.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283527,False
+http://arxiv.org/abs/2410.03963v1,dZiner: Rational Inverse Design of Materials with AI Agents,"  Recent breakthroughs in machine learning and artificial intelligence, fueled
+by scientific data, are revolutionizing the discovery of new materials. Despite
+the wealth of existing scientific literature, the availability of both
+structured experimental data and chemical domain knowledge that can be easily
+integrated into data-driven workflows is limited. The motivation to integrate
+this information, as well as additional context from first-principle
+calculations and physics-informed deep learning surrogate models, is to enable
+efficient exploration of the relevant chemical space and to predict
+structure-property relationships of new materials a priori. Ultimately, such a
+framework could replicate the expertise of human subject-matter experts. In
+this work, we present dZiner, a chemist AI agent, powered by large language
+models (LLMs), that discovers new compounds with desired properties via inverse
+design (property-to-structure). In specific, the agent leverages
+domain-specific insights from foundational scientific literature to propose new
+materials with enhanced chemical properties, iteratively evaluating them using
+relevant surrogate models in a rational design process, while accounting for
+design constraints. The model supports both closed-loop and human-in-the-loop
+feedback cycles, enabling human-AI collaboration in molecular design with
+real-time property inference, and uncertainty and chemical feasibility
+assessment. We demonstrate the flexibility of this agent by applying it to
+various materials target properties, including surfactants, ligand and drug
+candidates, and metal-organic frameworks. Our approach holds promise to both
+accelerate the discovery of new materials and enable the targeted design of
+materials with desired functionalities. The methodology is available as an
+open-source software on https://github.com/mehradans92/dZiner.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283589,False
+http://arxiv.org/abs/2310.19500v2,"Coarse-grained crystal graph neural networks for reticular materials
+  design","  Reticular materials, including metal-organic frameworks and covalent organic
+frameworks, combine relative ease of synthesis and an impressive range of
+applications in various fields, from gas storage to biomedicine. Diverse
+properties arise from the variation of building units$\unicode{x2013}$metal
+centers and organic linkers$\unicode{x2013}$in almost infinite chemical space.
+Such variation substantially complicates experimental design and promotes the
+use of computational methods. In particular, the most successful artificial
+intelligence algorithms for predicting properties of reticular materials are
+atomic-level graph neural networks, which optionally incorporate domain
+knowledge. Nonetheless, the data-driven inverse design involving these models
+suffers from incorporation of irrelevant and redundant features such as full
+atomistic graph and network topology. In this study, we propose a new way of
+representing materials, aiming to overcome the limitations of existing methods;
+the message passing is performed on a coarse-grained crystal graph that
+comprises molecular building units. To highlight the merits of our approach, we
+assessed predictive performance and energy efficiency of neural networks built
+on different materials representations, including composition-based and
+crystal-structure-aware models. Coarse-grained crystal graph neural networks
+showed decent accuracy at low computational costs, making them a valuable
+alternative to omnipresent atomic-level algorithms. Moreover, the presented
+models can be successfully integrated into an inverse materials design pipeline
+as estimators of the objective function. Overall, the coarse-grained crystal
+graph framework is aimed at challenging the prevailing atom-centric perspective
+on reticular materials design.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283665,False
+http://arxiv.org/abs/2305.11842v2,"Recent progress in the JARVIS infrastructure for next-generation
+  data-driven materials design","  The Joint Automated Repository for Various Integrated Simulations (JARVIS)
+infrastructure at the National Institute of Standards and Technology (NIST) is
+a large-scale collection of curated datasets and tools with more than 80000
+materials and millions of properties. JARVIS uses a combination of electronic
+structure, artificial intelligence (AI), advanced computation and experimental
+methods to accelerate materials design. Here we report some of the new features
+that were recently included in the infrastructure such as: 1) doubling the
+number of materials in the database since its first release, 2) including more
+accurate electronic structure methods such as Quantum Monte Carlo, 3) including
+graph neural network-based materials design, 4) development of unified
+force-field, 5) development of a universal tight-binding model, 6) addition of
+computer-vision tools for advanced microscopy applications, 7) development of a
+natural language processing tool for text-generation and analysis, 8) debuting
+a large-scale benchmarking endeavor, 9) including quantum computing algorithms
+for solids, 10) integrating several experimental datasets and 11) staging
+several community engagement and outreach events. New classes of materials,
+properties, and workflows added to the database include superconductors,
+two-dimensional (2D) magnets, magnetic topological materials, metal-organic
+frameworks, defects, and interface systems. The rich and reliable datasets,
+tools, documentation, and tutorials make JARVIS a unique platform for modern
+materials design. JARVIS ensures openness of data and tools to enhance
+reproducibility and transparency and to promote a healthy and collaborative
+scientific environment.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283741,False
+http://arxiv.org/abs/2107.11569v1,Chemical design and magnetic ordering in thin layers of 2D MOFs,"  Through rational chemical design, and thanks to the hybrid nature of
+metal-organic frameworks (MOFs), it is possible to prepare molecule-based 2D
+magnetic materials stable at ambient conditions. Here, we illustrate the
+versatility of this approach by changing both the metallic nodes and the
+ligands in a family of layered MOFs that allows the tuning of their magnetic
+properties. Specifically, the reaction of benzimidazole-type ligands with
+different metal centres (MII = Fe, Co, Mn, Zn) in a solvent-free synthesis
+produces a family of crystalline materials, denoted as MUV-1(M), which order
+antiferromagnetically with critical temperatures that depend on M. Furthermore,
+the incorporation of additional substituents in the ligand results in a novel
+system, denoted as MUV-8, formed by covalently bound magnetic double-layers
+interconnected by van der Waals interactions, a topology that is very rare in
+the field of 2D materials and unprecedented for 2D magnets. These layered
+materials are robust enough to be mechanically exfoliated down to a few layers
+with large lateral dimensions. Finally, the robustness and crystallinity of
+these layered MOFs allow the fabrication of nanomechanical resonators that can
+be used to detect -- through laser interferometry -- the magnetic order in thin
+layers of these 2D molecule-based antiferromagnets.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283813,False
+http://arxiv.org/abs/2306.10036v1,"MultiBinding Sites United in Covalent-Organic Frameworks (MSUCOF) for
+  H$_2$ Storage and Delivery at Room Temperature","  The storage of hydrogen gas (H$_2$) has presented a significant challenge
+that has hindered its use as a fuel source for transportation. To meet the
+Department of Energy's ambitious goals of achieving $50$ g L$^{-1}$ volumetric
+and $6.5$ wt \% gravimetric uptake targets, materials-based approaches are
+essential. Designing materials that can efficiently store hydrogen gas requires
+careful tuning of the interactions between the gaseous H$_2$ and the surface of
+the material. Metal-Organic Frameworks (MOFs) and Covalent-Organic Frameworks
+(COFs) have emerged as promising materials due to their exceptionally high
+surface areas and tunable structures that can improve gas-framework
+interactions. However, weak binding enthalpies have limited the success of many
+current candidates, which fail to achieve even $10$ g L$^{-1}$ volumetric
+uptake at ambient temperatures. To overcome this challenge, We utilized quantum
+mechanical (QM) based force fields (FF) to investigate the uptake and binding
+enthalpies of 3 linkers chelated with 7 different transition metals (TM),
+including both precious metals (Pd and Pt) and first row TM (Co, Cu, Fe, Ni,
+Mn), to design 24 different COFs in-silico. By applying QM-based FF with grand
+canonical Monte Carlo (GCMC) from 0-700 bar and 298 K, We demonstrated that
+Co-, Ni-, Mn-, Fe-, Pd-, and Pt-based MSUCOFs can already achieve the
+Department of Energy's hydrogen storage targets for 2025. Surprisingly, the
+COFs that incorporated the more affordable and abundant first-row TM often
+outperformed the precious metals. This promising development brings us one step
+closer to realizing a hydrogen-based energy economy.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283880,False
+http://arxiv.org/abs/2406.03616v1,"BEACON: A Bayesian Optimization Strategy for Novelty Search in Expensive
+  Black-Box Systems","  Novelty search (NS) refers to a class of exploration algorithms that
+automatically uncover diverse system behaviors through simulations or
+experiments. Systematically obtaining diverse outcomes is a key component in
+many real-world design problems such as material and drug discovery, neural
+architecture search, reinforcement learning, and robot navigation. Since the
+relationship between the inputs and outputs (i.e., behaviors) of these complex
+systems is typically not available in closed form, NS requires a black-box
+perspective. Consequently, popular NS algorithms rely on evolutionary
+optimization and other meta-heuristics that require intensive sampling of the
+input space, which is impractical when the system is expensive to evaluate. We
+propose a Bayesian optimization inspired algorithm for sample-efficient NS that
+is specifically designed for such expensive black-box systems. Our approach
+models the input-to-behavior mapping with multi-output Gaussian processes
+(MOGP) and selects the next point to evaluate by maximizing a novelty metric
+that depends on a posterior sample drawn from the MOGP that promotes both
+exploration and exploitation. By leveraging advances in efficient posterior
+sampling and high-dimensional Gaussian process modeling, we discuss how our
+approach can be made scalable with respect to both amount of data and number of
+inputs. We test our approach on ten synthetic benchmark problems and eight
+real-world problems (with up to 2133 inputs) including new applications such as
+discovery of diverse metal organic frameworks for use in clean energy
+technology. We show that our approach greatly outperforms existing NS
+algorithms by finding substantially larger sets of diverse behaviors under
+limited sample budgets.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.283952,False
+http://arxiv.org/abs/1401.2630v5,"General Theory of Absorption in Porous Materials: The Restricted
+  Multilayer Theory","  In this paper we present an approach for the generalization of adsorption of
+light gases in porous materials. This new theory goes beyond the Langmuir and
+BET theories, which are the standard approaches that have limited application
+to crystalline porous materials by their unphysical assumptions on the amount
+of possible adsorption layers. The derivation of the more general equation for
+any crystalline porous framework is presented; the Restricted Multilayer Theory
+(RMT). Our approach allows the determination of gas uptake considering only
+geometrical constraints of the porous framework and the interaction energy of
+the guest molecule with the framework. Based on this theory, we calculated
+optimal values for the adsorption enthalpy at different temperatures and
+pressures. We also present the use of this theory to determine the optimal
+linker length for a topological equivalent framework series. We validate this
+theoretical approach by applying it to Metal-Organic Frameworks (MOF) and show
+that it reproduces the experimental results for 7 different reported materials.
+We obtained the universal equation for optimal linker length given the topology
+of a porous framework. This work applied the general equation to MOFs and H$_2$
+to create energy storage materials, however this theory can be applied to other
+crystalline porous materials and light gases, which opens the possibility of
+designing the next generations of energy storage materials by first considering
+only the geometrical constraints of the porous materials.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284025,False
+http://arxiv.org/abs/1502.01100v2,"The Role of Density Functional Theory Methods in the Prediction of
+  Nanostructured Gas-Adsorbent Materials","  With the advent of new synthesis and large-scale production technologies,
+nanostructured gas-adsorbent materials (GAM) like carbon nanocomposites and
+metal-organic frameworks are becoming increasingly more influential in our
+everyday lives. First-principles methods based on density functional theory
+(DFT) have been pivotal in establishing the rational design of GAM, a factor
+which has tremendously boosted their development. However, DFT methods are not
+perfect and due to the stringent accuracy thresholds demanded in modelling of
+GAM (i.e., exact binding energies to within ~0.01 eV) these techniques may
+provide erroneous conclusions in some challenging situations. Examples of
+problematic circumstances include gas-adsorption processes in which both
+electronic long-range exchange and nonlocal correlations are important, and
+systems where many-body energy and Coulomb screening effects cannot be
+disregarded. In this critical review, we analyse recent efforts done in the
+assessment of the performance of DFT methods in the prediction and
+understanding of GAM. Our inquiry is constrained to the areas of hydrogen
+storage and carbon capture and sequestration, for which we expose a number of
+unresolved modelling controversies and define a set of best practice simulation
+principles. Also, we identify the subtle problems found in the generalization
+of DFT benchmark studies performed in model cluster systems to real materials,
+and discuss effective approaches to circumvent them. The increasing awareness
+of the strengths and imperfections of DFT methods in the simulation of
+gas-adsorption phenomena should lead in the medium term to more precise, and
+hence even more fruitful, ab initio engineering of GAM.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284098,False
+http://arxiv.org/abs/1610.08122v1,Controlling Thermal Expansion: a Metal Organic Frameworks Route,"  Controlling thermal expansion is an important, not yet resolved, and
+challenging problem in materials research. A conceptual design is introduced
+here for the first time, for the use of MOFs as platforms for controlling
+thermal expansion devices that can operate in the negative, zero and positive
+expansion regimes. A detailed computer simulation study, based on molecular
+dynamics, is presented to support the targeted application. MOF-5 has been
+selected as model material along with three molecules of similar size and known
+differences in terms of the nature of host--guest interactions. It has been
+shown that adsorbate molecules can control, in a colligative way, the thermal
+expansion of the solid, so that changing the adsorbate molecules induces the
+solid to have positive, zero or negative thermal expansion. We analyze in-depth
+the distortion mechanisms, beyond the ligand metal junction to cover the ligand
+distortions, and the energetic and entropic effect on the thermo-structural
+behavior. We provide an unprecedented atomistic insight on the effect of
+adsorbates on the thermal expansion of MOFs, as a basic tool towards
+controlling the thermal expansion.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284171,False
+http://arxiv.org/abs/1903.06894v1,"Theoretical realization of two-dimensional M3(C6X6)2(M= Co, Cr, Cu, Fe,
+  Mn, Ni, Pd, Rh and X= O, S, Se) metal-organic frameworks","  Most recently, Cu-hexahydroxybenzene MOF was for the time experimentally
+realized, through a kinetically controlled approach. Cu-HHB belongs to the
+family of conductive MOFs with a chemical formula of M3(C6X6)2(X=NH, O, S).
+Motivated by the recent experimental advance in the fabrication of Cu-HHB, we
+conducted extensive first-principles simulations to explore the thermal
+stability, mechanical properties and electronic characteristics of M3(C6X6)2(M=
+Co, Cr, Cu, Fe, Mn, Ni, Pd, Rh and X= O, S, Se) monolayers. First-principles
+results confirm that all considered 2D porous lattices are thermally stable at
+high temperatures over 1500 K. It was moreover found that these novel 2D
+structures can exhibit linear elasticity with considerable tensile strengths,
+revealing their suitability for practical applications in nanodevices.Depending
+on the metal and chalcogen atoms in M3(C6X6)2 monolayers, they can yield
+various electronic and magnetic properties, such as; magnetic semiconducting,
+perfect half metallic, magnetic and nonmagnetic metallic behaviours. This work
+highlights the outstanding physics of M3(C6X6)2 2D porous lattices and will
+hopefully help to expand this conductive MOF family, as promising candidates to
+design advanced energy storage/conversion, electronics and spintronics systems.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284236,False
+http://arxiv.org/abs/2011.13765v1,"Hybrid Perovskites, Metal--Organic Frameworks, and Beyond:
+  Unconventional Degrees of Freedom in Molecular Frameworks","  The structural degrees of freedom of a material are the various distortions
+most straightforwardly activated by external stimuli. A highly successful
+design strategy in materials chemistry involves controlling these individual
+distortions to produce useful functional responses. In a ferroelectric such as
+lead titanate, for example, the key degree of freedom involves displacements of
+Pb$^{2+}$; by coupling these together, the system interacts with electric
+fields. An exciting development has been to exploit the interplay between
+different distortions: $e.g.$ generating polarisation by combining different
+polyhedral rotations. Thus, degrees of freedom act as geometric `elements' that
+can be combined to engineer materials with interesting properties. Just as the
+discovery of new elements diversified chemical space, identifying new types of
+structural degrees of freedom is a key strategy for developing new functional
+materials. In this context, molecular frameworks are a fertile source of
+unanticipated distortion types, many of which have no parallel in conventional
+solid-state chemistry. Framework materials are solids whose structures are
+assembled from nodes and linkers to form scaffolding-like networks. These
+structures usually contain cavities, which may host additional ions for charge
+balance. In the well-established systems---such as lead titanate---these
+components are all atomic, but in molecular frameworks, at least one ion is
+molecular. Here, we survey the unconventional degrees of freedom introduced
+through the replacement of atoms by molecules. Our motivation is to understand
+the role these new distortions play in different materials properties. The
+various degrees of freedom are summarised and described in the context of
+experimental examples. We highlight a number of directions for future research,
+which demonstrate the extraordinary possibilities for this nascent field.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284303,False
+http://arxiv.org/abs/2110.12897v1,"Long-Lived Highly Emissive MOFs as Potential Candidates for
+  Multiphotonic Applications","  Long-lived emissive materials based on room temperature phosphorescence (RTP)
+and thermally activated delayed fluorescence (TADF) are considered as the
+cornerstone of the development of optical sensors, security systems and
+solid-state lighting. Nevertheless, molecular systems with these properties are
+scarce because most of them suffer from aggregation caused quenching emission
+(ACQ). One approach to address this shortcoming is by inhibiting the molecular
+motions/vibrations by employing a fixed matrix as afforded by a metal-organic
+framework (MOF). There, the organic chromophores are confined in a crystalline
+framework, and the structure-property relationship can be designed to get
+RTP/TADF. Inspired by this, the present work explores the relation between the
+linker arrangement and the physicochemical properties of two isochemical MOFs
+with different crystalline structures. The denser MOF exhibits a long-lived
+green RTP due to a hyperfine coupling of the linkers. On the other hand, the
+more porous MOF presents a long-lived temperature-dependent turquoise emission,
+reflecting the influence of the TADF. Hence, this study provides a huge advance
+about the potential of MOFs to undergo RTP and TADF emission, and at the same
+time, demonstrates their potential applicability in a wide range of photonic
+technologies, including physical and chemical sensing and the first example of
+a MOF-LED based on RTP-MOFs.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284380,False
+http://arxiv.org/abs/1506.06334v1,Thermal Maps of Gases in Heterogeneous Reactions,"  Over 85% of all chemical industry products are made using catalysts, with the
+overwhelming majority of these employing heterogeneous catalysts functioning at
+the gas-solid interface. Consequently, optimizing catalytic reactor design
+attracts much effort. Such optimization relies on heat transfer and fluid
+dynamics modeling coupled to surface reaction kinetics. The complexity of these
+systems demands many approximations, which can only be tested with experimental
+observations of quantities such as temperature, pressure, concentrations, flow
+rates, etc. One essential measurement is a map of the spatial variation in
+temperature throughout the catalyst bed. We present here the first non-invasive
+maps of gas temperatures in catalyst-filled reactors, including high spatial
+resolution maps in microreactors enabled by parahydrogen. The thermal maps
+reveal energy flux patterns whose length scale correlates with the catalyst
+packing. By exploiting the motional averaging under a weak applied
+magnetic-field gradient, the nuclear magnetic resonance (NMR) linewidths are
+inversely proportional to temperature. Measurements during the hydrogenation of
+propylene in reactors packed with metal nanoparticles and metal-organic
+framework catalysts yield temperature coefficients of ~0.1 Hz/K, and
+temperature error <4%. Temperature sensitivity increases with gradient
+strength, enabling tuning of precision.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284447,False
+http://arxiv.org/abs/2101.00340v1,"Dye-Encapsulated Zeolitic Imidazolate Framework (ZIF-71) for
+  Fluorochromic Sensing of Pressure, Temperature, and Volatile Solvents","  Luminescent metal-organic frameworks (MOFs) offer a multifunctional platform
+for creating non-invasive sensors and tuneable optoelectronics. However,
+fluorochromic materials that are photophysically resilient and show high
+sensitivity towards different physical and chemical stimuli are scarce. We
+report a facile host-guest nanoconfinement strategy to construct a fluorescent
+hybrid material with multiple sensing capabilities. We design and fabricate a
+new Guest@MOF material: comprising a zeolitic MOF (ZIF-71) as a nanoporous host
+for encapsulating rhodamine B (RhB dye) guest molecules, resulting in the
+RhB@ZIF-71 system with mechanochromic, thermochromic, and solvatochromic
+sensing response. The fluorochromic sensing properties stem from the
+nanoconfinement effect that ZIF-71 imposes on RhB monomers, yielding the H- or
+J-type aggregates with tuneable photophysical and photochemical properties. For
+mechanochromism, the external pressure causes an emission red shift in a linear
+fashion, switching RhB guests from H-type to J-type aggregates through a shear
+deformation. For thermochromism, we demonstrate a linear scaling as a function
+of temperature due to the spatial restriction imposed on J-type aggregates
+incarcerated in ZIF-71 pores. Harnessing the solvatochromism of RhB@ZIF-71, we
+identified three diverse groups of volatile organic compounds. The multimodal
+sensing response pave the way to smart applications like photonic pressure
+sensors, non-invasive thermometers, and ultrasensitive chemosensors.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284516,False
+http://arxiv.org/abs/2102.11023v2,"Predicting Material Properties Using a 3D Graph Neural Network with
+  Invariant Local Descriptors","  Accurate prediction of physical properties is critical for discovering and
+designing novel materials. Machine learning technologies have attracted
+significant attention in the materials science community for their potential
+for large-scale screening. Graph Convolution Neural Network (GCNN) is one of
+the most successful machine learning methods because of its flexibility and
+effectiveness in describing 3D structural data. Most existing GCNN models focus
+on the topological structure but overly simplify the three-dimensional
+geometric structure. However, in materials science, the 3D-spatial distribution
+of atoms is crucial for determining the atomic states and interatomic forces.
+This paper proposes an adaptive GCNN with a novel convolution mechanism that
+simultaneously models atomic interactions among all neighbor atoms in
+three-dimensional space. We apply the proposed model to two distinctly
+challenging problems on predicting material properties. The first is Henry's
+constant for gas adsorption in Metal-Organic Frameworks (MOFs), which is
+notoriously difficult because of its high sensitivity to atomic configurations.
+The second is the ion conductivity in solid-state crystal materials, which is
+difficult because of few labeled data available for training. The new model
+outperforms existing graph-based models on both data sets, suggesting that the
+critical three-dimensional geometric information is indeed captured.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284613,False
+http://arxiv.org/abs/2106.14583v2,"Towards Universal Neural Network Potential for Material Discovery
+  Applicable to Arbitrary Combination of 45 Elements","  Computational material discovery is under intense study owing to its ability
+to explore the vast space of chemical systems. Neural network potentials (NNPs)
+have been shown to be particularly effective in conducting atomistic
+simulations for such purposes. However, existing NNPs are generally designed
+for narrow target materials, making them unsuitable for broader applications in
+material discovery. To overcome this issue, we have developed a universal NNP
+called PreFerred Potential (PFP), which is able to handle any combination of 45
+elements. Particular emphasis is placed on the datasets, which include a
+diverse set of virtual structures used to attain the universality. We
+demonstrated the applicability of PFP in selected domains: lithium diffusion in
+LiFeSO${}_4$F, molecular adsorption in metal-organic frameworks, an
+order-disorder transition of Cu-Au alloys, and material discovery for a
+Fischer-Tropsch catalyst. They showcase the power of PFP, and this technology
+provides a highly useful tool for material discovery.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284681,False
+http://arxiv.org/abs/2202.10556v1,"Nano-Trap Engineering in MOF Microenvironment for Ultratrace Iodine
+  Sensors","  Ultra-sensitive and highly selective iodine gas sensors play a crucial role
+during the nuclear radiation leak for a timely detection and mitigation of
+pollution, ensuring the safety of a vast number of operators and subsequent
+integrity of the facility. Herein, we rationally designed a metal-organic
+framework (MOF) that exhibits an outstanding performance with an almost
+billion-fold enhancement in the electrical response due to its optimized
+hydrophobicity, which allows the easy migration of iodine molecules though the
+channels and the presence of suitable interaction sites, temporarily anchoring
+the target molecule for ultra-trace sensing. The prototype sensor tested in
+demanding environments demonstrates its high selectivity, ultra-trace parts per
+billion (ppb)-level sensitivity, good reversibility, and a very fast response
+time even at high frequencies compared to existing adsorbents, including
+commercially available materials. Further, the iodine sensing at the atomic
+level was studied in detail by measuring the electrical response of a single
+crystal and, the optimal thickness of the MOF layer was identified for an
+industrially-viable prototype sensor by using inkjet printing. In a wider
+perspective, we propose a general strategy towards electrically efficient
+sensing materials with hybrid functionalities for engineering high-sensitivity
+iodine sensors for a safe and sustainable future.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284745,False
+http://arxiv.org/abs/2203.08780v2,Frustration on a centred pyrochlore lattice in metal-organic frameworks,"  Geometric frustration inhibits magnetic systems from ordering, opening a
+window to unconventional phases of matter. The paradigmatic frustrated lattice
+in three dimensions to host a spin liquid is the pyrochlore, although there
+remain few experimental compounds thought to realize such a state. Here we go
+beyond the pyrochlore via molecular design in the metal-azolate framework
+[Mn(II)(ta)$_2$], which realizes a closely related centred pyrochlore lattice
+of Mn-spins with $S=5/2$. Despite a Curie-Weiss temperature of $-21$ K
+indicating the energy scale of magnetic interactions, [Mn(II)(ta)$_2$] orders
+at only 430 mK, putting it firmly in the category of highly frustrated magnets.
+Comparing magnetization and specific heat measurements to numerical results for
+a minimal Heisenberg model, we predict that this material displays distinct
+features of a classical spin liquid with a structure factor reflecting Coulomb
+physics in the presence of charges.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284813,False
+http://arxiv.org/abs/2205.05538v1,Current state and perspectives of nanoscale molecular rectifiers,"  The concept of utilizing a molecule bridged between two electrodes as a
+stable rectifying device with the possibility of commercialization is a ""holy
+grail"" of molecular electronics. Molecular rectifiers do not only exploit the
+electronic function of the molecules but also offer the possibility of their
+direct integration into specific nano-electronic circuits. However, even after
+nearly three decades of extensive experimental and theoretical work, the
+concept of molecular rectifiers still has many unresolved aspects concerning
+both the fundamental understanding of the underlying phenomena and the
+practical realization. At the same time, recent advancements in molecular
+systems with rectification ratios exceeding 105 are highly promising and
+competitive to the existing silicon-based devices. Here, we provide an overview
+and critical analysis of the current state and recent progress in molecular
+rectification relying on the different design concepts and material platforms
+such as single molecules, self-assembled monolayers, molecular multilayers,
+heterostructures, and metal-organic frameworks and coordination polymers. The
+involvement of crucial parameters such as the energy of molecular orbitals,
+electrode-molecule coupling, and asymmetric shifting of the energy levels will
+be discussed. Finally, we conclude by critically addressing the challenges and
+prospects for progress in the field and perspectives for the commercialization
+of molecular rectifiers.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284874,False
+http://arxiv.org/abs/2402.09251v2,Universal Machine Learning Kohn-Sham Hamiltonian for Materials,"  While density functional theory (DFT) serves as a prevalent computational
+approach in electronic structure calculations, its computational demands and
+scalability limitations persist. Recently, leveraging neural networks to
+parameterize the Kohn-Sham DFT Hamiltonian has emerged as a promising avenue
+for accelerating electronic structure computations. Despite advancements,
+challenges such as the necessity for computing extensive DFT training data to
+explore each new system and the complexity of establishing accurate ML models
+for multi-elemental materials still exist. Addressing these hurdles, this study
+introduces a universal electronic Hamiltonian model trained on Hamiltonian
+matrices obtained from first-principles DFT calculations of nearly all crystal
+structures on the Materials Project. We demonstrate its generality in
+predicting electronic structures across the whole periodic table, including
+complex multi-elemental systems, solid-state electrolytes, Moir\'e twisted
+bilayer heterostructure, and metal-organic frameworks (MOFs). Moreover, we
+utilize the universal model to conduct high-throughput calculations of
+electronic structures for crystals in GeNOME datasets, identifying 3,940
+crystals with direct band gaps and 5,109 crystals with flat bands. By offering
+a reliable efficient framework for computing electronic properties, this
+universal Hamiltonian model lays the groundwork for advancements in diverse
+fields, such as easily providing a huge data set of electronic structures and
+also making the materials design across the whole periodic table possible.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.284944,False
+http://arxiv.org/abs/2406.13389v1,"Unifying Mixed Gas Adsorption in Molecular Sieve Membranes and MOFs
+  using Machine Learning","  Recent machine learning models to accurately obtain gas adsorption isotherms
+focus on polymers or metal-organic frameworks (MOFs) separately. The difficulty
+in creating a unified model that can predict the adsorption trends in both
+types of adsorbents is challenging, owing to the diversity in their chemical
+structures. Moreover, models trained only on single gas adsorption data are
+incapable of predicting adsorption isotherms for binary gas mixtures. In this
+work, we address these problems using feature vectors comprising only the
+physical properties of the gas mixtures and adsorbents. Our model is trained on
+adsorption isotherms of both single and binary mixed gases inside carbon
+molecular sieving membrane (CMSM), together with data available from CoRE MOF
+database. The trained models are capable of accurately predicting the
+adsorption trends in both classes of materials, for both pure and binary
+components. ML architecture designed for one class of material, is not suitable
+for predicting the other class, even after proper training, signifying that the
+model must be trained jointly for proper predictions and transferability. The
+model is used to predict with good accuracy the CO2 uptake inside CALF-20
+framework. This work opens up a new avenue for predicting complex adsorption
+processes for gas mixtures in a wide range of materials.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.285012,False
+http://arxiv.org/abs/2408.04665v1,"LLM-based MOFs Synthesis Condition Extraction using Few-Shot
+  Demonstrations","  The extraction of Metal-Organic Frameworks (MOFs) synthesis conditions from
+literature text has been challenging but crucial for the logical design of new
+MOFs with desirable functionality. The recent advent of large language models
+(LLMs) provides disruptively new solution to this long-standing problem and
+latest researches have reported over 90% F1 in extracting correct conditions
+from MOFs literature. We argue in this paper that most existing synthesis
+extraction practices with LLMs stay with the primitive zero-shot learning,
+which could lead to downgraded extraction and application performance due to
+the lack of specialized knowledge. This work pioneers and optimizes the
+few-shot in-context learning paradigm for LLM extraction of material synthesis
+conditions. First, we propose a human-AI joint data curation process to secure
+high-quality ground-truth demonstrations for few-shot learning. Second, we
+apply a BM25 algorithm based on the retrieval-augmented generation (RAG)
+technique to adaptively select few-shot demonstrations for each MOF's
+extraction. Over a dataset randomly sampled from 84,898 well-defined MOFs, the
+proposed few-shot method achieves much higher average F1 performance (0.93 vs.
+0.81, +14.8%) than the native zero-shot LLM using the same GPT-4 model, under
+fully automatic evaluation that are more objective than the previous human
+evaluation. The proposed method is further validated through real-world
+material experiments: compared with the baseline zero-shot LLM, the proposed
+few-shot approach increases the MOFs structural inference performance (R^2) by
+29.4% in average.
+",na,"inverse design AND ""metal-organic frameworks""",2024-11-22 15:55:33.285078,False

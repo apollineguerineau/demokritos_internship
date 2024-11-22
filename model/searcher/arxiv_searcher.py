@@ -7,16 +7,26 @@ import urllib, urllib.request
 import xml.etree.ElementTree as ET
 import csv
 import sys
+import time
+import urllib.request as libreq
+    
 
 class ArxivSearcher(AbstractSearcher) : 
     def __init__(self):
         self.name = "Arxiv API"
 
+    def transform_query(self,query):
+        query =query.replace("-", ' ')
+        query =query.replace("  ", ' ')
+        query = query.replace(" ", "+")
+        query = query.replace('"', "%22")
+        return query
+
     def get_max_results(self, query):
-        query = query.replace(" AND ", "+AND+").replace(" OR ", "+OR+")
-        query = re.sub(r'\s+', '+', query)
-        url = 'http://export.arxiv.org/api/query?search_query=all:' + query
-        data = urllib.request.urlopen(url + '&max_results=1')
+        query = self.transform_query(query)
+        url = 'http://export.arxiv.org/api/query?search_query=all:' + query + '&max_results=1'
+        print(url)
+        data = urllib.request.urlopen(url)
         xml_content = data.read().decode('utf-8')
         namespaces = {'opensearch': 'http://a9.com/-/spec/opensearch/1.1/'}
         root = ET.fromstring(xml_content)
@@ -24,14 +34,15 @@ class ArxivSearcher(AbstractSearcher) :
         return(total_results)
 
     def get_n_pages(self, query, start, end):
-        query = query.replace(" AND ", "+AND+").replace(" OR ", "+OR+")
-        query = re.sub(r'\s+', '+', query)
+        wait_time = 3
+        query = self.transform_query(query)
         nb_fetched = 0
         pages = []
-        url = 'http://export.arxiv.org/api/query?search_query=all:' + query 
-        for i in range(start, end+1, 50):
+        url = "http://export.arxiv.org/api/query?search_query=all:" + query
+        # url = 'http://export.arxiv.org/api/query?search_query=all:' + query 
+        for i in range(start, end+1, 100):
             if nb_fetched < end :
-                requests_url = url + f'&start={i}&max_results={50}&sortBy=relevance&sortOrder=descending'
+                requests_url = url + f'&start={i}&max_results={100}&sortBy=relevance&sortOrder=descending'
                 data = urllib.request.urlopen(requests_url)
                 xml_content = data.read().decode('utf-8')
                 root = ET.fromstring(xml_content)
@@ -41,6 +52,7 @@ class ArxivSearcher(AbstractSearcher) :
                         page = self.read_arxiv_page(data_page)
                         pages.append(page)
                         nb_fetched+=1
+                time.sleep(wait_time)
             else :
                 break
         return(pages)
@@ -70,3 +82,27 @@ class ArxivSearcher(AbstractSearcher) :
         description = fetched_page.find('{http://www.w3.org/2005/Atom}summary').text
         page = Page(url, title, description)
         return page
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # inverse+design+AND+%22metal-organic+frameworks%22

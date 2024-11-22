@@ -1,0 +1,187 @@
+url;title;description;;;;
+http://arxiv.org/abs/1904.09497v1;"Interplay between Defects, Disorder and Flexibility in Metal-Organic
+  Frameworks";"  Metal-organic frameworks are a novel family of chemically diverse materials,
+which are of interest across engineering, physics, chemistry, biology, and
+medicine-based disciplines. Since the development of the field in its current
+form more than two decades ago, priority has been placed on the synthesis of
+new structures. However, more recently, a clear trend has emerged in shifting
+the emphasis from material design to exploring the chemical and physical
+properties of those already known. In particular --- while such nanoporous
+materials were traditionally seen as rigid crystalline structures --- there is
+growing evidence that large-scale flexibility, the presence of defects and
+long-range disorder, are not the exception, but rather the norm, in
+metal-organic frameworks. Here we offer some perspective into how these
+concepts are perhaps inescapably intertwined, highlight recent advances in our
+understanding, and discuss how a consideration of the interfaces between them
+may lead to enhancements of the materials' functionalities.
+";;;;
+http://arxiv.org/abs/2405.11783v1;"Inverse Design of Metal-Organic Frameworks Using Quantum Natural
+  Language Processing";"In this study, we explore the potential of using quantum natural language
+processing (QNLP) to inverse design metal-organic frameworks (MOFs) with
+targeted properties. Specifically, by analyzing 150 hypothetical MOF structures
+consisting of 10 metal nodes and 15 organic ligands, we categorize these
+structures into four distinct classes for pore volume and $H_{2}$ uptake
+values. We then compare various QNLP models (i.e. the bag-of-words, DisCoCat
+(Distributional Compositional Categorical), and sequence-based models) to
+identify the most effective approach to process the MOF dataset. Using a
+classical simulator provided by the IBM Qiskit, the bag-of-words model is
+identified to be the optimum model, achieving validation accuracies of 85.7%
+and 86.7% for binary classification tasks on pore volume and $H_{2}$ uptake,
+respectively. Further, we developed multi-class classification models tailored
+to the probabilistic nature of quantum circuits, with average test accuracies
+of 88.4% and 80.7% across different classes for pore volume and $H_{2}$ uptake
+datasets. Finally, the performance of generating MOF with target properties
+showed accuracies of 93.5% for pore volume and 89% for $H_{2}$ uptake,
+respectively. Although our investigation covers only a fraction of the vast MOF
+search space, it marks a promising first step towards using quantum computing
+for materials design, offering a new perspective through which to explore the
+complex landscape of MOFs.";;;;
+http://arxiv.org/abs/2010.00532v2;"Machine learning with persistent homology and chemical word embeddings
+  improves prediction accuracy and interpretability in metal-organic frameworks";"Machine learning has emerged as a powerful approach in materials discovery.
+Its major challenge is selecting features that create interpretable
+representations of materials, useful across multiple prediction tasks. We
+introduce an end-to-end machine learning model that automatically generates
+descriptors that capture a complex representation of a material's structure and
+chemistry. This approach builds on computational topology techniques (namely,
+persistent homology) and word embeddings from natural language processing. It
+automatically encapsulates geometric and chemical information directly from the
+material system. We demonstrate our approach on multiple nanoporous
+metal-organic framework datasets by predicting methane and carbon dioxide
+adsorption across different conditions. Our results show considerable
+improvement in both accuracy and transferability across targets compared to
+models constructed from the commonly-used, manually-curated features,
+consistently achieving an average 25-30% decrease in
+root-mean-squared-deviation and an average increase of 40-50% in R2 scores. A
+key advantage of our approach is interpretability: Our model identifies the
+pores that correlate best to adsorption at different pressures, which
+contributes to understanding atomic-level structure--property relationships for
+materials design.";;;;
+http://arxiv.org/abs/2305.11842v2;"Recent progress in the JARVIS infrastructure for next-generation
+  data-driven materials design";"The Joint Automated Repository for Various Integrated Simulations (JARVIS)
+infrastructure at the National Institute of Standards and Technology (NIST) is
+a large-scale collection of curated datasets and tools with more than 80000
+materials and millions of properties. JARVIS uses a combination of electronic
+structure, artificial intelligence (AI), advanced computation and experimental
+methods to accelerate materials design. Here we report some of the new features
+that were recently included in the infrastructure such as: 1) doubling the
+number of materials in the database since its first release, 2) including more
+accurate electronic structure methods such as Quantum Monte Carlo, 3) including
+graph neural network-based materials design, 4) development of unified
+force-field, 5) development of a universal tight-binding model, 6) addition of
+computer-vision tools for advanced microscopy applications, 7) development of a
+natural language processing tool for text-generation and analysis, 8) debuting
+a large-scale benchmarking endeavor, 9) including quantum computing algorithms
+for solids, 10) integrating several experimental datasets and 11) staging
+several community engagement and outreach events. New classes of materials,
+properties, and workflows added to the database include superconductors,
+two-dimensional (2D) magnets, magnetic topological materials, metal-organic
+frameworks, defects, and interface systems. The rich and reliable datasets,
+tools, documentation, and tutorials make JARVIS a unique platform for modern
+materials design. JARVIS ensures openness of data and tools to enhance
+reproducibility and transparency and to promote a healthy and collaborative
+scientific environment.";;;;
+http://arxiv.org/abs/2310.19500v2;"Coarse-grained crystal graph neural networks for reticular materials
+  design";"Reticular materials, including metal-organic frameworks and covalent organic
+frameworks, combine relative ease of synthesis and an impressive range of
+applications in various fields, from gas storage to biomedicine. Diverse
+properties arise from the variation of building units$\unicode{x2013}$metal
+centers and organic linkers$\unicode{x2013}$in almost infinite chemical space.
+Such variation substantially complicates experimental design and promotes the
+use of computational methods. In particular, the most successful artificial
+intelligence algorithms for predicting properties of reticular materials are
+atomic-level graph neural networks, which optionally incorporate domain
+knowledge. Nonetheless, the data-driven inverse design involving these models
+suffers from incorporation of irrelevant and redundant features such as full
+atomistic graph and network topology. In this study, we propose a new way of
+representing materials, aiming to overcome the limitations of existing methods;
+the message passing is performed on a coarse-grained crystal graph that
+comprises molecular building units. To highlight the merits of our approach, we
+assessed predictive performance and energy efficiency of neural networks built
+on different materials representations, including composition-based and
+crystal-structure-aware models. Coarse-grained crystal graph neural networks
+showed decent accuracy at low computational costs, making them a valuable
+alternative to omnipresent atomic-level algorithms. Moreover, the presented
+models can be successfully integrated into an inverse materials design pipeline
+as estimators of the objective function. Overall, the coarse-grained crystal
+graph framework is aimed at challenging the prevailing atom-centric perspective
+on reticular materials design.";;;;
+http://arxiv.org/abs/2210.17428v1;"EC-MOF/Phase-I: A computationally ready database of electrically
+  conductive metal-organic frameworks with high-throughput structural and
+  electronic properties";"The advent of pi-stacked layered metal-organic frameworks (MOFs) opened up
+new horizons for designing compact MOF-based devices as they offer unique
+electrical conductivity on top of permanent porosity and exceptionally high
+surface area. By taking advantage of the modular nature of these electrically
+conductive (EC) MOFs, an unlimited number of materials can be created for
+applications in electronic devices such as battery electrodes, supercapacitors,
+and spintronics. Permutation of structural building blocks including different
+metal nodes and organic linkers results in new systems with unprecedented and
+unexplored physical and chemical properties. With the ultimate goal of
+providing a platform for accelerated materials design and discovery, here, we
+lay the foundations towards creation of the first comprehensive database of
+EC-MOFs with an experimentally guided approach. The first phase of this
+database, coined EC-MOF/Phase-I, is comprised of 1,061 bulk and mono-layer
+structures built by all possible combinations of experimentally reported
+organic linkers, functional groups and metal nodes. A high-throughput screening
+(HTS) work flow is constructed to implement density functional theory
+calculations with periodic boundary conditions to optimize the structures and
+calculate some of their most significantly relevant properties. Since research
+and development in the area of EC-MOFs has long been suffering from the lack of
+appropriate initial crystal structures, all the geometries and property data
+have been made available for the use of the community through the online
+platform that is developed in the course of this work. This database provides
+comprehensive physical and chemical data of EC-MOFs as well as convenience of
+selecting appropriate materials for specific applications, thus, accelerating
+design and discovery of EC-MOF-based compact devices.";;;;
+http://arxiv.org/abs/2207.12467v1;Reproducible Sorbent Materials Foundry for Carbon Capture at Scale;"We envision an autonomous sorbent materials foundry (SMF) for rapidly
+evaluating materials for direct air capture of carbon dioxide (CO2),
+specifically targeting novel metal organic framework materials. Our proposed
+SMF is hierarchical, simultaneously addressing the most critical gaps in the
+inter-related space of sorbent material synthesis, processing, properties, and
+performance. The ability to collect these critical data streams in an agile,
+coordinated, and automated fashion will enable efficient end-to-end sorbent
+materials design through machine learning driven research framework.";;;;
+http://arxiv.org/abs/2302.09184v1;"Rapid Design of Top-Performing Metal-Organic Frameworks with Qualitative
+  Representations of Building Blocks";"Data-driven materials design often encounters challenges where systems
+require or possess qualitative (categorical) information. Metal-organic
+frameworks (MOFs) are an example of such material systems. The representation
+of MOFs through different building blocks makes it a challenge for designers to
+incorporate qualitative information into design optimization. Furthermore, the
+large number of potential building blocks leads to a combinatorial challenge,
+with millions of possible MOFs that could be explored through time consuming
+physics-based approaches. In this work, we integrated Latent Variable Gaussian
+Process (LVGP) and Multi-Objective Batch-Bayesian Optimization (MOBBO) to
+identify top-performing MOFs adaptively, autonomously, and efficiently without
+any human intervention. Our approach provides three main advantages: (i) no
+specific physical descriptors are required and only building blocks that
+construct the MOFs are used in global optimization through qualitative
+representations, (ii) the method is application and property independent, and
+(iii) the latent variable approach provides an interpretable model of
+qualitative building blocks with physical justification. To demonstrate the
+effectiveness of our method, we considered a design space with more than 47,000
+MOF candidates. By searching only ~1% of the design space, LVGP-MOBBO was able
+to identify all MOFs on the Pareto front and more than 97% of the 50
+top-performing designs for the CO$_2$ working capacity and CO$_2$/N$_2$
+selectivity properties. Finally, we compared our approach with the Random
+Forest algorithm and demonstrated its efficiency, interpretability, and
+robustness.";;;;
+http://arxiv.org/abs/2402.09251v2;Universal Machine Learning Kohn-Sham Hamiltonian for Materials;"While density functional theory (DFT) serves as a prevalent computational
+approach in electronic structure calculations, its computational demands and
+scalability limitations persist. Recently, leveraging neural networks to
+parameterize the Kohn-Sham DFT Hamiltonian has emerged as a promising avenue
+for accelerating electronic structure computations. Despite advancements,
+challenges such as the necessity for computing extensive DFT training data to
+explore each new system and the complexity of establishing accurate ML models
+for multi-elemental materials still exist. Addressing these hurdles, this study
+introduces a universal electronic Hamiltonian model trained on Hamiltonian
+matrices obtained from first-principles DFT calculations of nearly all crystal
+structures on the Materials Project. We demonstrate its generality in
+predicting electronic structures across the whole periodic table, including
+complex multi-elemental systems, solid-state electrolytes, Moir\'e twisted
+bilayer heterostructure, and metal-organic frameworks (MOFs). Moreover, we
+utilize the universal model to conduct high-throughput calculations of
+electronic structures for crystals in GeNOME datasets, identifying 3,940
+crystals with direct band gaps and 5,109 crystals with flat bands. By offering
+a reliable efficient framework for computing electronic properties, this
+universal Hamiltonian model lays the groundwork for advancements in diverse
+fields, such as easily providing a huge data set of electronic structures and
+also making the materials design across the whole periodic table possible.";;;;
