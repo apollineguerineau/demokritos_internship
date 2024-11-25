@@ -57,34 +57,41 @@ hyde_prompt_generator = LLMHydeGenerator(llm=llm, template=HydePromptBasedTempla
 configurations = []
 
 ## BASELINE ##
-configurations.append({
-"query_expander" : None,
-"classifier" : None,
-"threshold": None,
-"nb_pages_per_requests": None,
-"hyde_generator": None
-})
+# configurations.append({
+# "query_expander" : None,
+# "classifier" : None,
+# "threshold": None,
+# "nb_pages_per_requests": None,
+# "hyde_generator": None
+# })
 
 ## 4 configurations ##
 ## 1) and 2) EXPANDER ON SEED QUERY 
-configurations.append({
-"query_expander" : query_expander_on_seed,
-"classifier" : None,
-"threshold": None,
-"hyde_generator": None
-})
+# configurations.append({
+# "query_expander" : query_expander_on_seed,
+# "classifier" : None,
+# "threshold": None,
+# "hyde_generator": None
+# })
 # simple classifier : cosine similarity
 # improved classifier : hyde_cos_sim 
 
 ## 3) What if we expand with best page ? -> EXPANDER ON BEST PAGE
-configurations.append({
-"query_expander" : query_expander_best_page,
-"classifier" : hyde_classifier,
-"hyde_generator": hyde_generator
-})
+# configurations.append({
+# "query_expander" : query_expander_best_page,
+# "classifier" : hyde_classifier,
+# "hyde_generator": hyde_generator
+# })
 # 4) MAYBE IT'S BETTER WHEN USING A PROMPT ? -> EXPANDER ON BEST PAGE AND PROMPT
 # configurations.append({
 # "query_expander" : query_expander_best_page_and_prompt,
+# "classifier" : hyde_classifier,
+# "hyde_generator": hyde_prompt_generator
+# })
+
+#-> EXPANDER ON INITIAL QUERY AND PROMPT
+# configurations.append({
+# "query_expander" : query_expander_on_seed_and_prompt,
 # "classifier" : hyde_classifier,
 # "hyde_generator": hyde_prompt_generator
 # })
