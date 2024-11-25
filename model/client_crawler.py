@@ -40,7 +40,7 @@ class ClientCrawler :
 
         with open(self.folder + '/session_infos.csv', mode='w', newline='', encoding='utf-8') as csvfile:
             fieldnames = [
-                'session_name', 'searcher', 'query_expansion', 'classifier', 'threshold', 'nb_pages_per_request', 'stop_criteria', 'hyde', 'all_queries', 'nb_seed_pages','nb_fetched_pages', 'duration'
+                'session_name', 'searcher', 'query_expansion', 'classifier', 'hyde', 'all_queries', 'nb_seed_pages','nb_fetched_pages', 'duration'
             ]
             writer = csv.writer(csvfile)
             writer.writerow(fieldnames)
