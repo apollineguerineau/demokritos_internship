@@ -28,12 +28,13 @@ import os
 # Configuration de base
 # base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/MOF/"
 # query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
-folder_base_output_dir = "/Users/apollineguerineau/Documents/ENSAI/3A/Greece/internship/code/version0.2/demokritos_internship/crawl_results/"
+folder_base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/"
 # query = 'inverse design AND "metal-organic frameworks"'
-# query = '"metal-organic frameworks" AND "material design" AND "properties"'
-query = 'RAG AND "code generation"'
+query = '"metal-organic frameworks" AND "material design" AND "properties"'
+# query = 'RAG AND "code generation"'
 base_output_dir = folder_base_output_dir + query.replace(' ', '_') + '/'
-prompt = "The query focuses on the use of Retrieval-Augmented Generation (RAG) models for automating and enhancing code generation. These models combine information retrieval and text generation capabilities to produce high-quality, context-aware code. The aim is to address challenges such as improving code relevance, reducing errors, and optimizing code for specific domains. Potential applications include rapid prototyping, system architecture optimization, and error mitigation in software development."
+prompt = ''
+# prompt = "The query focuses on the use of Retrieval-Augmented Generation (RAG) models for automating and enhancing code generation. These models combine information retrieval and text generation capabilities to produce high-quality, context-aware code. The aim is to address challenges such as improving code relevance, reducing errors, and optimizing code for specific domains. Potential applications include rapid prototyping, system architecture optimization, and error mitigation in software development."
 llm = OllamaLLM(model='llama3.2')
 
 # searcher = ChemRxivSearcher()
@@ -108,9 +109,9 @@ def get_classifier_name(config):
     if config["classifier"] is None : 
         classifier_name = ''
     elif isinstance(config["classifier"], SimilarityClassifier) :
-        classifier_name = 'MostRelevantPagesPromptBasedTemplate'
+        classifier_name = 'SimilarityClassifier'
     elif isinstance(config["classifier"], HydeSimilarityClassifier) :
-        classifier_name = 'MostRelevantPagesPromptBasedTemplate'
+        classifier_name = 'HydeSimilarityClassifier'
     return(classifier_name)
 
 def get_hyde_generator_name(config):
@@ -135,9 +136,7 @@ for i, config in enumerate(configurations, 1):
 
     folder_path = base_output_dir + folder_name
 
-    do = True
-    # if not os.path.exists(folder_path):
-    if do : 
+    if not os.path.exists(folder_path):
         print(folder_name)
     
         # Lancer le crawler

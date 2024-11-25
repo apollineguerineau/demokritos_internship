@@ -21,8 +21,6 @@ class ClientCrawler :
                 if not hyde_generator :
                     print('Need to choose hyde generator')
                 else : 
-                    hyde = hyde_generator.generate_hyde(self.crawl_session)
-                    self.crawl_session.hyde = hyde
                     try : 
                         hyde = hyde_generator.generate_hyde(self.crawl_session)
                         self.crawl_session.hyde = hyde
@@ -65,7 +63,6 @@ class ClientCrawler :
         new_pages = self.searcher.get_all_pages(self.crawl_session.current_query)
         print('------------------------------------------------')
         for page in new_pages : 
-            print(page.title)
             if self.classifier : 
                 score = self.classifier.attribute_score(self.crawl_session, page)
                 page.score = score

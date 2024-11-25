@@ -25,7 +25,6 @@ class ArxivSearcher(AbstractSearcher) :
     def get_max_results(self, query):
         query = self.transform_query(query)
         url = 'http://export.arxiv.org/api/query?search_query=all:' + query + '&max_results=1'
-        print(url)
         data = urllib.request.urlopen(url)
         xml_content = data.read().decode('utf-8')
         namespaces = {'opensearch': 'http://a9.com/-/spec/opensearch/1.1/'}
@@ -59,6 +58,8 @@ class ArxivSearcher(AbstractSearcher) :
 
     def get_all_pages(self, query):
         total_results = self.get_max_results(query)
+        if total_results >20000 : 
+            total_results = 20000
         return(self.get_n_pages(query, 0, total_results))
     
     # def get_page(self, query, num_page):
@@ -82,27 +83,3 @@ class ArxivSearcher(AbstractSearcher) :
         description = fetched_page.find('{http://www.w3.org/2005/Atom}summary').text
         page = Page(url, title, description)
         return page
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # inverse+design+AND+%22metal-organic+frameworks%22
