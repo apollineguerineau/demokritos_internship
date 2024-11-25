@@ -10,7 +10,7 @@ import os
 import csv
 
 
-initial_query = 'RAG_AND_"code_generation"/'
+initial_query = '"metal-organic_frameworks"_AND_"material_design"_AND_"properties"/'
 base_path = f'/Users/apollineguerineau/Documents/ENSAI/3A/Greece/internship/eval/results/{initial_query}'
 path_seed_query_expand = base_path + 'SeedQueryBasedTemplate__/'
 fetched_pages = pd.read_csv(path_seed_query_expand + 'fetched_pages.csv')
@@ -37,11 +37,11 @@ fetched_pages.to_csv(classified_data_path, index=False)
 #######################################################################################
 
 classifier2 = HydeSimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
-crawl_session2 = CrawlSession(session_name='test', query='RAG_AND_"code_generation"')
+crawl_session2 = CrawlSession(session_name='test', query='"metal-organic_frameworks"_AND_"material_design"_AND_"properties"')
 template_hyde = HydeBasedTemplate()
 llm = OllamaLLM(model='llama3.2')
 hyde_generator = LLMHydeGenerator(llm=llm, template=template_hyde)
-hyde = hyde_generator.generate_hyde(crawl_session)
+hyde = hyde_generator.generate_hyde(crawl_session2)
 print(hyde)
 crawl_session2.hyde = hyde
 

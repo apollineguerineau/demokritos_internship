@@ -19,4 +19,4 @@ class MostRelevantPagesPromptBasedTemplate(AbstractTemplate):
         initial_query = crawl_session.seed_query
         prompt = crawl_session.prompt
         most_relevant_pages = self.get_most_relevant_pages(crawl_session)
-        return(self.template_script.format(initial_query, most_relevant_pages, prompt))
+        return(self.template_script.format(initial_query, prompt, most_relevant_pages))
