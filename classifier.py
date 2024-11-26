@@ -9,7 +9,7 @@ import pandas as pd
 import os
 import csv
 
-
+# initial_query = '"metal-organic_frameworks"_AND_"material_design"_AND_"properties"/'
 initial_query = '"Machine_Learning"_AND_(diffusion_OR_diffusivity)_AND_(MOFs_OR_ZIFs_OR_"metal-organic_frameworks"_OR_COFs_OR_"covalent-organic_frameworks)/'
 base_path = f'/Users/apollineguerineau/Documents/ENSAI/3A/Greece/internship/eval/results/{initial_query}'
 path_seed_query_expand = base_path + 'SeedQueryBasedTemplate__/'
@@ -21,42 +21,44 @@ fetched_pages = pd.read_csv(path_seed_query_expand + 'fetched_pages.csv')
 
 classifier = SimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
 crawl_session = CrawlSession(session_name='test', query='')
-scores = []
-for index, row in fetched_pages.iterrows():
-        print(f'Line {index+1} sur {len(fetched_pages)}')
+classified_data_path = path_seed_query_expand + '/sim_cos/fetched_pages.csv'
+
+with open(classified_data_path, mode='w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    writer.writerow(list(fetched_pages.columns))
+    
+    for index, row in fetched_pages.iterrows():
+        print(f'Processing line {index + 1} of {len(fetched_pages)}')
         page = Page(row['url'], row['title'], row['description'])
         score = classifier.attribute_score(crawl_session, page)
-        scores.append(score)
-
-fetched_pages['score'] = scores
-classified_data_path = path_seed_query_expand + '/sim_cos/fetched_pages.csv'
-fetched_pages.to_csv(classified_data_path, index=False)
+        row_with_score = [row['url'], row['title'], row['description'], score, row['get_with_query'], row['time_fetch'], row['is_seed']]
+        writer.writerow(row_with_score)
 
 #######################################################################################
 ###################################   HYDE CLASSIFIER  ################################
 #######################################################################################
-
 classifier2 = HydeSimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
 crawl_session2 = CrawlSession(session_name='test', query='"Machine_Learning"_AND_(diffusion_OR_diffusivity)_AND_(MOFs_OR_ZIFs_OR_"metal-organic_frameworks"_OR_COFs_OR_"covalent-organic_frameworks)')
 template_hyde = HydeBasedTemplate()
 llm = OllamaLLM(model='llama3.2')
 hyde_generator = LLMHydeGenerator(llm=llm, template=template_hyde)
 hyde = hyde_generator.generate_hyde(crawl_session2)
-print(hyde)
 crawl_session2.hyde = hyde
 
-scores = []
-for index, row in fetched_pages.iterrows():
-        print(f'Line {index+1} sur {len(fetched_pages)}')
+classified_data_path_hyde = path_seed_query_expand + '/hyde_sim_cos/fetched_pages.csv'
+
+with open(classified_data_path_hyde, mode='w', newline='', encoding='utf-8') as file:
+    writer = csv.writer(file)
+    writer.writerow(list(fetched_pages.columns))
+    
+    for index, row in fetched_pages.iterrows():
+        print(f'Processing line {index + 1} of {len(fetched_pages)}')
         page = Page(row['url'], row['title'], row['description'])
         score = classifier2.attribute_score(crawl_session2, page)
-        scores.append(score)
-
-fetched_pages['score'] = scores
-classified_data_path_hyde = path_seed_query_expand + '/hyde_sim_cos/fetched_pages.csv'
-fetched_pages.to_csv(classified_data_path_hyde, index=False)
-
+        row_with_score = [row['url'], row['title'], row['description'], score, row['get_with_query'], row['time_fetch'], row['is_seed']]
+        writer.writerow(row_with_score)
 print(hyde)
+
 
 
 

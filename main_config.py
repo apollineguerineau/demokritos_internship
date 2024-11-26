@@ -30,10 +30,10 @@ import os
 # query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
 folder_base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/"
 # query = 'inverse design AND "metal-organic frameworks"'
-query = '"metal-organic frameworks" AND "material design" AND "properties"'
-# query = 'RAG AND "code generation"'
+# query = '"metal-organic frameworks" AND "material design" AND "properties"'
+query = 'RAG AND "code generation"'
 base_output_dir = folder_base_output_dir + query.replace(' ', '_') + '/'
-prompt = ''
+prompt = 'Code generation is an area of artificial intelligence that aims to automate parts of software development. Retrieval-Augmented Generation (RAG) models are a novel approach in this field, combining information retrieval and text generation to produce context-aware code. These methods could help improve the relevance and quality of generated code, making them valuable for a wide range of applications, from prototyping to optimizing software for specific tasks.'
 # prompt = "The query focuses on the use of Retrieval-Augmented Generation (RAG) models for automating and enhancing code generation. These models combine information retrieval and text generation capabilities to produce high-quality, context-aware code. The aim is to address challenges such as improving code relevance, reducing errors, and optimizing code for specific domains. Potential applications include rapid prototyping, system architecture optimization, and error mitigation in software development."
 llm = OllamaLLM(model='llama3.2')
 
@@ -90,12 +90,11 @@ configurations = []
 # })
 
 #-> EXPANDER ON INITIAL QUERY AND PROMPT
-# configurations.append({
-# "query_expander" : query_expander_on_seed_and_prompt,
-# "classifier" : hyde_classifier,
-# "hyde_generator": hyde_prompt_generator
-# })
-
+configurations.append({
+"query_expander" : query_expander_on_seed_and_prompt,
+"classifier" : hyde_classifier,
+"hyde_generator": hyde_prompt_generator
+})
 
 print(f'{len(configurations)} configurations to test')
 ##################################################################################
