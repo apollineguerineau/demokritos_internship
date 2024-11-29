@@ -3,7 +3,7 @@
 **Abstract**  
 
 
-# Code Architecture
+## Code Architecture
 ![Code architecture](./images/class_diagram.png)
 
 ## How to Use the Code
