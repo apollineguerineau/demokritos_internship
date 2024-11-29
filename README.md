@@ -7,7 +7,7 @@
 ![Code architecture](./images/class_diagram.png)
 
 ## How to Use the Code
-Before running the code, make sure to choose the correct saving directory, use case, and searcher.
+Before running the code, make sure to choose the correct saving directory, use case, and searcher in file run_crawler.py.
 
 ### Step-by-Step Instructions:
 
