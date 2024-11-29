@@ -20,5 +20,5 @@ build/
 
 .pytest_cache/
 
-.DS_Store  # macOS
-Thumbs.db  # Windows
+.DS_Store
+Thumbs.db 
