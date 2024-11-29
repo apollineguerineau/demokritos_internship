@@ -1,2 +1,0 @@
-session_name,searcher,query_expansion,classifier,threshold,nb_pages_per_request,stop_criteria,hyde,all_queries,nb_seed_pages,nb_fetched_pages,duration
-baseline,Arxiv API,no expansion,no classifier,,"""metal-organic frameworks"" AND ""material design"" AND ""properties""",0,9,0:00:04.573306

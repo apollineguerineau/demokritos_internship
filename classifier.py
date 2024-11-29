@@ -6,7 +6,6 @@ from model.llm.template.hyde_based_template import HydeBasedTemplate
 from model.hyde_generator.llm_hyde_generator import LLMHydeGenerator
 from model.llm.ollama_llm import OllamaLLM
 import pandas as pd 
-import os
 import csv
 
 # initial_query = '"metal-organic_frameworks"_AND_"material_design"_AND_"properties"/'

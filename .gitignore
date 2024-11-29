@@ -1,4 +1,6 @@
 .env
+classifier.py
+crawl_results/
 venv/
 
 __pycache__/

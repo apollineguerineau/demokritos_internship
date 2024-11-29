@@ -1,8 +1,6 @@
 from model.llm.abstract_llm import AbstractLLM
 import ollama
 import ast
-import re
-import json
 
 class OllamaLLM(AbstractLLM):
     def __init__(self, model):

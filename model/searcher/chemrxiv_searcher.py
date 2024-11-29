@@ -1,10 +1,6 @@
 from model.searcher.abstract_searcher import AbstractSearcher
 import requests
 from model.business_object.page import Page
-import urllib.parse
-import re
-import csv
-import sys
 
 class ChemRxivSearcher(AbstractSearcher) : 
     def __init__(self):
@@ -37,7 +33,6 @@ class ChemRxivSearcher(AbstractSearcher) :
     def get_all_pages(self, query):
         total_results = self.get_max_results(query)
         return(self.get_n_pages(query, 0, total_results))
-
     
     def get_page(self, query, num_page):
         requests_url = "https://chemrxiv.org/engage/chemrxiv/public-api/v1/items?term=" + query + f'&skip={num_page}' + f'&sort=RELEVANT_DESC&limit={1}'

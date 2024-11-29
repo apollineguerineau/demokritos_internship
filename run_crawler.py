@@ -1,103 +1,111 @@
 from model.client_crawler import ClientCrawler
-
 from model.business_object.crawl_session import CrawlSession
-from model.business_object.page import Page
-
 from model.classifier.similarity_classifier import SimilarityClassifier
 from model.classifier.hyde_similarity_classifier import HydeSimilarityClassifier
-
 from model.llm.template.seed_query_based_template import SeedQueryBasedTemplate
 from model.llm.template.seed_query_prompt_based_template import SeedQueryPromptBasedTemplate
 from model.llm.template.most_relevant_pages_based import MostRelevantPagesBasedTemplate
 from model.llm.template.most_relevant_prompt_based_template import MostRelevantPagesPromptBasedTemplate
-
 from model.llm.template.hyde_based_template import HydeBasedTemplate
 from model.llm.template.hyde_prompt_based_template import HydePromptBasedTemplate
-
 from model.llm.ollama_llm import OllamaLLM
-
 from model.query_expansion.llm_query_expander import LLMQueryExpander
-
 from model.hyde_generator.llm_hyde_generator import LLMHydeGenerator
-
 from model.searcher.arxiv_searcher import ArxivSearcher
 from model.searcher.chemrxiv_searcher import ChemRxivSearcher
-
 import os
 
-# Configuration de base
-# base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/MOF/"
-# query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
-folder_base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/"
-# query = 'inverse design AND "metal-organic frameworks"'
-# query = '"metal-organic frameworks" AND "material design" AND "properties"'
+##############################################################################################
+##################################### CHOICE OF PARAMETERS ###################################
+##############################################################################################
+
+### Choice of use case ###
+# USE CASE 1
 query = 'RAG AND "code generation"'
-base_output_dir = folder_base_output_dir + query.replace(' ', '_') + '/'
 prompt = 'Code generation is an area of artificial intelligence that aims to automate parts of software development. Retrieval-Augmented Generation (RAG) models are a novel approach in this field, combining information retrieval and text generation to produce context-aware code. These methods could help improve the relevance and quality of generated code, making them valuable for a wide range of applications, from prototyping to optimizing software for specific tasks.'
-# prompt = "The query focuses on the use of Retrieval-Augmented Generation (RAG) models for automating and enhancing code generation. These models combine information retrieval and text generation capabilities to produce high-quality, context-aware code. The aim is to address challenges such as improving code relevance, reducing errors, and optimizing code for specific domains. Potential applications include rapid prototyping, system architecture optimization, and error mitigation in software development."
+
+# USE CASE 2
+# query = '"metal-organic frameworks" AND "material design" AND "properties"'
+# prompt = ''
+
+# USE CASE 3
+# query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
+# prompt = ''
+
+folder_base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/"
+base_output_dir = folder_base_output_dir + query.replace(' ', '_') + '/'
+
+### LLM choice ###
 llm = OllamaLLM(model='llama3.2')
 
+### Search choice ###
 # searcher = ChemRxivSearcher()
 searcher = ArxivSearcher()
 
+### Query expansion configurations ###
 sim_classifier = SimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
 hyde_classifier = HydeSimilarityClassifier(name_embed_model='intfloat/multilingual-e5-base')
 
-# Query expansion configurations
+### Query expansion configurations ###
 query_expander_on_seed = LLMQueryExpander(llm=llm, template=SeedQueryBasedTemplate())
 query_expander_on_seed_and_prompt = LLMQueryExpander(llm=llm, template=SeedQueryPromptBasedTemplate())
 query_expander_best_page = LLMQueryExpander(llm=llm, template=MostRelevantPagesBasedTemplate(nb_pages=1))
 query_expander_best_page_and_prompt = LLMQueryExpander(llm=llm, template=MostRelevantPagesPromptBasedTemplate(nb_pages=1))
 
-# Hyde generator
+### Hyde generator ###
 hyde_generator = LLMHydeGenerator(llm=llm, template=HydeBasedTemplate())
 hyde_prompt_generator = LLMHydeGenerator(llm=llm, template=HydePromptBasedTemplate())
 
-## Configurations
+##############################################################################################
+#################################### CONFIGURATIONS SET UP ###################################
+##############################################################################################
 configurations = []
 
-## BASELINE ##
-# configurations.append({
-# "query_expander" : None,
-# "classifier" : None,
-# "threshold": None,
-# "nb_pages_per_requests": None,
-# "hyde_generator": None
-# })
+## config0_baseline ##
+configurations.append({
+"query_expander" : None,
+"classifier" : None,
+"hyde_generator": None
+})
 
-## 4 configurations ##
-## 1) and 2) EXPANDER ON SEED QUERY 
-# configurations.append({
-# "query_expander" : query_expander_on_seed,
-# "classifier" : None,
-# "threshold": None,
-# "hyde_generator": None
-# })
-# simple classifier : cosine similarity
-# improved classifier : hyde_cos_sim 
+## config1_seed-query_sim-cos ##
+configurations.append({
+"query_expander" : query_expander_on_seed,
+"classifier" : sim_classifier,
+"hyde_generator": None
+})
 
-## 3) What if we expand with best page ? -> EXPANDER ON BEST PAGE
-# configurations.append({
-# "query_expander" : query_expander_best_page,
-# "classifier" : hyde_classifier,
-# "hyde_generator": hyde_generator
-# })
-# 4) MAYBE IT'S BETTER WHEN USING A PROMPT ? -> EXPANDER ON BEST PAGE AND PROMPT
-# configurations.append({
-# "query_expander" : query_expander_best_page_and_prompt,
-# "classifier" : hyde_classifier,
-# "hyde_generator": hyde_prompt_generator
-# })
+## config2_seed-query_hyde-sim-cos ##
+configurations.append({
+"query_expander" : query_expander_on_seed,
+"classifier" : hyde_classifier,
+"hyde_generator": None
+})
 
-#-> EXPANDER ON INITIAL QUERY AND PROMPT
+## config3_best-paper_hyde-sim-cos_description ##
 configurations.append({
 "query_expander" : query_expander_on_seed_and_prompt,
 "classifier" : hyde_classifier,
 "hyde_generator": hyde_prompt_generator
 })
 
+## config4_best-paper_hyde-sim-cos ##
+configurations.append({
+"query_expander" : query_expander_best_page,
+"classifier" : hyde_classifier,
+"hyde_generator": hyde_generator
+})
+
+## config5_best-paper_hyde-sim-cos_description ##
+configurations.append({
+"query_expander" : query_expander_best_page_and_prompt,
+"classifier" : hyde_classifier,
+"hyde_generator": hyde_prompt_generator
+})
+
 print(f'{len(configurations)} configurations to test')
-##################################################################################
+
+# service functions 
 def get_query_expander_name(config):
     if config["query_expander"] is None : 
         query_expander_name = ''
@@ -129,7 +137,11 @@ def get_hyde_generator_name(config):
         hyde_generator_name = 'HydePromptBasedTemplate'
     return(hyde_generator_name)
 
-# Création des folders et lancement des crawlers
+
+##############################################################################################
+########################################## RUN CRAWLERS ######################################
+##############################################################################################
+
 for i, config in enumerate(configurations, 1):
     query_expander_name = get_query_expander_name(config)
     classifier_name = get_classifier_name(config)
@@ -144,8 +156,6 @@ for i, config in enumerate(configurations, 1):
 
     if not os.path.exists(folder_path):
         print(folder_name)
-    
-        # Lancer le crawler
         crawl_session = CrawlSession(session_name=folder_name, query=query, prompt=prompt)
         
         crawler_client = ClientCrawler(
