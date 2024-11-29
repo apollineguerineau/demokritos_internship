@@ -15,7 +15,6 @@ class CrawlSession:
 
         self.seed_pages = []
         self.fetched_pages = []
-        self.rejected_pages = []
 
         self.hyde = None
 
