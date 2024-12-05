@@ -26,11 +26,11 @@ prompt = 'Code generation is an area of artificial intelligence that aims to aut
 
 # USE CASE 2
 # query = '"metal-organic frameworks" AND "material design" AND "properties"'
-# prompt = ''
+# prompt = 'Metal-organic frameworks is a family of nanoporous materials whose structure can be modified on the molecular level, towards tailoring their macroscopic properties. Property can be, for example, the amount of a specific gas species adsorbed in the pores of the material. However the correlation between structure and property value is complicated. Using ML predictive models (structure as input, and property values as output) is useful, but still is burdened by a trial-and-error approach. It would be useful to have an AI system that takes as input the desired property value and outputs the structure, which is the exact opposite direction of traditional ML models.'
 
 # USE CASE 3
 # query = '''"Machine Learning" AND (diffusion OR diffusivity) AND (MOFs OR ZIFs OR "metal-organic frameworks" OR COFs OR "covalent-organic frameworks)'''
-# prompt = ''
+# prompt = 'Metal-organic frameworks (MOFs), ZIFs and covalent-organic frameworks (COFs) are families of nanoporous materials whose structure can be modified on the molecular level, towards tailoring their macroscopic properties. However the correlation between structure and property value is complicated. Property can be, for example, the amount of a specific gas species adsorbed in the pores of the material. Machine Learning can be useful in getting data, be trained on them, and extract the aforementioned structure-property correlations.'
 
 folder_base_output_dir = "/home/onyxia/work/demokritos_internship/crawl_results/"
 base_output_dir = folder_base_output_dir + query.replace(' ', '_') + '/'
