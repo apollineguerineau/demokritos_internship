@@ -8,10 +8,6 @@ In summary, our findings suggest that query expansion via an LLM has the potenti
 
 The report described the methodology, results and limitations as well as a litterature review are available in folder /docs.
 
-## Paper
-
-## Domain review
-
 ## Code Architecture
 ![Code architecture](./images/class_diagram.png)
 
